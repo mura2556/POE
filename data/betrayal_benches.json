@@ -1,0 +1,653 @@
+[
+  {
+    "description": "random normal item (30 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x10",
+      "Chaos Orb x10",
+      "Exalted Orb x10",
+      "Veiled Exalted Orb x1"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 1
+  },
+  {
+    "description": "random normal item (60 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Chaos Orb x20",
+      "Exalted Orb x20",
+      "Veiled Exalted Orb x2"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 2
+  },
+  {
+    "description": "random normal item (90 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x30",
+      "Chaos Orb x30",
+      "Exalted Orb x30",
+      "Veiled Exalted Orb x3"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 3
+  },
+  {
+    "description": "random normal item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x10",
+      "Exalted Orb x10",
+      "Chaos Orb x10",
+      "Veiled Chaos Orb x10"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 1
+  },
+  {
+    "description": "random normal item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Exalted Orb x20",
+      "Chaos Orb x20",
+      "Veiled Chaos Orb x20"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 2
+  },
+  {
+    "description": "random normal item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x30",
+      "Exalted Orb x30",
+      "Chaos Orb x30",
+      "Veiled Chaos Orb x30"
+    ],
+    "owner": "Aisling Laffrey, The Silent Butcher",
+    "rank": 3
+  },
+  {
+    "description": "random +1 ilvl regular/abyss/cluster jewel (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Transmutation x30",
+      "Orb of Alteration x30",
+      "Orb of Augmentation x30",
+      "Regal Orb x30",
+      "Exalted Orb x30",
+      "Orb of Scouring x30",
+      "Orb of Annulment x30",
+      "Divine Orb x5"
+    ],
+    "owner": "Cameria the Coldblooded",
+    "rank": 1
+  },
+  {
+    "description": "random +2 ilvl regular/abyss/cluster jewel (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Transmutation x50",
+      "Orb of Alteration x50",
+      "Orb of Augmentation x50",
+      "Regal Orb x50",
+      "Exalted Orb x50",
+      "Orb of Scouring x50",
+      "Orb of Annulment x50",
+      "Divine Orb x7"
+    ],
+    "owner": "Cameria the Coldblooded",
+    "rank": 2
+  },
+  {
+    "description": "random regular/abyss/cluster jewel (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Transmutation x70",
+      "Orb of Alteration x70",
+      "Orb of Augmentation x70",
+      "Regal Orb x70",
+      "Exalted Orb x70",
+      "Orb of Scouring x70",
+      "Orb of Annulment x70",
+      "Divine Orb x10"
+    ],
+    "owner": "Cameria the Coldblooded",
+    "rank": 3
+  },
+  {
+    "description": "random corrupted rare item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x10",
+      "Tainted Exalted Orb x10",
+      "Tainted Divine Teardrop x2"
+    ],
+    "owner": "Elreon, Light's Judge",
+    "rank": 1
+  },
+  {
+    "description": "random corrupted rare item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x20",
+      "Tainted Exalted Orb x20",
+      "Tainted Divine Teardrop x4"
+    ],
+    "owner": "Elreon, Light's Judge",
+    "rank": 2
+  },
+  {
+    "description": "random corrupted rare item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x30",
+      "Tainted Exalted Orb x30",
+      "Tainted Divine Teardrop x6"
+    ],
+    "owner": "Elreon, Light's Judge",
+    "rank": 3
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card",
+    "division": "Research",
+    "limitations": [],
+    "owner": "Gravicius Reborn",
+    "rank": 1
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card",
+    "division": "Research",
+    "limitations": [],
+    "owner": "Gravicius Reborn",
+    "rank": 2
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card",
+    "division": "Research",
+    "limitations": [],
+    "owner": "Gravicius Reborn",
+    "rank": 3
+  },
+  {
+    "description": "random normal ring or amulet (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Exalted Orb x20",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "owner": "Guff \"Tiny\" Grenn",
+    "rank": 1
+  },
+  {
+    "description": "random normal ring or amulet (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x40",
+      "Exalted Orb x40",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "owner": "Guff \"Tiny\" Grenn",
+    "rank": 2
+  },
+  {
+    "description": "random normal ring or amulet (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Orb of Annulment x60",
+      "Exalted Orb x60",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "owner": "Guff \"Tiny\" Grenn",
+    "rank": 3
+  },
+  {
+    "description": "random normal item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Hinekora's Lock x4",
+      "Exalted Orb x20",
+      "Orb of Annulment x20",
+      "Random single stack of the following currency types (can be duplicate) x4",
+      "Warlord's Exalted Orb",
+      "Redeemer's Exalted Orb",
+      "Crusader's Exalted Orb",
+      "Hunter's Exalted Orb",
+      "Shaper's Exalted Orb",
+      "Elder's Exalted Orb",
+      "Veiled Exalted Orb"
+    ],
+    "owner": "Haku, Warmaster",
+    "rank": 2
+  },
+  {
+    "description": "random normal item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Hinekora's Lock x5",
+      "Exalted Orb x20",
+      "Orb of Annulment x20",
+      "Random single stack of the following currency types (can be duplicate) x4",
+      "Warlord's Exalted Orb",
+      "Redeemer's Exalted Orb",
+      "Crusader's Exalted Orb",
+      "Hunter's Exalted Orb",
+      "Shaper's Exalted Orb",
+      "Elder's Exalted Orb",
+      "Veiled Exalted Orb"
+    ],
+    "owner": "Haku, Warmaster",
+    "rank": 3
+  },
+  {
+    "description": "random rare item (30 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x20",
+      "Exalted Orb x20"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 1
+  },
+  {
+    "description": "random rare item (60 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x30",
+      "Exalted Orb x30"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 2
+  },
+  {
+    "description": "random rare item (90 sec)",
+    "division": "Fortification",
+    "limitations": [
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x40",
+      "Exalted Orb x40"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 3
+  },
+  {
+    "description": "random rare armour (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Lesser Eldritch Ember x20",
+      "Lesser Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 1
+  },
+  {
+    "description": "random rare armour (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Greater Eldritch Ember x20",
+      "Greater Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 2
+  },
+  {
+    "description": "random rare armour (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Grand Eldritch Ember x20",
+      "Grand Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "owner": "Hillock, the Blacksmith",
+    "rank": 3
+  },
+  {
+    "description": "random corrupted rare body armour (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Orb of Fusing x10",
+      "Tainted Jeweller's Orb x10",
+      "Tainted Chromatic Orb x10"
+    ],
+    "owner": "It That Fled",
+    "rank": 1
+  },
+  {
+    "description": "random corrupted rare body armour (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Orb of Fusing x15",
+      "Tainted Jeweller's Orb x15",
+      "Tainted Chromatic Orb x15"
+    ],
+    "owner": "It That Fled",
+    "rank": 2
+  },
+  {
+    "description": "random corrupted rare body armour (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Orb of Fusing x20",
+      "Tainted Jeweller's Orb x20",
+      "Tainted Chromatic Orb x20"
+    ],
+    "owner": "It That Fled",
+    "rank": 3
+  },
+  {
+    "description": "random Essence mod rare item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Scouring x20",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x9",
+      "random Screaming (T5) Essence x5",
+      "random Shrieking (T6) Essence x3",
+      "random Deafening (T7) Essence x2",
+      "random Corrupted (T8) Essence x1"
+    ],
+    "owner": "Korell Goya, Son of Stone",
+    "rank": 1
+  },
+  {
+    "description": "random Essence mod rare item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Scouring x30",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x11",
+      "random Screaming (T5) Essence x7",
+      "random Shrieking (T6) Essence x5",
+      "random Deafening (T7) Essence x4",
+      "random Corrupted (T8) Essence x3"
+    ],
+    "owner": "Korell Goya, Son of Stone",
+    "rank": 2
+  },
+  {
+    "description": "random Essence mod rare item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Scouring x40",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x13",
+      "random Screaming (T5)  Essence x9",
+      "random Shrieking (T6)  Essence x7",
+      "random Deafening (T7) Essence x6",
+      "random Corrupted (T8) Essence x5"
+    ],
+    "owner": "Korell Goya, Son of Stone",
+    "rank": 3
+  },
+  {
+    "description": "random unique item (20 sec)",
+    "division": "Research",
+    "limitations": [
+      "Djinn-Touched Vaal Orb x5"
+    ],
+    "owner": "Leo, Wolf of the Pits",
+    "rank": 1
+  },
+  {
+    "description": "random unique item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Djinn-Touched Vaal Orb x10"
+    ],
+    "owner": "Leo, Wolf of the Pits",
+    "rank": 2
+  },
+  {
+    "description": "random unique item (40 sec)",
+    "division": "Research",
+    "limitations": [
+      "Djinn-Touched Vaal Orb x15"
+    ],
+    "owner": "Leo, Wolf of the Pits",
+    "rank": 3
+  },
+  {
+    "description": "random unique item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Ancient Orb x10"
+    ],
+    "owner": "Riker Maloney, Midnight Tinkerer",
+    "rank": 1
+  },
+  {
+    "description": "random unique item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Ancient Orb x20"
+    ],
+    "owner": "Riker Maloney, Midnight Tinkerer",
+    "rank": 2
+  },
+  {
+    "description": "random unique item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Ancient Orb x30"
+    ],
+    "owner": "Riker Maloney, Midnight Tinkerer",
+    "rank": 3
+  },
+  {
+    "description": "random normal map (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Chaos Orb x30",
+      "Exalted Orb x30",
+      "Harbinger's Orb x7",
+      "Orb of Horizons x30",
+      "Random Maven Chisel or Cartographer's Chisel x4"
+    ],
+    "owner": "Rin Yuushu",
+    "rank": 3
+  },
+  {
+    "description": "random anointed rare Talisman (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x10",
+      "Tainted Exalted Orb x10",
+      "Tainted Divine Teardrop x2"
+    ],
+    "owner": "Thane Jorgin the Banished",
+    "rank": 1
+  },
+  {
+    "description": "random anointed rare Talisman (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x20",
+      "Tainted Exalted Orb x20",
+      "Tainted Divine Teardrop x4"
+    ],
+    "owner": "Thane Jorgin the Banished",
+    "rank": 2
+  },
+  {
+    "description": "random anointed rare Talisman (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Tainted Chaos Orb x30",
+      "Tainted Exalted Orb x30",
+      "Tainted Divine Teardrop x6"
+    ],
+    "owner": "Thane Jorgin the Banished",
+    "rank": 3
+  },
+  {
+    "description": "random skill or support gem (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Gemcutters Lens x10",
+      "Facetor's Lens - 60M gem experience x1",
+      "Gemcutter's Prism x10",
+      "Vaal Orb x1"
+    ],
+    "owner": "Tora, the Culler",
+    "rank": 1
+  },
+  {
+    "description": "random skill or support gem (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Gemcutters Lens x15",
+      "Facetor's Lens - 120M gem experience x1",
+      "Gemcutter's Prism x15",
+      "Vaal Orb x1"
+    ],
+    "owner": "Tora, the Culler",
+    "rank": 2
+  },
+  {
+    "description": "random skill or support gem (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Gemcutters Lens x20",
+      "Facetor's Lens - 180M gem experience x1",
+      "Gemcutter's Prism x20",
+      "Vaal Orb x1"
+    ],
+    "owner": "Tora, the Culler",
+    "rank": 3
+  },
+  {
+    "description": "random normal item (30 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x10",
+      "Exalted Orb x10",
+      "Orb of Annulment x10"
+    ],
+    "owner": "Vagan, Victory's Herald",
+    "rank": 1
+  },
+  {
+    "description": "random normal item (60 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x20",
+      "Exalted Orb x20",
+      "Orb of Annulment x20"
+    ],
+    "owner": "Vagan, Victory's Herald",
+    "rank": 2
+  },
+  {
+    "description": "random normal item (90 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x30",
+      "Exalted Orb x30",
+      "Orb of Annulment x30"
+    ],
+    "owner": "Vagan, Victory's Herald",
+    "rank": 3
+  },
+  {
+    "description": "reforge socket colours 100 times, keeping the greatest number of less-common coloured sockets",
+    "division": "Fortification",
+    "limitations": [],
+    "owner": "Vorici, Silent Brother",
+    "rank": 1
+  },
+  {
+    "description": "reforge socket number 100 times on your own item, keeping the greatest number of sockets",
+    "division": "Fortification",
+    "limitations": [],
+    "owner": "Vorici, Silent Brother",
+    "rank": 2
+  },
+  {
+    "description": "reforge socket links 100 times on your own item, keeping the greatest number of links",
+    "division": "Fortification",
+    "limitations": [],
+    "owner": "Vorici, Silent Brother",
+    "rank": 3
+  },
+  {
+    "description": "your own normal item (50 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Chance x30",
+      "Orb of Scouring x30"
+    ],
+    "owner": "Vorici, Silent Brother",
+    "rank": 1
+  },
+  {
+    "description": "your own normal item (100 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Chance x60",
+      "Orb of Scouring x60"
+    ],
+    "owner": "Vorici, Silent Brother",
+    "rank": 2
+  },
+  {
+    "description": "your own normal item (150 sec)",
+    "division": "Research",
+    "limitations": [
+      "Orb of Chance x90",
+      "Orb of Scouring x90"
+    ],
+    "owner": "Vorici, Silent Brother",
+    "rank": 3
+  }
+]
