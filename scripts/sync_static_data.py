@@ -4,13 +4,15 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, List, Sequence
+from typing import Dict, Iterable, List, Sequence
 
 import requests
 
@@ -124,6 +126,82 @@ def fetch_json(url: str) -> object:
     if response.headers.get("Content-Type", "").startswith("application/json"):
         return response.json()
     return json.loads(response.text)
+
+
+def fetch_cargo_rows(table: str, fields: str, where: str | None = None) -> List[dict]:
+    """Query the PoE Wiki Cargo API and return rows for a table."""
+
+    rows: List[dict] = []
+    limit = 500
+    offset = 0
+    while True:
+        params = {
+            "action": "cargoquery",
+            "format": "json",
+            "tables": table,
+            "fields": fields,
+            "limit": limit,
+            "offset": offset,
+        }
+        if where:
+            params["where"] = where
+        LOGGER.debug("Cargo %s offset %s", table, offset)
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        chunk = data.get("cargoquery", [])
+        if not chunk:
+            break
+        for entry in chunk:
+            title = entry.get("title", {})
+            if title:
+                rows.append(title)
+        if len(chunk) < limit:
+            break
+        offset += len(chunk)
+    return rows
+
+
+def dedupe_strings(items: Iterable[str]) -> List[str]:
+    seen: set[str] = set()
+    result: List[str] = []
+    for raw in items:
+        if not raw:
+            continue
+        text = str(raw).strip()
+        if not text:
+            continue
+        if text not in seen:
+            seen.add(text)
+            result.append(text)
+    return result
+
+
+def collect_keywords(*values: object) -> List[str]:
+    terms: set[str] = set()
+
+    def _handle(value: object) -> None:
+        if not value:
+            return
+        if isinstance(value, str):
+            terms.add(value.lower())
+        elif isinstance(value, Iterable):
+            for entry in value:
+                _handle(entry)
+        else:
+            terms.add(str(value).lower())
+
+    for value in values:
+        _handle(value)
+    return sorted(terms)
+
+
+def humanise_descriptor(text: str) -> str:
+    if not text:
+        return ""
+    cleaned = re.sub(r"[_\s]+", " ", text)
+    cleaned = re.sub(r"(?<=[a-z0-9])([A-Z])", r" \1", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip().capitalize()
 
 
 def ensure_data_dir() -> None:
@@ -397,6 +475,388 @@ def sync_boss_data() -> None:
     write_json("bosses.json", payload)
 
 
+def sync_crafting_methods(translator: StatTranslator) -> None:
+    fossils_url = f"{REPOE_BASE}/fossils.min.json"
+    mods_url = f"{REPOE_BASE}/mods.min.json"
+    base_items_url = f"{REPOE_BASE}/base_items.min.json"
+    fossils_raw: Dict[str, dict] = fetch_json(fossils_url)
+    mods: Dict[str, dict] = fetch_json(mods_url)
+    base_items: Dict[str, dict] = fetch_json(base_items_url)
+
+    def parse_notes(value: str | None) -> List[str]:
+        if not value:
+            return []
+        text = html.unescape(value)
+        text = text.replace("<br />", "\n").replace("<br/>", "\n").replace("<br>", "\n")
+        segments: List[str] = []
+        for chunk in text.split("\n"):
+            for part in chunk.split(";"):
+                cleaned = part.strip()
+                if cleaned:
+                    segments.append(cleaned)
+        return dedupe_strings(segments)
+
+    def parse_int(value: object, default: int = 1) -> int:
+        try:
+            return int(str(value))
+        except (TypeError, ValueError):
+            return default
+
+    fossils_payload: List[dict] = []
+    for identifier, entry in sorted(fossils_raw.items(), key=lambda item: item[1].get("name", "")):
+        name = entry.get("name") or identifier.split("/")[-1]
+        effect_lines: List[str] = list(entry.get("descriptions", []))
+        for mod_id in [*entry.get("added_mods", []), *entry.get("forced_mods", [])]:
+            mod = mods.get(mod_id)
+            if not mod:
+                continue
+            effect_lines.extend(translator.translate(mod.get("stats", [])))
+        positive_tags = sorted({weight.get("tag") for weight in entry.get("positive_mod_weights", []) if weight.get("tag")})
+        if positive_tags:
+            effect_lines.append(f"Favors {', '.join(positive_tags)} modifiers")
+        negative_tags = sorted({weight.get("tag") for weight in entry.get("negative_mod_weights", []) if weight.get("tag")})
+        if negative_tags:
+            effect_lines.append(f"Suppresses {', '.join(negative_tags)} modifiers")
+        if entry.get("rolls_lucky"):
+            effect_lines.append("Rolls are lucky")
+        if entry.get("rolls_white_sockets"):
+            effect_lines.append("Can roll white sockets")
+        if entry.get("changes_quality"):
+            effect_lines.append("Modifies item quality")
+        effects = dedupe_strings(effect_lines)
+
+        constraints: List[str] = []
+        allowed_tags = entry.get("allowed_tags", [])
+        if allowed_tags:
+            constraints.append(f"Allowed item tags: {', '.join(sorted(allowed_tags))}")
+        forbidden_tags = entry.get("forbidden_tags", [])
+        if forbidden_tags:
+            constraints.append(f"Forbidden item tags: {', '.join(sorted(forbidden_tags))}")
+        blocked_descriptions = [humanise_descriptor(desc) for desc in entry.get("blocked_descriptions", [])]
+        if blocked_descriptions:
+            constraints.append(f"Blocks: {', '.join(blocked_descriptions)}")
+        if entry.get("corrupted_essence_chance"):
+            chance = entry.get("corrupted_essence_chance")
+            constraints.append(f"{chance}% chance to corrupt Essence outcomes")
+        constraints = dedupe_strings(constraints)
+
+        fossils_payload.append(
+            {
+                "identifier": identifier,
+                "name": name,
+                "effects": effects,
+                "constraints": constraints,
+                "keywords": collect_keywords(name, effects, constraints, identifier),
+            }
+        )
+    fossils_payload.sort(key=lambda item: item["name"].lower())
+
+    resonators_payload: List[dict] = []
+    for identifier, entry in base_items.items():
+        name = entry.get("name", "")
+        if "Resonator" not in name:
+            continue
+        properties = entry.get("properties", {}) or {}
+        description = properties.get("description", "")
+        directions = properties.get("directions", "")
+        socket_match = re.search(r"(\d+)$", identifier)
+        sockets = int(socket_match.group(1)) if socket_match else 1
+        resonators_payload.append(
+            {
+                "identifier": identifier,
+                "name": name,
+                "sockets": sockets,
+                "description": description,
+                "directions": directions,
+                "keywords": collect_keywords(name, description, directions, f"{sockets}-socket"),
+            }
+        )
+    resonators_payload.sort(key=lambda item: (item["sockets"], item["name"].lower()))
+
+    recipes = fetch_cargo_rows(
+        "bestiary_recipes",
+        "id=id,header=header,subheader=subheader,notes=notes,game_mode=game_mode",
+    )
+    component_rows = fetch_cargo_rows(
+        "bestiary_recipe_components",
+        "recipe_id=recipe_id,component_id=component_id,amount=amount",
+    )
+    beast_rows = fetch_cargo_rows(
+        "bestiary_components",
+        "id=id,monster=monster,rarity=rarity,beast_group=beast_group,family=family,genus=genus",
+    )
+
+    components_by_recipe: Dict[str, List[dict]] = defaultdict(list)
+    for component in component_rows:
+        recipe_id = component.get("recipe_id")
+        if not recipe_id:
+            continue
+        components_by_recipe[recipe_id].append(component)
+
+    beast_lookup = {entry.get("id"): entry for entry in beast_rows if entry.get("id")}
+    game_mode_labels = {"1": "Standard", "2": "Ruthless"}
+    beastcraft_payload: List[dict] = []
+    for recipe in recipes:
+        recipe_id = recipe.get("id")
+        if not recipe_id:
+            continue
+        header = html.unescape(recipe.get("header", ""))
+        result = html.unescape(recipe.get("subheader", ""))
+        notes = parse_notes(recipe.get("notes"))
+        game_mode = game_mode_labels.get(str(recipe.get("game_mode")), "Any")
+        beasts: List[dict] = []
+        for component in components_by_recipe.get(recipe_id, []):
+            component_id = component.get("component_id", "")
+            info = beast_lookup.get(component_id, {})
+            name = info.get("monster") or info.get("genus") or info.get("family") or humanise_descriptor(component_id)
+            beasts.append(
+                {
+                    "id": component_id,
+                    "name": name,
+                    "rarity": info.get("rarity"),
+                    "family": info.get("family"),
+                    "genus": info.get("genus"),
+                    "group": info.get("beast_group"),
+                    "quantity": parse_int(component.get("amount"), 1),
+                }
+            )
+        beasts.sort(key=lambda item: (item["name"], item["id"]))
+        beastcraft_payload.append(
+            {
+                "id": recipe_id,
+                "header": header,
+                "result": result,
+                "notes": notes,
+                "game_mode": game_mode,
+                "beasts": beasts,
+                "keywords": collect_keywords(recipe_id, header, result, notes, [beast["name"] for beast in beasts]),
+            }
+        )
+    beastcraft_payload.sort(key=lambda item: (item["header"].lower(), item["result"].lower()))
+
+    raw_betrayal_entries = [
+        {
+            "member": "Aisling Laffrey",
+            "division": "Research",
+            "rank": 4,
+            "ability": "Add a Veiled modifier",
+            "summary": "Slams a random Veiled prefix or suffix and removes an existing crafted modifier.",
+            "requirements": [
+                "Unlock by defeating Aisling as Research safehouse leader (rank 4).",
+                "Target item must be rare with an open prefix or suffix.",
+            ],
+        },
+        {
+            "member": "Hillock",
+            "division": "Fortification",
+            "rank": 3,
+            "ability": "Quality bench",
+            "summary": "Boosts quality on weapons, armour, or flasks depending on item type (up to 30%).",
+            "requirements": [
+                "Encounter Hillock as Fortification safehouse leader (rank 3).",
+                "Applies to the item type Hillock inspected in the safehouse encounter.",
+            ],
+        },
+        {
+            "member": "Vorici",
+            "division": "Research",
+            "rank": 3,
+            "ability": "White socket bench",
+            "summary": "Allows forcing 1-3 white sockets on an item at the cost of a level 8 bench craft.",
+            "requirements": [
+                "Unlock Vorici in the Research safehouse at rank 3 or higher.",
+                "Costs 25 Vaal Orbs for three white sockets.",
+            ],
+        },
+        {
+            "member": "Tora",
+            "division": "Research",
+            "rank": 3,
+            "ability": "Gem experience bench",
+            "summary": "Grants large amounts of experience to socketed gems (up to level 20).",
+            "requirements": [
+                "Complete the Research safehouse with Tora at rank 3.",
+                "Socket target gems into the bench before activating.",
+            ],
+        },
+        {
+            "member": "Jorgin",
+            "division": "Research",
+            "rank": 3,
+            "ability": "Talisman imprint",
+            "summary": "Imprints a Talisman onto an amulet, transforming it into that talisman with retained quality.",
+            "requirements": [
+                "Encounter Jorgin as Research safehouse leader at rank 3.",
+                "Consumes the input amulet and chosen talisman.",
+            ],
+        },
+    ]
+
+    betrayal_payload: List[dict] = []
+    for entry in raw_betrayal_entries:
+        requirements = dedupe_strings(entry.get("requirements", []))
+        payload_entry = {
+            **entry,
+            "requirements": requirements,
+            "keywords": collect_keywords(entry.get("member"), entry.get("division"), entry.get("ability"), entry.get("summary"), requirements),
+        }
+        betrayal_payload.append(payload_entry)
+    betrayal_payload.sort(key=lambda item: (item["division"], item["member"]))
+
+    raw_strategies = [
+        {
+            "name": "Multimodding",
+            "summary": "Use the bench craft 'Can have up to 3 Crafted Modifiers' to stack powerful crafts.",
+            "requirements": [
+                "Unlock Jun's rank 3 unveiling for the multimod craft.",
+                "Item must be rare with at least two open modifier slots.",
+                "Costs 2 Divine Orbs to apply the craft in current leagues.",
+            ],
+            "best_for": [
+                "Meta-crafting influenced rares where specific crafted prefixes/suffixes are required.",
+                "Items that already have strong natural modifiers but need crafted fillers.",
+            ],
+            "steps": [
+                "Apply the multimod craft at the crafting bench.",
+                "Add two additional crafted modifiers to fill remaining affix slots.",
+                "Remove the multimod craft later if you need to reroll or replace crafts.",
+            ],
+        },
+        {
+            "name": "Alteration/Augmentation Spamming",
+            "summary": "Roll blue items with Orbs of Alteration and finish with Augmentation/Regal when you hit target mods.",
+            "requirements": [
+                "Base item of the correct item level.",
+                "Access to a large stack of Orbs of Alteration and Augmentation.",
+            ],
+            "best_for": [
+                "Targeting specific prefixes or suffixes on single-mod bases such as amulets or belts.",
+                "Preparing for metamods like 'Prefixes Cannot Be Changed' before further crafting.",
+            ],
+            "steps": [
+                "Use Alteration Orbs until one desired mod appears.",
+                "Use an Augmentation Orb if you need the opposite affix type.",
+                "Regal the item to rare and evaluate whether to continue, annul, or restart.",
+            ],
+        },
+        {
+            "name": "Chaos Spamming",
+            "summary": "Apply Chaos Orbs repeatedly to reroll all modifiers until the item meets your minimum requirements.",
+            "requirements": [
+                "Rare item of the appropriate item level.",
+                "A supply of Chaos Orbs (or Harvest reforges) for repeated attempts.",
+            ],
+            "best_for": [
+                "Early- and mid-game rares when deterministic options are not unlocked.",
+                "Bases with broad desired mod pools (e.g., life + resist armour).",
+            ],
+            "steps": [
+                "Spam Chaos Orbs or Harvest 'Reforge with lucky modifiers' crafts.",
+                "Stop when mandatory stats roll acceptably, then bench-craft missing values.",
+            ],
+        },
+        {
+            "name": "Essence Spamming",
+            "summary": "Lock in a specific powerful modifier by applying the same Essence repeatedly.",
+            "requirements": [
+                "Essence of the desired tier (Screaming, Deafening, etc.).",
+                "Base item that can roll the forced modifier (check item level).",
+            ],
+            "best_for": [
+                "Items where one mod provides the majority of value (e.g., Essence of Greed life rolls).",
+                "Combining with bench crafts or Harvest reforges to finish prefixes/suffixes.",
+            ],
+            "steps": [
+                "Apply the Essence to guarantee the key modifier.",
+                "Evaluate the remaining mods; consider Harvest reforges to fix the opposite affix type.",
+                "Finish with bench crafts or meta-crafting once satisfied.",
+            ],
+        },
+    ]
+
+    strategies_payload: List[dict] = []
+    for entry in raw_strategies:
+        best_for = dedupe_strings(entry.get("best_for", []))
+        steps = dedupe_strings(entry.get("steps", []))
+        requirements = dedupe_strings(entry.get("requirements", []))
+        strategies_payload.append(
+            {
+                **entry,
+                "best_for": best_for,
+                "steps": steps,
+                "requirements": requirements,
+                "keywords": collect_keywords(entry.get("name"), entry.get("summary"), best_for, steps, requirements),
+            }
+        )
+    strategies_payload.sort(key=lambda item: item["name"].lower())
+
+    raw_vendor_recipes = [
+        {
+            "name": "Chromatic Orb Recipe",
+            "reward": "Chromatic Orb",
+            "inputs": ["Item with linked red, green, and blue sockets"],
+            "notes": ["Sockets must be linked.", "Item rarity does not matter."],
+        },
+        {
+            "name": "Jeweller's Orb Recipe",
+            "reward": "7 Jeweller's Orbs",
+            "inputs": ["Any item with 6 sockets"],
+            "notes": ["Item must be unidentified for double reward in Ruthless."],
+        },
+        {
+            "name": "Orb of Fusing Recipe",
+            "reward": "1 Orb of Fusing",
+            "inputs": ["Any item with a 5-link"],
+            "notes": ["Links must be on the same item; sockets can be any colour."],
+        },
+        {
+            "name": "Chaos Orb Recipe",
+            "reward": "Chaos Orb",
+            "inputs": ["Full rare item set (ilvl 60-74)"],
+            "notes": [
+                "Include two rings, amulet, belt, gloves, boots, helmet, body armour, and weapon/shield.",
+                "Unidentified set yields an extra Chaos Orb.",
+            ],
+        },
+        {
+            "name": "Regal Orb Recipe",
+            "reward": "Regal Orb",
+            "inputs": ["Full rare item set (ilvl 75+)"],
+            "notes": ["Unidentified sets reward an extra Regal Orb.", "Most efficient when done with high level maps."],
+        },
+        {
+            "name": "Gemcutter's Prism Recipe",
+            "reward": "Gemcutter's Prism",
+            "inputs": ["Sell gems whose total quality equals 40%"],
+            "notes": ["Multiple gems can be combined to reach 40%.", "Works with any mix of skill and support gems."],
+        },
+    ]
+
+    vendor_payload: List[dict] = []
+    for entry in raw_vendor_recipes:
+        inputs = dedupe_strings(entry.get("inputs", []))
+        notes = dedupe_strings(entry.get("notes", []))
+        vendor_payload.append(
+            {
+                **entry,
+                "inputs": inputs,
+                "notes": notes,
+                "keywords": collect_keywords(entry.get("name"), entry.get("reward"), inputs, notes),
+            }
+        )
+    vendor_payload.sort(key=lambda item: item["name"].lower())
+
+    payload = {
+        "fossils": fossils_payload,
+        "resonators": resonators_payload,
+        "beastcrafts": beastcraft_payload,
+        "betrayal_benches": betrayal_payload,
+        "strategies": strategies_payload,
+        "vendor_recipes": vendor_payload,
+    }
+    write_json("crafting_methods.json", payload)
+
+
 def sync_harvest_data(translator: StatTranslator) -> None:
     mods_url = f"{REPOE_BASE}/mods.min.json"
     mods = fetch_json(mods_url)
@@ -421,7 +881,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "crafting_methods", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,13 +892,16 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "crafting_methods", "essences", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)
+    if "crafting_methods" in sections:
+        LOGGER.info("Syncing crafting methods...")
+        sync_crafting_methods(translator)
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)

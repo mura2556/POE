@@ -1,10 +1,25 @@
 """Curated knowledge base loaders for Path of Exile data."""
 
-from . import bosses, bench_recipes, essences, harvest
+from . import (
+    bench_recipes,
+    bestiary,
+    betrayal,
+    bosses,
+    crafting_strategies,
+    essences,
+    fossils,
+    harvest,
+    vendor_recipes,
+)
 
 __all__ = [
-    "bosses",
     "bench_recipes",
+    "bestiary",
+    "betrayal",
+    "bosses",
+    "crafting_strategies",
     "essences",
+    "fossils",
     "harvest",
+    "vendor_recipes",
 ]
