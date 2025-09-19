@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
@@ -251,6 +252,160 @@ def sync_essence_data(translator: StatTranslator) -> None:
     write_json("essences.json", curated)
 
 
+def _clean_html(text: str | None) -> str:
+    if not text:
+        return ""
+    text = html.unescape(text)
+    text = re.sub(r"<br\s*/?>", " ", text)
+    text = re.sub(r"<.*?>", " ", text)
+    text = text.replace("\n", " ")
+    text = re.sub(r"\s+", " ", text)
+    text = text.strip()
+    return clean_wiki_markup(text)
+
+
+def _split_sentences(text: str) -> List[str]:
+    if not text:
+        return []
+    cleaned = re.sub(r"[\r\n]+", " ", text)
+    parts = re.split(r"(?<=[.!?])\s+", cleaned)
+    sentences = [part.strip() for part in parts if part.strip()]
+    return sentences
+
+
+def _normalise_keyword(text: str) -> List[str]:
+    cleaned = re.sub(r"[^a-z0-9]+", " ", text.lower())
+    tokens = [token for token in cleaned.split() if token]
+    return tokens
+
+
+def _derive_currency_category(metadata_id: str) -> str:
+    if not metadata_id:
+        return ""
+    slug = metadata_id.split("/")[-1]
+    if slug.lower().startswith("currency"):
+        slug = slug[len("currency") :]
+    slug = re.sub(r"[_-]+", " ", slug)
+    slug = re.sub(r"(?<!^)(?=[A-Z])", " ", slug)
+    words = [word for word in slug.split() if word]
+    formatted = " ".join(word.capitalize() if len(word) > 1 else word.upper() for word in words)
+    return formatted or "Currency"
+
+
+def fetch_currency_rows() -> List[dict]:
+    fields = [
+        "items._pageName=Name",
+        "items.metadata_id=MetadataID",
+        "items.description=Description",
+        "items.explicit_stat_text=Explicit",
+        "items.help_text=HelpText",
+        "items.drop_text=DropText",
+        "items.is_drop_restricted=DropRestricted",
+        "items.name_list=Aliases",
+    ]
+    where = (
+        "items.class_id='StackableCurrency'"
+        " AND items.metadata_id LIKE 'Metadata/Items/Currency/%'"
+        " AND items.frame_type='currency'"
+    )
+    params = {
+        "action": "cargoquery",
+        "tables": "items",
+        "fields": ",".join(fields),
+        "where": where,
+        "order_by": "items._pageName",
+        "limit": 500,
+        "format": "json",
+    }
+    rows: List[dict] = []
+    offset = 0
+    while True:
+        params["offset"] = offset
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        chunk = data.get("cargoquery", [])
+        if not chunk:
+            break
+        for entry in chunk:
+            rows.append(entry.get("title", {}))
+        if len(chunk) < params["limit"]:
+            break
+        offset += len(chunk)
+    return rows
+
+
+def sync_currency_data() -> None:
+    raw_rows = fetch_currency_rows()
+    curated: List[dict] = []
+    seen: set[str] = set()
+    for row in raw_rows:
+        name = row.get("Name", "").strip()
+        if not name or name in seen:
+            continue
+        seen.add(name)
+        metadata_id = row.get("MetadataID", "").strip()
+        category = _derive_currency_category(metadata_id)
+        description = _clean_html(row.get("Description")) or _clean_html(row.get("Explicit"))
+        help_text = _clean_html(row.get("HelpText"))
+        drop_text = _clean_html(row.get("DropText"))
+        drop_restricted = row.get("DropRestricted", "0")
+
+        effect = description or "Unknown effect"
+        restrictions = _split_sentences(help_text)
+        if drop_text:
+            restrictions.append(drop_text)
+        if drop_restricted and drop_restricted != "0":
+            restrictions.append("Drop-restricted item.")
+        restrictions = [line for index, line in enumerate(restrictions) if line and line not in restrictions[:index]]
+
+        alias_field = row.get("Aliases", "")
+        aliases = [alias.strip() for alias in alias_field.replace("�", "|").split("|") if alias.strip() and alias.strip() != name]
+
+        description_lines = [effect]
+        description_lines.extend(restrictions)
+        formatted_description = "\n".join(description_lines)
+
+        keyword_sources = [name, category, effect, *aliases, *restrictions]
+        keywords_set: List[str] = []
+        seen_keywords: set[str] = set()
+        for source in keyword_sources:
+            cleaned = source.lower().strip()
+            if cleaned and cleaned not in seen_keywords:
+                keywords_set.append(cleaned)
+                seen_keywords.add(cleaned)
+            for token in _normalise_keyword(source):
+                if token and token not in seen_keywords:
+                    keywords_set.append(token)
+                    seen_keywords.add(token)
+        if metadata_id:
+            meta_lower = metadata_id.lower()
+            if meta_lower not in seen_keywords:
+                keywords_set.append(meta_lower)
+                seen_keywords.add(meta_lower)
+            tail = metadata_id.split("/")[-1]
+            for token in _normalise_keyword(tail):
+                if token and token not in seen_keywords:
+                    keywords_set.append(token)
+                    seen_keywords.add(token)
+
+        curated.append(
+            {
+                "name": name,
+                "category": category,
+                "effect": effect,
+                "restrictions": restrictions,
+                "description": formatted_description,
+                "metadata_id": metadata_id,
+                "aliases": aliases,
+                "keywords": keywords_set,
+            }
+        )
+
+    curated.sort(key=lambda entry: entry["name"].lower())
+    write_json("currency.json", curated)
+
+
 def clean_wiki_markup(text: str) -> str:
     text = re.sub(r"\{\{.*?\}\}", "", text)
     text = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", text)
@@ -421,7 +576,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "currency", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,10 +587,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "currency", "essences", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
+    if "currency" in sections:
+        LOGGER.info("Syncing currency data...")
+        sync_currency_data()
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)

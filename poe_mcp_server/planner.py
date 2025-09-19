@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bosses, currency, essences, harvest
 from .models import CraftingStep
 
 
@@ -63,6 +63,23 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for recipe in bench_hits[:3]
             ]
             section = _format_section("Workbench Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        currency_hits = currency.find(base_text)
+        if currency_hits:
+            metadata["currency"] = [asdict(entry) for entry in currency_hits]
+            lines = []
+            for entry in currency_hits[:3]:
+                header = entry.name
+                if entry.category:
+                    header += f" [{entry.category}]"
+                details = entry.effect or "Unknown effect"
+                restrictions = "; ".join(entry.restrictions[:2])
+                if restrictions:
+                    details = f"{details} ({restrictions})"
+                lines.append(f"- {header} – {details}")
+            section = _format_section("Currency Options:", lines)
             if section:
                 instruction_parts.append(section)
 
