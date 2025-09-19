@@ -1,0 +1,4438 @@
+[
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of Convection\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask1",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of convection\"",
+      "adds \"of convection\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask1",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of Convection\""
+  },
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of Damping\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask2",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of damping\"",
+      "adds \"of damping\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask2",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of Damping\""
+  },
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of Earthing\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask4",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of earthing\"",
+      "adds \"of earthing\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask4",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of Earthing\""
+  },
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of Sealing\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask3",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of sealing\"",
+      "adds \"of sealing\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask3",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of Sealing\""
+  },
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of Warding\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask6",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of warding\"",
+      "adds \"of warding\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask6",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of Warding\""
+  },
+  {
+    "display": "Add a Mod to a Life or Mana Flask – Adds \"of the Antitoxin\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Life or Mana Flask",
+    "identifier": "EinharMasterCraftFlask5",
+    "keywords": [
+      "add a mod to a life or mana flask",
+      "add a mod to a life or mana flask – adds \"of the antitoxin\"",
+      "adds \"of the antitoxin\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask5",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Antitoxin\""
+  },
+  {
+    "display": "Add a Mod to a Utility Flask – Adds \"of the Conger\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Utility Flask",
+    "identifier": "EinharMasterCraftFlask9",
+    "keywords": [
+      "add a mod to a utility flask",
+      "add a mod to a utility flask – adds \"of the conger\"",
+      "adds \"of the conger\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask9",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Conger\""
+  },
+  {
+    "display": "Add a Mod to a Utility Flask – Adds \"of the Deer\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Utility Flask",
+    "identifier": "EinharMasterCraftFlask10",
+    "keywords": [
+      "add a mod to a utility flask",
+      "add a mod to a utility flask – adds \"of the deer\"",
+      "adds \"of the deer\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask10",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Deer\""
+  },
+  {
+    "display": "Add a Mod to a Utility Flask – Adds \"of the Lizard\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Utility Flask",
+    "identifier": "EinharMasterCraftFlask7",
+    "keywords": [
+      "add a mod to a utility flask",
+      "add a mod to a utility flask – adds \"of the lizard\"",
+      "adds \"of the lizard\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask7",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Lizard\""
+  },
+  {
+    "display": "Add a Mod to a Utility Flask – Adds \"of the Skunk\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Utility Flask",
+    "identifier": "EinharMasterCraftFlask8",
+    "keywords": [
+      "add a mod to a utility flask",
+      "add a mod to a utility flask – adds \"of the skunk\"",
+      "adds \"of the skunk\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask8",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Skunk\""
+  },
+  {
+    "display": "Add a Mod to a Utility Flask – Adds \"of the Urchin\"",
+    "game_mode": "standard",
+    "header": "Add a Mod to a Utility Flask",
+    "identifier": "EinharMasterCraftFlask11",
+    "keywords": [
+      "add a mod to a utility flask",
+      "add a mod to a utility flask – adds \"of the urchin\"",
+      "adds \"of the urchin\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercraftflask11",
+      "rare",
+      "rare any creature",
+      "requires flask to have no existing suffix",
+      "standard"
+    ],
+    "notes": "Requires Flask to have no existing Suffix",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"of the Urchin\""
+  },
+  {
+    "display": "Apply a Hinekora's Lock – To a Magic Item",
+    "game_mode": "standard",
+    "header": "Apply a Hinekora's Lock",
+    "identifier": "EinharMasterCraftMorrigan5",
+    "keywords": [
+      "apply a hinekora's lock",
+      "apply a hinekora's lock – to a magic item",
+      "black mórrigan",
+      "craicic chimeral",
+      "einharmastercraftmorrigan5",
+      "legendarybeastgemfrog",
+      "morrigan",
+      "standard",
+      "to a magic item"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGemFrog",
+        "display": "Craicic Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Chimeral",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      }
+    ],
+    "subheader": "To a Magic Item"
+  },
+  {
+    "display": "Convert this Unique Item – Into Another Random Unique Item",
+    "game_mode": "standard",
+    "header": "Convert this Unique Item",
+    "identifier": "EinharMasterCraft33",
+    "keywords": [
+      "convert this unique item",
+      "convert this unique item – into another random unique item",
+      "einharmastercraft33",
+      "fenumal scorpion",
+      "into another random unique item",
+      "legendarybeastscorpion",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastScorpion",
+        "display": "Fenumal Scorpion",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scorpion",
+        "rarity": null
+      }
+    ],
+    "subheader": "Into Another Random Unique Item"
+  },
+  {
+    "display": "Corrupt a Map – To have 30% base Quality",
+    "game_mode": "standard",
+    "header": "Corrupt a Map",
+    "identifier": "EinharMasterCraft28",
+    "keywords": [
+      "corrupt a map",
+      "corrupt a map – to have 30% base quality",
+      "craicic vassal",
+      "einharmastercraft28",
+      "legendarybeastparasiticsquid",
+      "standard",
+      "to have 30% base quality"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "display": "Craicic Vassal",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Vassal",
+        "rarity": null
+      }
+    ],
+    "subheader": "To have 30% base Quality"
+  },
+  {
+    "display": "Corrupt a Map – Twice",
+    "game_mode": "standard",
+    "header": "Corrupt a Map",
+    "identifier": "EinharMasterCraft48",
+    "keywords": [
+      "corrupt a map",
+      "corrupt a map – twice",
+      "craicic vassal",
+      "einharmastercraft48",
+      "fenumal scorpion",
+      "legendarybeastparasiticsquid",
+      "legendarybeastscorpion",
+      "standard",
+      "twice"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "display": "Craicic Vassal",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Vassal",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastScorpion",
+        "display": "Fenumal Scorpion",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scorpion",
+        "rarity": null
+      }
+    ],
+    "subheader": "Twice"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Aspect of the Avian skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft39",
+    "keywords": [
+      "aspect of the avian skill",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – aspect of the avian skill",
+      "einharmastercraft39",
+      "saqawal, first of the sky",
+      "spiritbossavian",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossAvian",
+        "display": "Saqawal, First of the Sky",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawal, First of the Sky",
+        "rarity": null
+      }
+    ],
+    "subheader": "Aspect of the Avian skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Aspect of the Cat skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft38",
+    "keywords": [
+      "aspect of the cat skill",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – aspect of the cat skill",
+      "einharmastercraft38",
+      "farrul, first of the plains",
+      "spiritbosstiger",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossTiger",
+        "display": "Farrul, First of the Plains",
+        "family": null,
+        "genus": null,
+        "monster": "Farrul, First of the Plains",
+        "rarity": null
+      }
+    ],
+    "subheader": "Aspect of the Cat skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Aspect of the Crab skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft41",
+    "keywords": [
+      "aspect of the crab skill",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – aspect of the crab skill",
+      "craiceann, first of the deep",
+      "einharmastercraft41",
+      "spiritbosscrab",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossCrab",
+        "display": "Craiceann, First of the Deep",
+        "family": null,
+        "genus": null,
+        "monster": "Craiceann, First of the Deep",
+        "rarity": null
+      }
+    ],
+    "subheader": "Aspect of the Crab skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Aspect of the Spider skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft40",
+    "keywords": [
+      "aspect of the spider skill",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – aspect of the spider skill",
+      "einharmastercraft40",
+      "fenumus, first of the night",
+      "spiritbossspider",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossSpider",
+        "display": "Fenumus, First of the Night",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumus, First of the Night",
+        "rarity": null
+      }
+    ],
+    "subheader": "Aspect of the Spider skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Avian skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan2",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the avian skill",
+      "einharmastercraftmorrigan2",
+      "level 30 aspect of the avian skill",
+      "morrigan",
+      "saqawal, first of the sky",
+      "spiritbossavian",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossAvian",
+        "display": "Saqawal, First of the Sky",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawal, First of the Sky",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Avian skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Cat skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan1",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the cat skill",
+      "einharmastercraftmorrigan1",
+      "farrul, first of the plains",
+      "level 30 aspect of the cat skill",
+      "morrigan",
+      "spiritbosstiger",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossTiger",
+        "display": "Farrul, First of the Plains",
+        "family": null,
+        "genus": null,
+        "monster": "Farrul, First of the Plains",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Cat skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Crab skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan4",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the crab skill",
+      "craiceann, first of the deep",
+      "einharmastercraftmorrigan4",
+      "level 30 aspect of the crab skill",
+      "morrigan",
+      "spiritbosscrab",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossCrab",
+        "display": "Craiceann, First of the Deep",
+        "family": null,
+        "genus": null,
+        "monster": "Craiceann, First of the Deep",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Crab skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Spider skill",
+    "game_mode": "standard",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan3",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the spider skill",
+      "einharmastercraftmorrigan3",
+      "fenumus, first of the night",
+      "level 30 aspect of the spider skill",
+      "morrigan",
+      "spiritbossspider",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossSpider",
+        "display": "Fenumus, First of the Night",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumus, First of the Night",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Spider skill"
+  },
+  {
+    "display": "Create Currency Items – A Stack of 10 Random Currency",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft26",
+    "keywords": [
+      "a stack of 10 random currency",
+      "create currency items",
+      "create currency items – a stack of 10 random currency",
+      "einharmastercraft26",
+      "legendarybeastiguana",
+      "saqawine chimeral",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastIguana",
+        "display": "Saqawine Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Chimeral",
+        "rarity": null
+      }
+    ],
+    "subheader": "A Stack of 10 Random Currency"
+  },
+  {
+    "display": "Create Currency Items – A Stack of 2 Orbs of Binding",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft50",
+    "keywords": [
+      "a stack of 2 orbs of binding",
+      "craicic sand spitter",
+      "craicic shield crab",
+      "create currency items",
+      "create currency items – a stack of 2 orbs of binding",
+      "einharmastercraft50",
+      "legendarybeastsandspitter",
+      "legendarybeastshieldcrab",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSpitter",
+        "display": "Craicic Sand Spitter",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Sand Spitter",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastShieldCrab",
+        "display": "Craicic Shield Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Shield Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "A Stack of 2 Orbs of Binding"
+  },
+  {
+    "display": "Create Currency Items – A Stack of 3 Orbs of Horizons",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft51",
+    "keywords": [
+      "a stack of 3 orbs of horizons",
+      "create currency items",
+      "create currency items – a stack of 3 orbs of horizons",
+      "einharmastercraft51",
+      "farric frost hellion alpha",
+      "farric gargantuan",
+      "legendarybeastbeast",
+      "legendarybeasthellionice",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastBeast",
+        "display": "Farric Gargantuan",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Gargantuan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHellionIce",
+        "display": "Farric Frost Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Frost Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "A Stack of 3 Orbs of Horizons"
+  },
+  {
+    "display": "Create Currency Items – A Stack of 4 Jeweller's Orbs",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft2",
+    "keywords": [
+      "a stack of 4 jeweller's orbs",
+      "craicic shield crab",
+      "create currency items",
+      "create currency items – a stack of 4 jeweller's orbs",
+      "einharmastercraft2",
+      "legendarybeastshieldcrab",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastShieldCrab",
+        "display": "Craicic Shield Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Shield Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "A Stack of 4 Jeweller's Orbs"
+  },
+  {
+    "display": "Create Currency Items – A Stack of 8 Chromatic Orbs",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft1",
+    "keywords": [
+      "a stack of 8 chromatic orbs",
+      "create currency items",
+      "create currency items – a stack of 8 chromatic orbs",
+      "einharmastercraft1",
+      "legendarybeastrhoa",
+      "saqawine rhoa",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastRhoa",
+        "display": "Saqawine Rhoa",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Rhoa",
+        "rarity": null
+      }
+    ],
+    "subheader": "A Stack of 8 Chromatic Orbs"
+  },
+  {
+    "display": "Create Currency Items – Orb of Fusing",
+    "game_mode": "standard",
+    "header": "Create Currency Items",
+    "identifier": "EinharMasterCraft3",
+    "keywords": [
+      "craicic sand spitter",
+      "create currency items",
+      "create currency items – orb of fusing",
+      "einharmastercraft3",
+      "legendarybeastsandspitter",
+      "orb of fusing",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSpitter",
+        "display": "Craicic Sand Spitter",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Sand Spitter",
+        "rarity": null
+      }
+    ],
+    "subheader": "Orb of Fusing"
+  },
+  {
+    "display": "Create a Rare – Talisman",
+    "game_mode": "standard",
+    "header": "Create a Rare",
+    "identifier": "EinharMasterCraft13",
+    "keywords": [
+      "craicic squid",
+      "create a rare",
+      "create a rare – talisman",
+      "einharmastercraft13",
+      "legendarybeastsirenspawn",
+      "standard",
+      "talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSirenSpawn",
+        "display": "Craicic Squid",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Squid",
+        "rarity": null
+      }
+    ],
+    "subheader": "Talisman"
+  },
+  {
+    "display": "Create a Unique – Amulet",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft6",
+    "keywords": [
+      "amulet",
+      "create a unique",
+      "create a unique – amulet",
+      "einharmastercraft6",
+      "farric chieftain",
+      "legendarybeastchieftain",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastChieftain",
+        "display": "Farric Chieftain",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Chieftain",
+        "rarity": null
+      }
+    ],
+    "subheader": "Amulet"
+  },
+  {
+    "display": "Create a Unique – Belt",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft7",
+    "keywords": [
+      "belt",
+      "create a unique",
+      "create a unique – belt",
+      "einharmastercraft7",
+      "farric ape",
+      "legendarybeastmonkey",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastMonkey",
+        "display": "Farric Ape",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Ape",
+        "rarity": null
+      }
+    ],
+    "subheader": "Belt"
+  },
+  {
+    "display": "Create a Unique – Body Armour",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft10",
+    "keywords": [
+      "body armour",
+      "create a unique",
+      "create a unique – body armour",
+      "einharmastercraft10",
+      "farric ursa",
+      "legendarybeastursa",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastUrsa",
+        "display": "Farric Ursa",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Ursa",
+        "rarity": null
+      }
+    ],
+    "subheader": "Body Armour"
+  },
+  {
+    "display": "Create a Unique – Boots",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft11",
+    "keywords": [
+      "boots",
+      "create a unique",
+      "create a unique – boots",
+      "einharmastercraft11",
+      "legendarybeastkiweth",
+      "saqawine retch",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastKiweth",
+        "display": "Saqawine Retch",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Retch",
+        "rarity": null
+      }
+    ],
+    "subheader": "Boots"
+  },
+  {
+    "display": "Create a Unique – Bow",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft20",
+    "keywords": [
+      "bow",
+      "create a unique",
+      "create a unique – bow",
+      "einharmastercraft20",
+      "farric goliath",
+      "legendarybeastspiker",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSpiker",
+        "display": "Farric Goliath",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Goliath",
+        "rarity": null
+      }
+    ],
+    "subheader": "Bow"
+  },
+  {
+    "display": "Create a Unique – Claw or Dagger",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft14",
+    "keywords": [
+      "claw or dagger",
+      "craicic watcher",
+      "create a unique",
+      "create a unique – claw or dagger",
+      "einharmastercraft14",
+      "legendarybeastsquid",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSquid",
+        "display": "Craicic Watcher",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Watcher",
+        "rarity": null
+      }
+    ],
+    "subheader": "Claw or Dagger"
+  },
+  {
+    "display": "Create a Unique – Flask",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft8",
+    "keywords": [
+      "create a unique",
+      "create a unique – flask",
+      "einharmastercraft8",
+      "farric goatman",
+      "flask",
+      "legendarybeastgoatman",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGoatman",
+        "display": "Farric Goatman",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Goatman",
+        "rarity": null
+      }
+    ],
+    "subheader": "Flask"
+  },
+  {
+    "display": "Create a Unique – Gloves",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft12",
+    "keywords": [
+      "create a unique",
+      "create a unique – gloves",
+      "einharmastercraft12",
+      "fenumal widow",
+      "gloves",
+      "legendarybeastspider",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSpider",
+        "display": "Fenumal Widow",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Widow",
+        "rarity": null
+      }
+    ],
+    "subheader": "Gloves"
+  },
+  {
+    "display": "Create a Unique – Helmet",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft9",
+    "keywords": [
+      "create a unique",
+      "create a unique – helmet",
+      "einharmastercraft9",
+      "farric gargantuan",
+      "helmet",
+      "legendarybeastbeast",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastBeast",
+        "display": "Farric Gargantuan",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Gargantuan",
+        "rarity": null
+      }
+    ],
+    "subheader": "Helmet"
+  },
+  {
+    "display": "Create a Unique – Item",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft4",
+    "keywords": [
+      "craicic savage crab",
+      "create a unique",
+      "create a unique – item",
+      "einharmastercraft4",
+      "item",
+      "legendarybeastcrab",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCrab",
+        "display": "Craicic Savage Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Savage Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "Item"
+  },
+  {
+    "display": "Create a Unique – Mace or Sceptre",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft15",
+    "keywords": [
+      "create a unique",
+      "create a unique – mace or sceptre",
+      "einharmastercraft15",
+      "legendarybeastforestsnake",
+      "mace or sceptre",
+      "saqawine cobra",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastForestSnake",
+        "display": "Saqawine Cobra",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Cobra",
+        "rarity": null
+      }
+    ],
+    "subheader": "Mace or Sceptre"
+  },
+  {
+    "display": "Create a Unique – Map",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft22",
+    "keywords": [
+      "create a unique",
+      "create a unique – map",
+      "einharmastercraft22",
+      "farric taurus",
+      "legendarybeastbull",
+      "map",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastBull",
+        "display": "Farric Taurus",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Taurus",
+        "rarity": null
+      }
+    ],
+    "subheader": "Map"
+  },
+  {
+    "display": "Create a Unique – Ring",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft5",
+    "keywords": [
+      "create a unique",
+      "create a unique – ring",
+      "einharmastercraft5",
+      "farric flame hellion alpha",
+      "legendarybeasthellionfire",
+      "ring",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHellionFire",
+        "display": "Farric Flame Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Flame Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Ring"
+  },
+  {
+    "display": "Create a Unique – Shield or Quiver",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft16",
+    "keywords": [
+      "create a unique",
+      "create a unique – shield or quiver",
+      "einharmastercraft16",
+      "fenumal devourer",
+      "legendarybeastdevourer",
+      "shield or quiver",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastDevourer",
+        "display": "Fenumal Devourer",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Devourer",
+        "rarity": null
+      }
+    ],
+    "subheader": "Shield or Quiver"
+  },
+  {
+    "display": "Create a Unique – Staff",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft18",
+    "keywords": [
+      "create a unique",
+      "create a unique – staff",
+      "einharmastercraft18",
+      "fenumal queen",
+      "legendarybeastcarrionqueen",
+      "staff",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "display": "Fenumal Queen",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Queen",
+        "rarity": null
+      }
+    ],
+    "subheader": "Staff"
+  },
+  {
+    "display": "Create a Unique – Sword or Axe",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft17",
+    "keywords": [
+      "create a unique",
+      "create a unique – sword or axe",
+      "einharmastercraft17",
+      "legendarybeastsandsnake",
+      "saqawine blood viper",
+      "standard",
+      "sword or axe"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSnake",
+        "display": "Saqawine Blood Viper",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Blood Viper",
+        "rarity": null
+      }
+    ],
+    "subheader": "Sword or Axe"
+  },
+  {
+    "display": "Create a Unique – Wand",
+    "game_mode": "standard",
+    "header": "Create a Unique",
+    "identifier": "EinharMasterCraft21",
+    "keywords": [
+      "create a unique",
+      "create a unique – wand",
+      "einharmastercraft21",
+      "fenumal scrabbler",
+      "legendarybeastsandleaper",
+      "standard",
+      "wand"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandLeaper",
+        "display": "Fenumal Scrabbler",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scrabbler",
+        "rarity": null
+      }
+    ],
+    "subheader": "Wand"
+  },
+  {
+    "display": "Create an Imprint – Of a Magic Item",
+    "game_mode": "standard",
+    "header": "Create an Imprint",
+    "identifier": "EinharMasterCraft27",
+    "keywords": [
+      "craicic chimeral",
+      "create an imprint",
+      "create an imprint – of a magic item",
+      "einharmastercraft27",
+      "legendarybeastgemfrog",
+      "of a magic item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGemFrog",
+        "display": "Craicic Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Chimeral",
+        "rarity": null
+      }
+    ],
+    "subheader": "Of a Magic Item"
+  },
+  {
+    "display": "Create an Item – 23% Quality Corrupted Gem",
+    "game_mode": "standard",
+    "header": "Create an Item",
+    "identifier": "EinharMasterCraft23",
+    "keywords": [
+      "23% quality corrupted gem",
+      "create an item",
+      "create an item – 23% quality corrupted gem",
+      "einharmastercraft23",
+      "farric magma hound",
+      "legendarybeasthound",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHound",
+        "display": "Farric Magma Hound",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Magma Hound",
+        "rarity": null
+      }
+    ],
+    "subheader": "23% Quality Corrupted Gem"
+  },
+  {
+    "display": "Create an Item – Fully-linked Six-socket Rare",
+    "game_mode": "standard",
+    "header": "Create an Item",
+    "identifier": "EinharMasterCraft25",
+    "keywords": [
+      "create an item",
+      "create an item – fully-linked six-socket rare",
+      "einharmastercraft25",
+      "fully-linked six-socket rare",
+      "legendarybeastvulture",
+      "saqawine vulture",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastVulture",
+        "display": "Saqawine Vulture",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Vulture",
+        "rarity": null
+      }
+    ],
+    "subheader": "Fully-linked Six-socket Rare"
+  },
+  {
+    "display": "Create an Item – Level 21 Corrupted Gem",
+    "game_mode": "standard",
+    "header": "Create an Item",
+    "identifier": "EinharMasterCraft24",
+    "keywords": [
+      "create an item",
+      "create an item – level 21 corrupted gem",
+      "einharmastercraft24",
+      "farric pit hound",
+      "legendarybeastpitbull",
+      "level 21 corrupted gem",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPitbull",
+        "display": "Farric Pit Hound",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Pit Hound",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 21 Corrupted Gem"
+  },
+  {
+    "display": "Create an Item – Shaper Guardian, Elder Guardian or Conqueror Map",
+    "game_mode": "standard",
+    "header": "Create an Item",
+    "identifier": "EinharMasterCraftMemoryLine6",
+    "keywords": [
+      "create an item",
+      "create an item – shaper guardian, elder guardian or conqueror map",
+      "einharmastercraftmemoryline6",
+      "memorylinelegendarybeastharvestplatedscorpiont3",
+      "shaper guardian, elder guardian or conqueror map",
+      "standard",
+      "vivid abberarach"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestPlatedScorpionT3",
+        "display": "Vivid Abberarach",
+        "family": null,
+        "genus": null,
+        "monster": "Vivid Abberarach",
+        "rarity": null
+      }
+    ],
+    "subheader": "Shaper Guardian, Elder Guardian or Conqueror Map"
+  },
+  {
+    "display": "Create an Item – Synthesis Unique Map",
+    "game_mode": "standard",
+    "header": "Create an Item",
+    "identifier": "EinharMasterCraftMemoryLine7",
+    "keywords": [
+      "create an item",
+      "create an item – synthesis unique map",
+      "einharmastercraftmemoryline7",
+      "memorylinelegendarybeastharvestrhext3",
+      "primal rhex matriarch",
+      "standard",
+      "synthesis unique map"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestRhexT3",
+        "display": "Primal Rhex Matriarch",
+        "family": null,
+        "genus": null,
+        "monster": "Primal Rhex Matriarch",
+        "rarity": null
+      }
+    ],
+    "subheader": "Synthesis Unique Map"
+  },
+  {
+    "display": "Gain Atlas Crafts – Gain Five Kirac Missions",
+    "game_mode": "standard",
+    "header": "Gain Atlas Crafts",
+    "identifier": "EinharMasterCraftMemoryLine9",
+    "keywords": [
+      "colour of missions based on level of red beast",
+      "einharmastercraftmemoryline9",
+      "gain atlas crafts",
+      "gain atlas crafts – gain five kirac missions",
+      "gain five kirac missions",
+      "memorylinelegendarybeastharvestgoatmant3",
+      "primal cystcaller",
+      "standard"
+    ],
+    "notes": "Colour of Missions based on Level of Red Beast",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestGoatmanT3",
+        "display": "Primal Cystcaller",
+        "family": null,
+        "genus": null,
+        "monster": "Primal Cystcaller",
+        "rarity": null
+      }
+    ],
+    "subheader": "Gain Five Kirac Missions"
+  },
+  {
+    "display": "Gain Atlas Crafts – Gain a free use of each Map Crafting Option",
+    "game_mode": "standard",
+    "header": "Gain Atlas Crafts",
+    "identifier": "EinharMasterCraftMemoryLine8",
+    "keywords": [
+      "einharmastercraftmemoryline8",
+      "gain a free use of each map crafting option",
+      "gain atlas crafts",
+      "gain atlas crafts – gain a free use of each map crafting option",
+      "memorylinelegendarybeastharvestnessacrabt3",
+      "primal crushclaw",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestNessaCrabT3",
+        "display": "Primal Crushclaw",
+        "family": null,
+        "genus": null,
+        "monster": "Primal Crushclaw",
+        "rarity": null
+      }
+    ],
+    "subheader": "Gain a free use of each Map Crafting Option"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Crusader Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft46",
+    "keywords": [
+      "add a mod to a crusader item",
+      "craicic maw",
+      "einharmastercraft46",
+      "farric goliath",
+      "legendarybeastfrog",
+      "legendarybeastspiker",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a crusader item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSpiker",
+        "display": "Farric Goliath",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Goliath",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Crusader Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Hunter Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft45",
+    "keywords": [
+      "add a mod to a hunter item",
+      "craicic maw",
+      "craicic watcher",
+      "einharmastercraft45",
+      "legendarybeastfrog",
+      "legendarybeastsquid",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a hunter item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSquid",
+        "display": "Craicic Watcher",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Watcher",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Hunter Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Rare Map",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft49",
+    "keywords": [
+      "add a mod to a rare map",
+      "craicic savage crab",
+      "einharmastercraft49",
+      "legendarybeastcrab",
+      "legendarybeastforestsnake",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a rare map",
+      "only works on rare maps",
+      "saqawine cobra",
+      "standard"
+    ],
+    "notes": "Only works on rare maps",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCrab",
+        "display": "Craicic Savage Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Savage Crab",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastForestSnake",
+        "display": "Saqawine Cobra",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Cobra",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Rare Map"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Redeemer Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft44",
+    "keywords": [
+      "add a mod to a redeemer item",
+      "craicic maw",
+      "einharmastercraft44",
+      "fenumal queen",
+      "legendarybeastcarrionqueen",
+      "legendarybeastfrog",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a redeemer item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "display": "Fenumal Queen",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Queen",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Redeemer Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Shaper Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft42",
+    "keywords": [
+      "add a mod to a shaper item",
+      "craicic maw",
+      "einharmastercraft42",
+      "fenumal devourer",
+      "legendarybeastdevourer",
+      "legendarybeastfrog",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a shaper item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastDevourer",
+        "display": "Fenumal Devourer",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Devourer",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Shaper Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to a Warlord Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft47",
+    "keywords": [
+      "add a mod to a warlord item",
+      "craicic maw",
+      "einharmastercraft47",
+      "fenumal scrabbler",
+      "legendarybeastfrog",
+      "legendarybeastsandleaper",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to a warlord item",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandLeaper",
+        "display": "Fenumal Scrabbler",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scrabbler",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to a Warlord Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Mod to an Elder Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft43",
+    "keywords": [
+      "add a mod to an elder item",
+      "craicic maw",
+      "einharmastercraft43",
+      "legendarybeastfrog",
+      "legendarybeastsandsnake",
+      "modify mods on an item",
+      "modify mods on an item – add a mod to an elder item",
+      "saqawine blood viper",
+      "standard"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSnake",
+        "display": "Saqawine Blood Viper",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Blood Viper",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Mod to an Elder Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Prefix, Remove a Random Suffix",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft31",
+    "keywords": [
+      "add a prefix, remove a random suffix",
+      "einharmastercraft31",
+      "farric wolf alpha",
+      "legendarybeastwolf",
+      "modify mods on an item",
+      "modify mods on an item – add a prefix, remove a random suffix",
+      "only works on rare items",
+      "standard"
+    ],
+    "notes": "Only works on rare items",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastWolf",
+        "display": "Farric Wolf Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Wolf Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Prefix, Remove a Random Suffix"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a Suffix, Remove a Random Prefix",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraft30",
+    "keywords": [
+      "add a suffix, remove a random prefix",
+      "einharmastercraft30",
+      "farric lynx alpha",
+      "legendarybeastlynx",
+      "modify mods on an item",
+      "modify mods on an item – add a suffix, remove a random prefix",
+      "only works on rare items",
+      "standard"
+    ],
+    "notes": "Only works on rare items",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastLynx",
+        "display": "Farric Lynx Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Lynx Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a Suffix, Remove a Random Prefix"
+  },
+  {
+    "display": "Modify Mods on an Item – Add a crafted Meta-modifier to a non-Unique Item",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraftMemoryLine1",
+    "keywords": [
+      "add a crafted meta-modifier to a non-unique item",
+      "einharmastercraftmemoryline1",
+      "memorylinelegendarybeastharvestbeastt3",
+      "modify mods on an item",
+      "modify mods on an item – add a crafted meta-modifier to a non-unique item",
+      "standard",
+      "wild bristle matron"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestBeastT3",
+        "display": "Wild Bristle Matron",
+        "family": null,
+        "genus": null,
+        "monster": "Wild Bristle Matron",
+        "rarity": null
+      }
+    ],
+    "subheader": "Add a crafted Meta-modifier to a non-Unique Item"
+  },
+  {
+    "display": "Modify Mods on an Item – Reroll a Watcher's Eye Modifier",
+    "game_mode": "standard",
+    "header": "Modify Mods on an Item",
+    "identifier": "EinharMasterCraftMemoryLine2",
+    "keywords": [
+      "cannot reroll maximum life, mana or energy shield modifiers",
+      "einharmastercraftmemoryline2",
+      "memorylinelegendarybeastharvesthelliont3",
+      "modify mods on an item",
+      "modify mods on an item – reroll a watcher's eye modifier",
+      "reroll a watcher's eye modifier",
+      "standard",
+      "wild hellion alpha"
+    ],
+    "notes": "Cannot reroll Maximum Life, Mana or Energy Shield modifiers",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestHellionT3",
+        "display": "Wild Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Wild Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Reroll a Watcher's Eye Modifier"
+  },
+  {
+    "display": "Modify an Item – to Have Maximum Possible Links",
+    "game_mode": "standard",
+    "header": "Modify an Item",
+    "identifier": "EinharMasterCraftMorrigan7",
+    "keywords": [
+      "black mórrigan",
+      "craicic sand spitter",
+      "einharmastercraftmorrigan7",
+      "legendarybeastsandspitter",
+      "modify an item",
+      "modify an item – to have maximum possible links",
+      "morrigan",
+      "standard",
+      "to have maximum possible links"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSpitter",
+        "display": "Craicic Sand Spitter",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Sand Spitter",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Have Maximum Possible Links"
+  },
+  {
+    "display": "Modify an Item – to Have Maximum Possible Number of Sockets",
+    "game_mode": "standard",
+    "header": "Modify an Item",
+    "identifier": "EinharMasterCraftMorrigan8",
+    "keywords": [
+      "black mórrigan",
+      "craicic shield crab",
+      "einharmastercraftmorrigan8",
+      "legendarybeastshieldcrab",
+      "modify an item",
+      "modify an item – to have maximum possible number of sockets",
+      "morrigan",
+      "standard",
+      "to have maximum possible number of sockets"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastShieldCrab",
+        "display": "Craicic Shield Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Shield Crab",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Have Maximum Possible Number of Sockets"
+  },
+  {
+    "display": "Open a Portal – to Craiceann's Cove",
+    "game_mode": "standard",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft37",
+    "keywords": [
+      "craicic spider crab",
+      "einharmastercraft37",
+      "legendarybeastcrab2",
+      "open a portal",
+      "open a portal – to craiceann's cove",
+      "standard",
+      "to craiceann's cove"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCrab2",
+        "display": "Craicic Spider Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Spider Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Craiceann's Cove"
+  },
+  {
+    "display": "Open a Portal – to Farrul's Den",
+    "game_mode": "standard",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft34",
+    "keywords": [
+      "einharmastercraft34",
+      "farric tiger alpha",
+      "legendarybeasttiger",
+      "open a portal",
+      "open a portal – to farrul's den",
+      "standard",
+      "to farrul's den"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastTiger",
+        "display": "Farric Tiger Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Tiger Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Farrul's Den"
+  },
+  {
+    "display": "Open a Portal – to Fenumus' Lair",
+    "game_mode": "standard",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft36",
+    "keywords": [
+      "einharmastercraft36",
+      "fenumal hybrid arachnid",
+      "legendarybeastplatedspider",
+      "open a portal",
+      "open a portal – to fenumus' lair",
+      "standard",
+      "to fenumus' lair"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPlatedSpider",
+        "display": "Fenumal Hybrid Arachnid",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Hybrid Arachnid",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Fenumus' Lair"
+  },
+  {
+    "display": "Open a Portal – to Saqawal's Roost",
+    "game_mode": "standard",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft35",
+    "keywords": [
+      "einharmastercraft35",
+      "legendarybeastrhex",
+      "open a portal",
+      "open a portal – to saqawal's roost",
+      "saqawine rhex",
+      "standard",
+      "to saqawal's roost"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastRhex",
+        "display": "Saqawine Rhex",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Rhex",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Saqawal's Roost"
+  },
+  {
+    "display": "Split an Item – Into Three Items, with Two Mods on Each Item",
+    "game_mode": "standard",
+    "header": "Split an Item",
+    "identifier": "EinharMasterCraftMorrigan6",
+    "keywords": [
+      "black mórrigan",
+      "does not work on influenced or split items, must have 6+ mods",
+      "einharmastercraftmorrigan6",
+      "fenumal plagued arachnid",
+      "into three items, with two mods on each item",
+      "legendarybeastplaguespider",
+      "morrigan",
+      "split an item",
+      "split an item – into three items, with two mods on each item",
+      "standard"
+    ],
+    "notes": "Does not work on Influenced or Split items, must have 6+ mods",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "display": "Fenumal Plagued Arachnid",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Plagued Arachnid",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      }
+    ],
+    "subheader": "Into Three Items, with Two Mods on Each Item"
+  },
+  {
+    "display": "Split an Item – Into Two Items, with Half the Mods on Each Item",
+    "game_mode": "standard",
+    "header": "Split an Item",
+    "identifier": "EinharMasterCraft32",
+    "keywords": [
+      "does not work on influenced or split items, must have 4+ mods",
+      "einharmastercraft32",
+      "fenumal plagued arachnid",
+      "into two items, with half the mods on each item",
+      "legendarybeastplaguespider",
+      "split an item",
+      "split an item – into two items, with half the mods on each item",
+      "standard"
+    ],
+    "notes": "Does not work on Influenced or Split items, Must have 4+ mods",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "display": "Fenumal Plagued Arachnid",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Plagued Arachnid",
+        "rarity": null
+      }
+    ],
+    "subheader": "Into Two Items, with Half the Mods on Each Item"
+  },
+  {
+    "display": "Transform an Item – Increase level of non-Corrupted Awakened Gem by 1",
+    "game_mode": "standard",
+    "header": "Transform an Item",
+    "identifier": "EinharMasterCraftMemoryLine3",
+    "keywords": [
+      "einharmastercraftmemoryline3",
+      "increase level of non-corrupted awakened gem by 1",
+      "memorylinelegendarybeastharvestbramblehulkt3",
+      "standard",
+      "transform an item",
+      "transform an item – increase level of non-corrupted awakened gem by 1",
+      "wild brambleback"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestBrambleHulkT3",
+        "display": "Wild Brambleback",
+        "family": null,
+        "genus": null,
+        "monster": "Wild Brambleback",
+        "rarity": null
+      }
+    ],
+    "subheader": "Increase level of non-Corrupted Awakened Gem by 1"
+  },
+  {
+    "display": "Transform an Item – Reroll a Synthesis Implicit Modifier",
+    "game_mode": "standard",
+    "header": "Transform an Item",
+    "identifier": "EinharMasterCraftMemoryLine5",
+    "keywords": [
+      "einharmastercraftmemoryline5",
+      "memorylinelegendarybeastharvestvultureparasitet3",
+      "reroll a synthesis implicit modifier",
+      "standard",
+      "transform an item",
+      "transform an item – reroll a synthesis implicit modifier",
+      "vivid vulture"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestVultureParasiteT3",
+        "display": "Vivid Vulture",
+        "family": null,
+        "genus": null,
+        "monster": "Vivid Vulture",
+        "rarity": null
+      }
+    ],
+    "subheader": "Reroll a Synthesis Implicit Modifier"
+  },
+  {
+    "display": "Transform an Item – Reroll an Awakened Support Gem",
+    "game_mode": "standard",
+    "header": "Transform an Item",
+    "identifier": "EinharMasterCraftMemoryLine4",
+    "keywords": [
+      "cannot result in awakened empower, enhance or enlighten",
+      "einharmastercraftmemoryline4",
+      "memorylinelegendarybeastharvestsquidt3",
+      "reroll an awakened support gem",
+      "standard",
+      "transform an item",
+      "transform an item – reroll an awakened support gem",
+      "vivid watcher"
+    ],
+    "notes": "Cannot result in Awakened Empower, Enhance or Enlighten",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "MemoryLineLegendaryBeastHarvestSquidT3",
+        "display": "Vivid Watcher",
+        "family": null,
+        "genus": null,
+        "monster": "Vivid Watcher",
+        "rarity": null
+      }
+    ],
+    "subheader": "Reroll an Awakened Support Gem"
+  },
+  {
+    "display": "Transform an Item – from an Amulet into a Talisman",
+    "game_mode": "standard",
+    "header": "Transform an Item",
+    "identifier": "EinharMasterCraft29",
+    "keywords": [
+      "does not work on influenced items",
+      "einharmastercraft29",
+      "farric frost hellion alpha",
+      "from an amulet into a talisman",
+      "legendarybeasthellionice",
+      "standard",
+      "transform an item",
+      "transform an item – from an amulet into a talisman"
+    ],
+    "notes": "Does not work on Influenced items",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHellionIce",
+        "display": "Farric Frost Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Frost Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "from an Amulet into a Talisman"
+  },
+  {
+    "display": "Apply a Hinekora's Lock – To a Magic Item",
+    "game_mode": "ruthless",
+    "header": "Apply a Hinekora's Lock",
+    "identifier": "EinharMasterCraftMorrigan5HardMode",
+    "keywords": [
+      "apply a hinekora's lock",
+      "apply a hinekora's lock – to a magic item",
+      "black mórrigan",
+      "craicic chimeral",
+      "einharmastercraftmorrigan5hardmode",
+      "legendarybeastgemfrog",
+      "morrigan",
+      "ruthless",
+      "to a magic item"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGemFrog",
+        "display": "Craicic Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Chimeral",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      }
+    ],
+    "subheader": "To a Magic Item"
+  },
+  {
+    "display": "Convert this Unique Item – Into Another Random Unique Item",
+    "game_mode": "ruthless",
+    "header": "Convert this Unique Item",
+    "identifier": "EinharMasterCraft33HardMode",
+    "keywords": [
+      "convert this unique item",
+      "convert this unique item – into another random unique item",
+      "einharmastercraft33hardmode",
+      "fenumal scorpion",
+      "into another random unique item",
+      "legendarybeastscorpion",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastScorpion",
+        "display": "Fenumal Scorpion",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scorpion",
+        "rarity": null
+      }
+    ],
+    "subheader": "Into Another Random Unique Item"
+  },
+  {
+    "display": "Corrupt a Map – To have 30% Quality",
+    "game_mode": "ruthless",
+    "header": "Corrupt a Map",
+    "identifier": "EinharMasterCraft32HardMode",
+    "keywords": [
+      "corrupt a map",
+      "corrupt a map – to have 30% quality",
+      "craicic vassal",
+      "einharmastercraft32hardmode",
+      "legendarybeastparasiticsquid",
+      "ruthless",
+      "to have 30% quality"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "display": "Craicic Vassal",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Vassal",
+        "rarity": null
+      }
+    ],
+    "subheader": "To have 30% Quality"
+  },
+  {
+    "display": "Corrupt a Map – Twice",
+    "game_mode": "ruthless",
+    "header": "Corrupt a Map",
+    "identifier": "EinharMasterCraft34HardMode",
+    "keywords": [
+      "corrupt a map",
+      "corrupt a map – twice",
+      "craicic vassal",
+      "einharmastercraft34hardmode",
+      "fenumal scorpion",
+      "legendarybeastparasiticsquid",
+      "legendarybeastscorpion",
+      "ruthless",
+      "twice"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "display": "Craicic Vassal",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Vassal",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastScorpion",
+        "display": "Fenumal Scorpion",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scorpion",
+        "rarity": null
+      }
+    ],
+    "subheader": "Twice"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 20 Aspect of the Avian skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft40HardMode",
+    "keywords": [
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 20 aspect of the avian skill",
+      "einharmastercraft40hardmode",
+      "level 20 aspect of the avian skill",
+      "ruthless",
+      "saqawal, first of the sky",
+      "spiritbossavian"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossAvian",
+        "display": "Saqawal, First of the Sky",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawal, First of the Sky",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 20 Aspect of the Avian skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 20 Aspect of the Cat skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft39HardMode",
+    "keywords": [
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 20 aspect of the cat skill",
+      "einharmastercraft39hardmode",
+      "farrul, first of the plains",
+      "level 20 aspect of the cat skill",
+      "ruthless",
+      "spiritbosstiger"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossTiger",
+        "display": "Farrul, First of the Plains",
+        "family": null,
+        "genus": null,
+        "monster": "Farrul, First of the Plains",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 20 Aspect of the Cat skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 20 Aspect of the Crab skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft42HardMode",
+    "keywords": [
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 20 aspect of the crab skill",
+      "craiceann, first of the deep",
+      "einharmastercraft42hardmode",
+      "level 20 aspect of the crab skill",
+      "ruthless",
+      "spiritbosscrab"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossCrab",
+        "display": "Craiceann, First of the Deep",
+        "family": null,
+        "genus": null,
+        "monster": "Craiceann, First of the Deep",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 20 Aspect of the Crab skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 20 Aspect of the Spider skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraft41HardMode",
+    "keywords": [
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 20 aspect of the spider skill",
+      "einharmastercraft41hardmode",
+      "fenumus, first of the night",
+      "level 20 aspect of the spider skill",
+      "ruthless",
+      "spiritbossspider"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossSpider",
+        "display": "Fenumus, First of the Night",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumus, First of the Night",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 20 Aspect of the Spider skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Avian skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan2HardMode",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the avian skill",
+      "einharmastercraftmorrigan2hardmode",
+      "level 30 aspect of the avian skill",
+      "morrigan",
+      "ruthless",
+      "saqawal, first of the sky",
+      "spiritbossavian"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossAvian",
+        "display": "Saqawal, First of the Sky",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawal, First of the Sky",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Avian skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Cat skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan1HardMode",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the cat skill",
+      "einharmastercraftmorrigan1hardmode",
+      "farrul, first of the plains",
+      "level 30 aspect of the cat skill",
+      "morrigan",
+      "ruthless",
+      "spiritbosstiger"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossTiger",
+        "display": "Farrul, First of the Plains",
+        "family": null,
+        "genus": null,
+        "monster": "Farrul, First of the Plains",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Cat skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Crab skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan4HardMode",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the crab skill",
+      "craiceann, first of the deep",
+      "einharmastercraftmorrigan4hardmode",
+      "level 30 aspect of the crab skill",
+      "morrigan",
+      "ruthless",
+      "spiritbosscrab"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossCrab",
+        "display": "Craiceann, First of the Deep",
+        "family": null,
+        "genus": null,
+        "monster": "Craiceann, First of the Deep",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Crab skill"
+  },
+  {
+    "display": "Craft an Aspect Skill onto an Item – Level 30 Aspect of the Spider skill",
+    "game_mode": "ruthless",
+    "header": "Craft an Aspect Skill onto an Item",
+    "identifier": "EinharMasterCraftMorrigan3HardMode",
+    "keywords": [
+      "black mórrigan",
+      "craft an aspect skill onto an item",
+      "craft an aspect skill onto an item – level 30 aspect of the spider skill",
+      "einharmastercraftmorrigan3hardmode",
+      "fenumus, first of the night",
+      "level 30 aspect of the spider skill",
+      "morrigan",
+      "ruthless",
+      "spiritbossspider"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "Morrigan",
+        "display": "Black Mórrigan",
+        "family": null,
+        "genus": null,
+        "monster": "Black Mórrigan",
+        "rarity": null
+      },
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "SpiritBossSpider",
+        "display": "Fenumus, First of the Night",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumus, First of the Night",
+        "rarity": null
+      }
+    ],
+    "subheader": "Level 30 Aspect of the Spider skill"
+  },
+  {
+    "display": "Create a Talisman – Ashscale Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft2HardMode",
+    "keywords": [
+      "ashscale talisman",
+      "craicic shield crab",
+      "create a talisman",
+      "create a talisman – ashscale talisman",
+      "einharmastercraft2hardmode",
+      "legendarybeastshieldcrab",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastShieldCrab",
+        "display": "Craicic Shield Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Shield Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "Ashscale Talisman"
+  },
+  {
+    "display": "Create a Talisman – Avian Twins Talisman (Cold)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft26HardMode",
+    "keywords": [
+      "avian twins talisman (cold)",
+      "create a talisman",
+      "create a talisman – avian twins talisman (cold)",
+      "einharmastercraft26hardmode",
+      "farric frost hellion alpha",
+      "legendarybeasthellionice",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHellionIce",
+        "display": "Farric Frost Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Frost Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Avian Twins Talisman (Cold)"
+  },
+  {
+    "display": "Create a Talisman – Avian Twins Talisman (Fire)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft24HardMode",
+    "keywords": [
+      "avian twins talisman (fire)",
+      "create a talisman",
+      "create a talisman – avian twins talisman (fire)",
+      "einharmastercraft24hardmode",
+      "fenumal plagued arachnid",
+      "legendarybeastplaguespider",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "display": "Fenumal Plagued Arachnid",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Plagued Arachnid",
+        "rarity": null
+      }
+    ],
+    "subheader": "Avian Twins Talisman (Fire)"
+  },
+  {
+    "display": "Create a Talisman – Avian Twins Talisman (Lightning)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft25HardMode",
+    "keywords": [
+      "avian twins talisman (lightning)",
+      "create a talisman",
+      "create a talisman – avian twins talisman (lightning)",
+      "einharmastercraft25hardmode",
+      "legendarybeastvulture",
+      "ruthless",
+      "saqawine vulture"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastVulture",
+        "display": "Saqawine Vulture",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Vulture",
+        "rarity": null
+      }
+    ],
+    "subheader": "Avian Twins Talisman (Lightning)"
+  },
+  {
+    "display": "Create a Talisman – Black Maw Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft11HardMode",
+    "keywords": [
+      "black maw talisman",
+      "create a talisman",
+      "create a talisman – black maw talisman",
+      "einharmastercraft11hardmode",
+      "legendarybeastkiweth",
+      "ruthless",
+      "saqawine retch"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastKiweth",
+        "display": "Saqawine Retch",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Retch",
+        "rarity": null
+      }
+    ],
+    "subheader": "Black Maw Talisman"
+  },
+  {
+    "display": "Create a Talisman – Bonespire Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft8HardMode",
+    "keywords": [
+      "bonespire talisman",
+      "create a talisman",
+      "create a talisman – bonespire talisman",
+      "einharmastercraft8hardmode",
+      "farric goatman",
+      "legendarybeastgoatman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGoatman",
+        "display": "Farric Goatman",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Goatman",
+        "rarity": null
+      }
+    ],
+    "subheader": "Bonespire Talisman"
+  },
+  {
+    "display": "Create a Talisman – Breakrib Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft1HardMode",
+    "keywords": [
+      "breakrib talisman",
+      "create a talisman",
+      "create a talisman – breakrib talisman",
+      "einharmastercraft1hardmode",
+      "legendarybeastrhoa",
+      "ruthless",
+      "saqawine rhoa"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastRhoa",
+        "display": "Saqawine Rhoa",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Rhoa",
+        "rarity": null
+      }
+    ],
+    "subheader": "Breakrib Talisman"
+  },
+  {
+    "display": "Create a Talisman – Chrysalis Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft5HardMode",
+    "keywords": [
+      "chrysalis talisman",
+      "create a talisman",
+      "create a talisman – chrysalis talisman",
+      "einharmastercraft5hardmode",
+      "farric flame hellion alpha",
+      "legendarybeasthellionfire",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHellionFire",
+        "display": "Farric Flame Hellion Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Flame Hellion Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Chrysalis Talisman"
+  },
+  {
+    "display": "Create a Talisman – Clutching Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft13HardMode",
+    "keywords": [
+      "clutching talisman",
+      "craicic squid",
+      "create a talisman",
+      "create a talisman – clutching talisman",
+      "einharmastercraft13hardmode",
+      "legendarybeastsirenspawn",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSirenSpawn",
+        "display": "Craicic Squid",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Squid",
+        "rarity": null
+      }
+    ],
+    "subheader": "Clutching Talisman"
+  },
+  {
+    "display": "Create a Talisman – Deadhand Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft9HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – deadhand talisman",
+      "deadhand talisman",
+      "einharmastercraft9hardmode",
+      "farric gargantuan",
+      "legendarybeastbeast",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastBeast",
+        "display": "Farric Gargantuan",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Gargantuan",
+        "rarity": null
+      }
+    ],
+    "subheader": "Deadhand Talisman"
+  },
+  {
+    "display": "Create a Talisman – Deep One Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft4HardMode",
+    "keywords": [
+      "craicic savage crab",
+      "create a talisman",
+      "create a talisman – deep one talisman",
+      "deep one talisman",
+      "einharmastercraft4hardmode",
+      "legendarybeastcrab",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCrab",
+        "display": "Craicic Savage Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Savage Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "Deep One Talisman"
+  },
+  {
+    "display": "Create a Talisman – Fangjaw Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft17HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – fangjaw talisman",
+      "einharmastercraft17hardmode",
+      "fangjaw talisman",
+      "legendarybeastsandsnake",
+      "ruthless",
+      "saqawine blood viper"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSnake",
+        "display": "Saqawine Blood Viper",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Blood Viper",
+        "rarity": null
+      }
+    ],
+    "subheader": "Fangjaw Talisman"
+  },
+  {
+    "display": "Create a Talisman – Hexclaw Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft16HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – hexclaw talisman",
+      "einharmastercraft16hardmode",
+      "fenumal devourer",
+      "hexclaw talisman",
+      "legendarybeastdevourer",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastDevourer",
+        "display": "Fenumal Devourer",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Devourer",
+        "rarity": null
+      }
+    ],
+    "subheader": "Hexclaw Talisman"
+  },
+  {
+    "display": "Create a Talisman – Horned Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft14HardMode",
+    "keywords": [
+      "craicic watcher",
+      "create a talisman",
+      "create a talisman – horned talisman",
+      "einharmastercraft14hardmode",
+      "horned talisman",
+      "legendarybeastsquid",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSquid",
+        "display": "Craicic Watcher",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Watcher",
+        "rarity": null
+      }
+    ],
+    "subheader": "Horned Talisman"
+  },
+  {
+    "display": "Create a Talisman – Lone Antler Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft3HardMode",
+    "keywords": [
+      "craicic sand spitter",
+      "create a talisman",
+      "create a talisman – lone antler talisman",
+      "einharmastercraft3hardmode",
+      "legendarybeastsandspitter",
+      "lone antler talisman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandSpitter",
+        "display": "Craicic Sand Spitter",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Sand Spitter",
+        "rarity": null
+      }
+    ],
+    "subheader": "Lone Antler Talisman"
+  },
+  {
+    "display": "Create a Talisman – Longtooth Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft21HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – longtooth talisman",
+      "einharmastercraft21hardmode",
+      "farric taurus",
+      "legendarybeastbull",
+      "longtooth talisman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastBull",
+        "display": "Farric Taurus",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Taurus",
+        "rarity": null
+      }
+    ],
+    "subheader": "Longtooth Talisman"
+  },
+  {
+    "display": "Create a Talisman – Mandible Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft7HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – mandible talisman",
+      "einharmastercraft7hardmode",
+      "farric ape",
+      "legendarybeastmonkey",
+      "mandible talisman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastMonkey",
+        "display": "Farric Ape",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Ape",
+        "rarity": null
+      }
+    ],
+    "subheader": "Mandible Talisman"
+  },
+  {
+    "display": "Create a Talisman – Monkey Paw Talisman (Endurance)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft29HardMode",
+    "keywords": [
+      "craicic maw",
+      "create a talisman",
+      "create a talisman – monkey paw talisman (endurance)",
+      "einharmastercraft29hardmode",
+      "legendarybeastfrog",
+      "monkey paw talisman (endurance)",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastFrog",
+        "display": "Craicic Maw",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Maw",
+        "rarity": null
+      }
+    ],
+    "subheader": "Monkey Paw Talisman (Endurance)"
+  },
+  {
+    "display": "Create a Talisman – Monkey Paw Talisman (Frenzy)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft28HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – monkey paw talisman (frenzy)",
+      "einharmastercraft28hardmode",
+      "farric wolf alpha",
+      "legendarybeastwolf",
+      "monkey paw talisman (frenzy)",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastWolf",
+        "display": "Farric Wolf Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Wolf Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Monkey Paw Talisman (Frenzy)"
+  },
+  {
+    "display": "Create a Talisman – Monkey Paw Talisman (Power)",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft27HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – monkey paw talisman (power)",
+      "einharmastercraft27hardmode",
+      "farric lynx alpha",
+      "legendarybeastlynx",
+      "monkey paw talisman (power)",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastLynx",
+        "display": "Farric Lynx Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Lynx Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "Monkey Paw Talisman (Power)"
+  },
+  {
+    "display": "Create a Talisman – Monkey Twins Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft19HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – monkey twins talisman",
+      "einharmastercraft19hardmode",
+      "farric goliath",
+      "legendarybeastspiker",
+      "monkey twins talisman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSpiker",
+        "display": "Farric Goliath",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Goliath",
+        "rarity": null
+      }
+    ],
+    "subheader": "Monkey Twins Talisman"
+  },
+  {
+    "display": "Create a Talisman – Primal Skull Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft15HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – primal skull talisman",
+      "einharmastercraft15hardmode",
+      "legendarybeastforestsnake",
+      "primal skull talisman",
+      "ruthless",
+      "saqawine cobra"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastForestSnake",
+        "display": "Saqawine Cobra",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Cobra",
+        "rarity": null
+      }
+    ],
+    "subheader": "Primal Skull Talisman"
+  },
+  {
+    "display": "Create a Talisman – Rotfeather Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft22HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – rotfeather talisman",
+      "einharmastercraft22hardmode",
+      "farric magma hound",
+      "legendarybeasthound",
+      "rotfeather talisman",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastHound",
+        "display": "Farric Magma Hound",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Magma Hound",
+        "rarity": null
+      }
+    ],
+    "subheader": "Rotfeather Talisman"
+  },
+  {
+    "display": "Create a Talisman – Splitnewt Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft12HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – splitnewt talisman",
+      "einharmastercraft12hardmode",
+      "fenumal widow",
+      "legendarybeastspider",
+      "ruthless",
+      "splitnewt talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSpider",
+        "display": "Fenumal Widow",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Widow",
+        "rarity": null
+      }
+    ],
+    "subheader": "Splitnewt Talisman"
+  },
+  {
+    "display": "Create a Talisman – Three Hands Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft20HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – three hands talisman",
+      "einharmastercraft20hardmode",
+      "fenumal scrabbler",
+      "legendarybeastsandleaper",
+      "ruthless",
+      "three hands talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastSandLeaper",
+        "display": "Fenumal Scrabbler",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Scrabbler",
+        "rarity": null
+      }
+    ],
+    "subheader": "Three Hands Talisman"
+  },
+  {
+    "display": "Create a Talisman – Three Rat Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft23HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – three rat talisman",
+      "einharmastercraft23hardmode",
+      "farric pit hound",
+      "legendarybeastpitbull",
+      "ruthless",
+      "three rat talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPitbull",
+        "display": "Farric Pit Hound",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Pit Hound",
+        "rarity": null
+      }
+    ],
+    "subheader": "Three Rat Talisman"
+  },
+  {
+    "display": "Create a Talisman – Undying Flesh Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft10HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – undying flesh talisman",
+      "einharmastercraft10hardmode",
+      "farric ursa",
+      "legendarybeastursa",
+      "ruthless",
+      "undying flesh talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastUrsa",
+        "display": "Farric Ursa",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Ursa",
+        "rarity": null
+      }
+    ],
+    "subheader": "Undying Flesh Talisman"
+  },
+  {
+    "display": "Create a Talisman – Wereclaw Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft18HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – wereclaw talisman",
+      "einharmastercraft18hardmode",
+      "fenumal queen",
+      "legendarybeastcarrionqueen",
+      "ruthless",
+      "wereclaw talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "display": "Fenumal Queen",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Queen",
+        "rarity": null
+      }
+    ],
+    "subheader": "Wereclaw Talisman"
+  },
+  {
+    "display": "Create a Talisman – Writhing Talisman",
+    "game_mode": "ruthless",
+    "header": "Create a Talisman",
+    "identifier": "EinharMasterCraft6HardMode",
+    "keywords": [
+      "create a talisman",
+      "create a talisman – writhing talisman",
+      "einharmastercraft6hardmode",
+      "farric chieftain",
+      "legendarybeastchieftain",
+      "ruthless",
+      "writhing talisman"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastChieftain",
+        "display": "Farric Chieftain",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Chieftain",
+        "rarity": null
+      }
+    ],
+    "subheader": "Writhing Talisman"
+  },
+  {
+    "display": "Create an Imprint – Of a Magic Item",
+    "game_mode": "ruthless",
+    "header": "Create an Imprint",
+    "identifier": "EinharMasterCraft31HardMode",
+    "keywords": [
+      "craicic chimeral",
+      "create an imprint",
+      "create an imprint – of a magic item",
+      "einharmastercraft31hardmode",
+      "legendarybeastgemfrog",
+      "of a magic item",
+      "ruthless"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastGemFrog",
+        "display": "Craicic Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Chimeral",
+        "rarity": null
+      }
+    ],
+    "subheader": "Of a Magic Item"
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Reused at the end of this Flask's effect\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask2",
+    "keywords": [
+      "adds \"reused at the end of this flask's effect\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask2",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"reused at the end of this flask's effect\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Reused at the end of this Flask's effect\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when Charges reach full\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask3",
+    "keywords": [
+      "adds \"used when charges reach full\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask3",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when charges reach full\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when Charges reach full\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when an adjacent Flask is used\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask1",
+    "keywords": [
+      "adds \"used when an adjacent flask is used\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask1",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when an adjacent flask is used\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when an adjacent Flask is used\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you Block\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask13",
+    "keywords": [
+      "adds \"used when you block\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask13",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you block\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you Block\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you Hit a Rare or Unique Enemy, if not already in effect\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask6",
+    "keywords": [
+      "adds \"used when you hit a rare or unique enemy, if not already in effect\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask6",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you hit a rare or unique enemy, if not already in effect\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you Hit a Rare or Unique Enemy, if not already in effect\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you Use a Guard Skill\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask4",
+    "keywords": [
+      "adds \"used when you use a guard skill\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask4",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you use a guard skill\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you Use a Guard Skill\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you Use a Travel Skill\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask5",
+    "keywords": [
+      "adds \"used when you use a travel skill\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask5",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you use a travel skill\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you Use a Travel Skill\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you become Chilled\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask8",
+    "keywords": [
+      "adds \"used when you become chilled\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask8",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you become chilled\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you become Chilled\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you become Frozen\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask7",
+    "keywords": [
+      "adds \"used when you become frozen\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask7",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you become frozen\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you become Frozen\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you become Ignited\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask10",
+    "keywords": [
+      "adds \"used when you become ignited\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask10",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you become ignited\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you become Ignited\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you become Poisoned\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask12",
+    "keywords": [
+      "adds \"used when you become poisoned\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask12",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you become poisoned\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you become Poisoned\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you become Shocked\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask9",
+    "keywords": [
+      "adds \"used when you become shocked\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask9",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you become shocked\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you become Shocked\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you start Bleeding\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask11",
+    "keywords": [
+      "adds \"used when you start bleeding\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask11",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you start bleeding\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you start Bleeding\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you take a Savage Hit\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask14",
+    "keywords": [
+      "adds \"used when you take a savage hit\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask14",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you take a savage hit\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you take a Savage Hit\""
+  },
+  {
+    "display": "Enchant a Utility Flask – Adds \"Used when you use a Life Flask\"",
+    "game_mode": "ruthless",
+    "header": "Enchant a Utility Flask",
+    "identifier": "EinharMasterCraftHardModeFlask15",
+    "keywords": [
+      "adds \"used when you use a life flask\"",
+      "any creature",
+      "anyrarelevel20plus",
+      "einharmastercrafthardmodeflask15",
+      "enchant a utility flask",
+      "enchant a utility flask – adds \"used when you use a life flask\"",
+      "rare",
+      "rare any creature",
+      "replaces any existing enchantment",
+      "ruthless"
+    ],
+    "notes": "Replaces any existing Enchantment",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "AnyRareLevel20Plus",
+        "display": "Rare Any Creature",
+        "family": "Any Creature",
+        "genus": null,
+        "monster": null,
+        "rarity": "Rare"
+      }
+    ],
+    "subheader": "Adds \"Used when you use a Life Flask\""
+  },
+  {
+    "display": "Open a Portal – to Craiceann's Cove",
+    "game_mode": "ruthless",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft38HardMode",
+    "keywords": [
+      "craicic spider crab",
+      "einharmastercraft38hardmode",
+      "legendarybeastcrab2",
+      "open a portal",
+      "open a portal – to craiceann's cove",
+      "ruthless",
+      "to craiceann's cove"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastCrab2",
+        "display": "Craicic Spider Crab",
+        "family": null,
+        "genus": null,
+        "monster": "Craicic Spider Crab",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Craiceann's Cove"
+  },
+  {
+    "display": "Open a Portal – to Farrul's Den",
+    "game_mode": "ruthless",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft35HardMode",
+    "keywords": [
+      "einharmastercraft35hardmode",
+      "farric tiger alpha",
+      "legendarybeasttiger",
+      "open a portal",
+      "open a portal – to farrul's den",
+      "ruthless",
+      "to farrul's den"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastTiger",
+        "display": "Farric Tiger Alpha",
+        "family": null,
+        "genus": null,
+        "monster": "Farric Tiger Alpha",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Farrul's Den"
+  },
+  {
+    "display": "Open a Portal – to Fenumus' Lair",
+    "game_mode": "ruthless",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft37HardMode",
+    "keywords": [
+      "einharmastercraft37hardmode",
+      "fenumal hybrid arachnid",
+      "legendarybeastplatedspider",
+      "open a portal",
+      "open a portal – to fenumus' lair",
+      "ruthless",
+      "to fenumus' lair"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastPlatedSpider",
+        "display": "Fenumal Hybrid Arachnid",
+        "family": null,
+        "genus": null,
+        "monster": "Fenumal Hybrid Arachnid",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Fenumus' Lair"
+  },
+  {
+    "display": "Open a Portal – to Saqawal's Roost",
+    "game_mode": "ruthless",
+    "header": "Open a Portal",
+    "identifier": "EinharMasterCraft36HardMode",
+    "keywords": [
+      "einharmastercraft36hardmode",
+      "legendarybeastrhex",
+      "open a portal",
+      "open a portal – to saqawal's roost",
+      "ruthless",
+      "saqawine rhex",
+      "to saqawal's roost"
+    ],
+    "notes": null,
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastRhex",
+        "display": "Saqawine Rhex",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Rhex",
+        "rarity": null
+      }
+    ],
+    "subheader": "to Saqawal's Roost"
+  },
+  {
+    "display": "Transform an Item – from an Amulet into a Talisman",
+    "game_mode": "ruthless",
+    "header": "Transform an Item",
+    "identifier": "EinharMasterCraft30HardMode",
+    "keywords": [
+      "does not work on influenced items",
+      "einharmastercraft30hardmode",
+      "from an amulet into a talisman",
+      "legendarybeastiguana",
+      "ruthless",
+      "saqawine chimeral",
+      "transform an item",
+      "transform an item – from an amulet into a talisman"
+    ],
+    "notes": "Does not work on Influenced items",
+    "requirements": [
+      {
+        "amount": 1,
+        "beast_group": null,
+        "component_id": "LegendaryBeastIguana",
+        "display": "Saqawine Chimeral",
+        "family": null,
+        "genus": null,
+        "monster": "Saqawine Chimeral",
+        "rarity": null
+      }
+    ],
+    "subheader": "from an Amulet into a Talisman"
+  }
+]

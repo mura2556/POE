@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, List, Sequence
@@ -126,6 +128,41 @@ def fetch_json(url: str) -> object:
     return json.loads(response.text)
 
 
+def fetch_cargo_rows(
+    tables: str,
+    fields: str,
+    where: str | None = None,
+    join_on: str | None = None,
+    limit: int = 500,
+) -> List[dict]:
+    params = {
+        "title": "Special:CargoExport",
+        "tables": tables,
+        "fields": fields,
+        "format": "json",
+        "limit": limit,
+    }
+    if where:
+        params["where"] = where
+    if join_on:
+        params["join_on"] = join_on
+
+    rows: List[dict] = []
+    offset = 0
+    while True:
+        params["offset"] = offset
+        response = requests.get(POEWIKI_EXPORT, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        chunk = response.json()
+        if not chunk:
+            break
+        rows.extend(chunk)
+        if len(chunk) < limit:
+            break
+        offset += len(chunk)
+    return rows
+
+
 def ensure_data_dir() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -140,6 +177,152 @@ def build_translator() -> StatTranslator:
     stats_url = f"{REPOE_BASE}/stat_translations.min.json"
     translations = fetch_json(stats_url)
     return StatTranslator(translations)
+
+
+def sync_bestiary_data() -> None:
+    recipes = fetch_cargo_rows(
+        "bestiary_recipes",
+        ",".join(
+            [
+                "bestiary_recipes.id=identifier",
+                "bestiary_recipes.header=header",
+                "bestiary_recipes.subheader=subheader",
+                "bestiary_recipes.notes=notes",
+                "bestiary_recipes.game_mode=game_mode",
+            ]
+        ),
+    )
+    components = fetch_cargo_rows(
+        "bestiary_recipe_components",
+        ",".join(
+            [
+                "bestiary_recipe_components.recipe_id=recipe_id",
+                "bestiary_recipe_components.component_id=component_id",
+                "bestiary_recipe_components.amount=amount",
+            ]
+        ),
+    )
+    beasts = fetch_cargo_rows(
+        "bestiary_components",
+        ",".join(
+            [
+                "bestiary_components.id=identifier",
+                "bestiary_components.monster=monster",
+                "bestiary_components.family=family",
+                "bestiary_components.genus=genus",
+                "bestiary_components.beast_group=beast_group",
+                "bestiary_components.rarity=rarity",
+            ]
+        ),
+    )
+
+    def clean_text(value: object) -> str:
+        if value is None:
+            return ""
+        return html.unescape(str(value)).strip()
+
+    def clean_optional(value: object) -> str | None:
+        text = clean_text(value)
+        return text or None
+
+    beast_lookup: dict[str, dict[str, str | None]] = {}
+    for entry in beasts:
+        identifier = clean_text(entry.get("identifier"))
+        if not identifier:
+            continue
+        beast_lookup[identifier] = {
+            "monster": clean_optional(entry.get("monster")),
+            "family": clean_optional(entry.get("family")),
+            "genus": clean_optional(entry.get("genus")),
+            "beast_group": clean_optional(entry.get("beast_group")),
+            "rarity": clean_optional(entry.get("rarity")),
+        }
+    requirement_map: dict[str, List[dict]] = defaultdict(list)
+    for component in components:
+        recipe_id = clean_text(component.get("recipe_id"))
+        component_id = clean_text(component.get("component_id"))
+        if not recipe_id or not component_id:
+            continue
+        amount_raw = component.get("amount")
+        try:
+            amount = int(amount_raw)
+        except (TypeError, ValueError):
+            amount = 0
+        if amount <= 0:
+            amount = 1
+        beast = beast_lookup.get(component_id, {})
+        rarity = beast.get("rarity")
+        name_candidates = [
+            beast.get("monster"),
+            beast.get("genus"),
+            beast.get("family"),
+            beast.get("beast_group"),
+            component_id,
+        ]
+        display_name = next((candidate for candidate in name_candidates if candidate), component_id) or component_id
+        if rarity and rarity.lower() not in display_name.lower():
+            display_name = f"{rarity} {display_name}"
+        requirement = {
+            "component_id": component_id,
+            "amount": amount,
+            "display": display_name,
+            "monster": beast.get("monster"),
+            "family": beast.get("family"),
+            "genus": beast.get("genus"),
+            "beast_group": beast.get("beast_group"),
+            "rarity": rarity,
+        }
+        requirement_map[recipe_id].append(requirement)
+
+    game_mode_labels = {1: "standard", 2: "ruthless"}
+    curated: List[dict] = []
+    for recipe in recipes:
+        identifier = clean_text(recipe.get("identifier"))
+        if not identifier:
+            continue
+        header = clean_text(recipe.get("header"))
+        subheader = clean_optional(recipe.get("subheader"))
+        notes = clean_optional(recipe.get("notes"))
+        mode_raw = recipe.get("game_mode")
+        try:
+            mode_code = int(mode_raw)
+        except (TypeError, ValueError):
+            mode_code = 1
+        game_mode = game_mode_labels.get(mode_code, "standard")
+        display_parts = [part for part in [header, subheader] if part]
+        display = " – ".join(display_parts) if display_parts else header or identifier
+        requirements = [dict(req) for req in requirement_map.get(identifier, [])]
+
+        keyword_values = {identifier.lower(), game_mode}
+        if header:
+            keyword_values.add(header.lower())
+        if subheader:
+            keyword_values.add(subheader.lower())
+        if notes:
+            keyword_values.add(notes.lower())
+        if display:
+            keyword_values.add(display.lower())
+        for requirement in requirements:
+            for key in ("display", "monster", "family", "genus", "beast_group", "component_id", "rarity"):
+                value = requirement.get(key)
+                if value:
+                    keyword_values.add(str(value).lower())
+
+        curated.append(
+            {
+                "identifier": identifier,
+                "header": header,
+                "subheader": subheader,
+                "notes": notes,
+                "game_mode": game_mode,
+                "display": display,
+                "keywords": sorted(value for value in keyword_values if value),
+                "requirements": requirements,
+            }
+        )
+
+    curated.sort(key=lambda entry: (0 if entry["game_mode"] == "standard" else 1, entry["display"]))
+    write_json("bestiary_recipes.json", curated)
 
 
 def sync_bench_data(translator: StatTranslator) -> None:
@@ -421,7 +604,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "bestiary", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,10 +615,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "bestiary", "essences", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
+    if "bestiary" in sections:
+        LOGGER.info("Syncing Beastcraft recipes...")
+        sync_bestiary_data()
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)

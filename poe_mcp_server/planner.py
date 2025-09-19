@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bestiary, bosses, essences, harvest
 from .models import CraftingStep
 
 
@@ -74,6 +74,31 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for craft in harvest_hits[:3]
             ]
             section = _format_section("Harvest Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        beastcraft_hits = bestiary.find(base_text)
+        if beastcraft_hits:
+            metadata["beastcraft_recipes"] = [asdict(recipe) for recipe in beastcraft_hits]
+            lines = []
+            for recipe in beastcraft_hits[:3]:
+                requirement_texts = [
+                    (f"{req.amount}× {req.display}" if req.amount > 1 else req.display)
+                    for req in recipe.requirements
+                    if req.display
+                ]
+                requirements_display = ", ".join(requirement_texts) if requirement_texts else "Unknown beasts"
+                title_parts = [recipe.header]
+                if recipe.subheader:
+                    title_parts.append(recipe.subheader)
+                title = " – ".join(part for part in title_parts if part)
+                if recipe.game_mode != "standard":
+                    title += f" [{recipe.game_mode.title()}]"
+                line = f"- {title} – Requires: {requirements_display}"
+                if recipe.notes:
+                    line += f" – Notes: {recipe.notes}"
+                lines.append(line)
+            section = _format_section("Beastcraft Options:", lines)
             if section:
                 instruction_parts.append(section)
 
