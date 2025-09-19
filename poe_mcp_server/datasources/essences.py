@@ -29,6 +29,8 @@ class _EssenceIndex:
 
     @staticmethod
     def _normalise(text: str) -> str:
+        if not isinstance(text, str):
+            text = str(text)
         cleaned = re.sub(r"[^a-z0-9]+", " ", text.lower())
         return " ".join(cleaned.split())
 
