@@ -1,0 +1,92 @@
+[
+  {
+    "aliases": [
+      "Sacrificial Chamber",
+      "SacrificeRoomI",
+      "Table of Sacrifice"
+    ],
+    "effect": "Sacrifice a unique item for another random unique item.",
+    "item_classes": [
+      "Unique Item"
+    ],
+    "notes": [],
+    "room": "Sacrificial Chamber",
+    "room_id": "SacrificeRoomI",
+    "tier": 1
+  },
+  {
+    "aliases": [
+      "Hall of Offerings",
+      "SacrificeRoomII",
+      "Table of Sacrifice"
+    ],
+    "effect": "Sacrifice a unique item for another random unique of the same item class.",
+    "item_classes": [
+      "Unique Item (same class)"
+    ],
+    "notes": [
+      "Resulting item matches the sacrificed item's class (belt to belt, quiver to quiver, etc.)."
+    ],
+    "room": "Hall of Offerings",
+    "room_id": "SacrificeRoomII",
+    "tier": 2
+  },
+  {
+    "aliases": [
+      "Apex of Ascension",
+      "SacrificeRoomIII",
+      "Altar of Sacrifice"
+    ],
+    "effect": "Sacrifice a unique item for another random unique of the same item class or upgrade temple-exclusive uniques when paired with the correct Vial.",
+    "item_classes": [
+      "Unique Item (same class)",
+      "Temple-exclusive unique + matching Vial"
+    ],
+    "notes": [
+      "Combine temple-exclusive uniques such as Sacrificial Garb with their matching Vial to obtain the upgraded version."
+    ],
+    "room": "Apex of Ascension",
+    "room_id": "SacrificeRoomIII",
+    "tier": 3
+  },
+  {
+    "aliases": [
+      "Doryani's Institute",
+      "GemRoomIII",
+      "Lapidary Lens"
+    ],
+    "effect": "Use the Lapidary Lens to corrupt a skill or support gem twice, combining two Vaal Orb outcomes.",
+    "item_classes": [
+      "Skill Gem",
+      "Support Gem"
+    ],
+    "notes": [
+      "Can grant +1 level, up to 23% quality, convert to a Vaal version, or leave the gem unchanged."
+    ],
+    "room": "Doryani's Institute",
+    "room_id": "GemRoomIII",
+    "tier": 3
+  },
+  {
+    "aliases": [
+      "Locus of Corruption",
+      "CorruptionRoomIII",
+      "Altar of Corruption",
+      "Double Corrupt"
+    ],
+    "effect": "Corrupt a non-corrupted item with one of four powerful or destructive outcomes.",
+    "item_classes": [
+      "Weapon",
+      "Armour",
+      "Jewellery",
+      "Quiver",
+      "Jewel"
+    ],
+    "notes": [
+      "Possible outcomes: gain two corrupted implicits, turn all sockets white, reroll into a random influenced rare, or destroy the item."
+    ],
+    "room": "Locus of Corruption",
+    "room_id": "CorruptionRoomIII",
+    "tier": 3
+  }
+]

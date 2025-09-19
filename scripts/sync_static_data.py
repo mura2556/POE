@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
@@ -417,11 +418,135 @@ def sync_harvest_data(translator: StatTranslator) -> None:
     write_json("harvest_crafts.json", curated)
 
 
+INCURSION_CRAFT_CONFIG: dict[str, dict] = {
+    "SacrificeRoomI": {
+        "aliases": ["Sacrificial Chamber", "Table of Sacrifice"],
+        "effect": "Sacrifice a unique item for another random unique item.",
+        "item_classes": ["Unique Item"],
+    },
+    "SacrificeRoomII": {
+        "aliases": ["Hall of Offerings", "Table of Sacrifice"],
+        "effect": "Sacrifice a unique item for another random unique of the same item class.",
+        "item_classes": ["Unique Item (same class)"],
+        "notes": ["Resulting item matches the sacrificed item's class (belt to belt, quiver to quiver, etc.)."],
+    },
+    "SacrificeRoomIII": {
+        "aliases": ["Apex of Ascension", "Altar of Sacrifice"],
+        "effect": (
+            "Sacrifice a unique item for another random unique of the same item class or upgrade temple-exclusive uniques when paired with the correct Vial."
+        ),
+        "item_classes": ["Unique Item (same class)", "Temple-exclusive unique + matching Vial"],
+        "notes": [
+            "Combine temple-exclusive uniques such as Sacrificial Garb with their matching Vial to obtain the upgraded version.",
+        ],
+    },
+    "CorruptionRoomIII": {
+        "aliases": ["Locus of Corruption", "Altar of Corruption", "Double Corrupt"],
+        "effect": "Corrupt a non-corrupted item with one of four powerful or destructive outcomes.",
+        "item_classes": ["Weapon", "Armour", "Jewellery", "Quiver", "Jewel"],
+        "notes": [
+            "Possible outcomes: gain two corrupted implicits, turn all sockets white, reroll into a random influenced rare, or destroy the item.",
+        ],
+    },
+    "GemRoomIII": {
+        "aliases": ["Doryani's Institute", "Lapidary Lens"],
+        "effect": "Use the Lapidary Lens to corrupt a skill or support gem twice, combining two Vaal Orb outcomes.",
+        "item_classes": ["Skill Gem", "Support Gem"],
+        "notes": [
+            "Can grant +1 level, up to 23% quality, convert to a Vaal version, or leave the gem unchanged.",
+        ],
+    },
+}
+
+
+def _clean_incursion_text(raw: str | None) -> List[str]:
+    if not raw:
+        return []
+    text = re.sub(r"<br\s*/?>", "\n", raw)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    lines = [line.strip() for line in text.splitlines()]
+    return [line for line in lines if line]
+
+
+def _dedupe_preserve_order(values: Iterable[str]) -> List[str]:
+    seen: set[str] = set()
+    ordered: List[str] = []
+    for value in values:
+        if not value:
+            continue
+        key = value.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        ordered.append(value)
+    return ordered
+
+
+def sync_incursion_data() -> None:
+    params = {
+        "action": "cargoquery",
+        "format": "json",
+        "tables": "incursion_rooms",
+        "fields": "incursion_rooms.id=Id,incursion_rooms.name=Name,incursion_rooms.description=Description,incursion_rooms.tier=Tier",
+        "where": "incursion_rooms.tier>0",
+        "limit": 500,
+    }
+    rows: List[dict] = []
+    offset = 0
+    while True:
+        params["offset"] = offset
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        payload = response.json()
+        chunk = [entry.get("title", {}) for entry in payload.get("cargoquery", [])]
+        if not chunk:
+            break
+        rows.extend(chunk)
+        if len(chunk) < params["limit"]:
+            break
+        offset += len(chunk)
+
+    curated: List[dict] = []
+    for row in rows:
+        identifier = row.get("Id")
+        if not identifier:
+            continue
+        config = INCURSION_CRAFT_CONFIG.get(identifier)
+        if not config:
+            continue
+        description_lines = _clean_incursion_text(row.get("Description"))
+        base_effect = description_lines[0] if description_lines else ""
+        effect = config.get("effect", base_effect) or base_effect
+        notes = list(config.get("notes", []))
+        item_classes = list(config.get("item_classes", []))
+        aliases = _dedupe_preserve_order([
+            row.get("Name", ""),
+            identifier,
+            *config.get("aliases", []),
+        ])
+
+        curated.append(
+            {
+                "room": row.get("Name", identifier),
+                "room_id": identifier,
+                "tier": int(row.get("Tier", 0) or 0),
+                "effect": effect,
+                "item_classes": item_classes,
+                "notes": notes,
+                "aliases": aliases,
+            }
+        )
+
+    curated.sort(key=lambda entry: (entry.get("tier", 0), entry.get("room", "")))
+    write_json("incursion_crafts.json", curated)
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "essences", "harvest", "incursion"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +557,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "essences", "harvest", "incursion"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
@@ -442,6 +567,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
+    if "incursion" in sections:
+        LOGGER.info("Syncing Incursion temple crafts...")
+        sync_incursion_data()
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()

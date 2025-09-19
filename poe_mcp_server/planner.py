@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bosses, essences, harvest, incursion
 from .models import CraftingStep
 
 
@@ -85,6 +85,21 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for essence in essence_hits[:3]
             ]
             section = _format_section("Essence Notes:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        incursion_hits = incursion.find(base_text)
+        if incursion_hits:
+            metadata["incursion_crafts"] = [asdict(craft) for craft in incursion_hits]
+            lines = []
+            for craft in incursion_hits[:3]:
+                parts = [f"- {craft.room} (Tier {craft.tier}) – {craft.effect}"]
+                if craft.item_classes:
+                    parts.append(f"[{', '.join(craft.item_classes)}]")
+                if craft.notes:
+                    parts.append(craft.notes[0])
+                lines.append(" ".join(parts))
+            section = _format_section("Incursion Temple:", lines)
             if section:
                 instruction_parts.append(section)
 
