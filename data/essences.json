@@ -8,10 +8,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 32,
     "tier": "Remnant of Corruption",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 0
-    }
+    "type": "Remnant of Corruption – Tier 0"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger1",
@@ -27,10 +24,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger2",
@@ -46,10 +40,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger3",
@@ -65,10 +56,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger4",
@@ -84,10 +72,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger5",
@@ -103,10 +88,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnger6",
@@ -122,10 +104,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Anger – Tier 2 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnguish1",
@@ -144,10 +123,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Anguish – Tier 4 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnguish2",
@@ -166,10 +142,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Anguish – Tier 4 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnguish3",
@@ -188,10 +161,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Anguish – Tier 4 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceAnguish4",
@@ -210,10 +180,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Anguish – Tier 4 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt1",
@@ -229,10 +196,7 @@
     "spawn_level_max": 47,
     "spawn_level_min": 1,
     "tier": "Whispering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Whispering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt2",
@@ -248,10 +212,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt3",
@@ -268,10 +229,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt4",
@@ -289,10 +247,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt5",
@@ -310,10 +265,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt6",
@@ -331,10 +283,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceContempt7",
@@ -352,10 +301,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Contempt – Tier 1 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDelirium1",
@@ -377,10 +323,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Essence of Delirium",
-    "type": {
-      "is_corruption_only": true,
-      "tier": 6
-    }
+    "type": "Essence of Delirium – Tier 6 – Corruption-only"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDoubt1",
@@ -397,10 +340,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Doubt – Tier 3 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDoubt2",
@@ -419,10 +359,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Doubt – Tier 3 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDoubt3",
@@ -442,10 +379,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Doubt – Tier 3 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDoubt4",
@@ -465,10 +399,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Doubt – Tier 3 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDoubt5",
@@ -488,10 +419,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Doubt – Tier 3 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDread1",
@@ -514,10 +442,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Dread – Tier 5 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDread2",
@@ -540,10 +465,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Dread – Tier 5 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceDread3",
@@ -566,10 +488,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Dread – Tier 5 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceEnvy1",
@@ -586,10 +505,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Envy – Tier 5 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceEnvy2",
@@ -606,10 +522,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Envy – Tier 5 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceEnvy3",
@@ -626,10 +539,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Envy – Tier 5 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear1",
@@ -647,10 +557,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear2",
@@ -668,10 +575,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear3",
@@ -689,10 +593,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear4",
@@ -710,10 +611,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear5",
@@ -731,10 +629,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceFear6",
@@ -752,10 +647,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Fear – Tier 2 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed1",
@@ -771,10 +663,7 @@
     "spawn_level_max": 47,
     "spawn_level_min": 1,
     "tier": "Whispering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Whispering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed2",
@@ -790,10 +679,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed3",
@@ -809,10 +695,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed4",
@@ -829,10 +712,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed5",
@@ -850,10 +730,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed6",
@@ -872,10 +749,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceGreed7",
@@ -894,10 +768,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Greed – Tier 1 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred1",
@@ -913,10 +784,7 @@
     "spawn_level_max": 47,
     "spawn_level_min": 1,
     "tier": "Whispering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Whispering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred2",
@@ -932,10 +800,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred3",
@@ -951,10 +816,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred4",
@@ -970,10 +832,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred5",
@@ -989,10 +848,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred6",
@@ -1008,10 +864,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHatred7",
@@ -1027,10 +880,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Hatred – Tier 1 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHorror1",
@@ -1053,10 +903,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Essence of Horror",
-    "type": {
-      "is_corruption_only": true,
-      "tier": 6
-    }
+    "type": "Essence of Horror – Tier 6 – Corruption-only"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceHysteria1",
@@ -1079,10 +926,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Essence of Hysteria",
-    "type": {
-      "is_corruption_only": true,
-      "tier": 6
-    }
+    "type": "Essence of Hysteria – Tier 6 – Corruption-only"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceInsanity1",
@@ -1104,10 +948,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Essence of Insanity",
-    "type": {
-      "is_corruption_only": true,
-      "tier": 6
-    }
+    "type": "Essence of Insanity – Tier 6 – Corruption-only"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceLoathing1",
@@ -1126,10 +967,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Loathing – Tier 4 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceLoathing2",
@@ -1148,10 +986,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Loathing – Tier 4 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceLoathing3",
@@ -1170,10 +1005,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Loathing – Tier 4 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceLoathing4",
@@ -1192,10 +1024,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Loathing – Tier 4 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceMisery1",
@@ -1213,10 +1042,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Misery – Tier 5 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceMisery2",
@@ -1234,10 +1060,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Misery – Tier 5 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceMisery3",
@@ -1255,10 +1078,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Misery – Tier 5 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceRage1",
@@ -1273,10 +1093,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Rage – Tier 3 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceRage2",
@@ -1291,10 +1108,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Rage – Tier 3 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceRage3",
@@ -1309,10 +1123,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Rage – Tier 3 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceRage4",
@@ -1327,10 +1138,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Rage – Tier 3 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceRage5",
@@ -1345,10 +1153,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Rage – Tier 3 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceScorn1",
@@ -1366,10 +1171,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Scorn – Tier 5 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceScorn2",
@@ -1387,10 +1189,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Scorn – Tier 5 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceScorn3",
@@ -1408,10 +1207,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 5
-    }
+    "type": "Scorn – Tier 5 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow1",
@@ -1426,10 +1222,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow2",
@@ -1444,10 +1237,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow3",
@@ -1462,10 +1252,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow4",
@@ -1480,10 +1267,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow5",
@@ -1498,10 +1282,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSorrow6",
@@ -1516,10 +1297,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Sorrow – Tier 2 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSpite1",
@@ -1534,10 +1312,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Spite – Tier 4 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSpite2",
@@ -1552,10 +1327,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Spite – Tier 4 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSpite3",
@@ -1570,10 +1342,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Spite – Tier 4 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSpite4",
@@ -1588,10 +1357,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Spite – Tier 4 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSuffering1",
@@ -1611,10 +1377,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Suffering – Tier 3 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSuffering2",
@@ -1634,10 +1397,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Suffering – Tier 3 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSuffering3",
@@ -1657,10 +1417,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Suffering – Tier 3 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSuffering4",
@@ -1680,10 +1437,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Suffering – Tier 3 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceSuffering5",
@@ -1703,10 +1457,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Suffering – Tier 3 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment1",
@@ -1725,10 +1476,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment2",
@@ -1747,10 +1495,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment3",
@@ -1769,10 +1514,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment4",
@@ -1791,10 +1533,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment5",
@@ -1813,10 +1552,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceTorment6",
@@ -1835,10 +1571,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 2
-    }
+    "type": "Torment – Tier 2 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe1",
@@ -1856,10 +1589,7 @@
     "spawn_level_max": 47,
     "spawn_level_min": 1,
     "tier": "Whispering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Whispering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe2",
@@ -1877,10 +1607,7 @@
     "spawn_level_max": 67,
     "spawn_level_min": 12,
     "tier": "Muttering",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Muttering)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe3",
@@ -1898,10 +1625,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe4",
@@ -1921,10 +1645,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe5",
@@ -1945,10 +1666,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe6",
@@ -1970,10 +1688,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWoe7",
@@ -1995,10 +1710,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 1
-    }
+    "type": "Woe – Tier 1 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWrath1",
@@ -2014,10 +1726,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 30,
     "tier": "Weeping",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Wrath – Tier 3 (Weeping)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWrath2",
@@ -2033,10 +1742,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Wrath – Tier 3 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWrath3",
@@ -2052,10 +1758,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Wrath – Tier 3 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWrath4",
@@ -2071,10 +1774,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Wrath – Tier 3 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceWrath5",
@@ -2090,10 +1790,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 3
-    }
+    "type": "Wrath – Tier 3 (Deafening)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceZeal1",
@@ -2115,10 +1812,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 48,
     "tier": "Wailing",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Zeal – Tier 4 (Wailing)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceZeal2",
@@ -2140,10 +1834,7 @@
     "spawn_level_max": 100,
     "spawn_level_min": 68,
     "tier": "Screaming",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Zeal – Tier 4 (Screaming)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceZeal3",
@@ -2166,10 +1857,7 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Shrieking",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Zeal – Tier 4 (Shrieking)"
   },
   {
     "identifier": "Metadata/Items/Currency/CurrencyEssenceZeal4",
@@ -2191,9 +1879,6 @@
     "spawn_level_max": 0,
     "spawn_level_min": 0,
     "tier": "Deafening",
-    "type": {
-      "is_corruption_only": false,
-      "tier": 4
-    }
+    "type": "Zeal – Tier 4 (Deafening)"
   }
 ]

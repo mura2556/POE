@@ -196,6 +196,42 @@ def collect_keywords(*values: object) -> List[str]:
     return sorted(terms)
 
 
+def describe_essence_type(name: str, type_info: dict | None) -> str:
+    """Convert the RePoE essence type structure into a readable string."""
+
+    type_info = type_info or {}
+    name = name or ""
+    family = ""
+    tier_label = ""
+    if " Essence of " in name:
+        tier_label, family = name.split(" Essence of ", 1)
+    else:
+        family = name
+    family = family.strip()
+    tier_label = tier_label.strip()
+
+    tier_value = type_info.get("tier")
+    tier_text = ""
+    if isinstance(tier_value, (int, float)):
+        if isinstance(tier_value, float) and tier_value.is_integer():
+            tier_value = int(tier_value)
+        tier_text = f"Tier {tier_value}"
+        if tier_label and tier_label.lower() != family.lower():
+            tier_text += f" ({tier_label})"
+    elif tier_label:
+        tier_text = tier_label
+
+    parts: List[str] = []
+    if family:
+        parts.append(family)
+    if tier_text:
+        parts.append(tier_text)
+    if type_info.get("is_corruption_only"):
+        parts.append("Corruption-only")
+
+    return " – ".join(parts) or "Unknown essence type"
+
+
 def humanise_descriptor(text: str) -> str:
     if not text:
         return ""
@@ -326,13 +362,14 @@ def sync_essence_data(translator: StatTranslator) -> None:
                 mod_texts.append(mod_id)
         mod_texts = dedupe_strings(mod_texts)
         tier = data.get("name", "").split(" Essence ")[0]
+        type_text = describe_essence_type(data.get("name", identifier), data.get("type"))
         curated.append(
             {
                 "identifier": identifier,
                 "name": data.get("name", identifier),
                 "tier": tier,
                 "level": data.get("level", 0),
-                "type": data.get("type", ""),
+                "type": type_text,
                 "mods": mod_texts,
                 "item_level_restriction": data.get("item_level_restriction"),
                 "spawn_level_min": data.get("spawn_level_min"),
