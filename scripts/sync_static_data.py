@@ -260,6 +260,178 @@ def clean_wiki_markup(text: str) -> str:
     return text.strip()
 
 
+def _split_template(content: str) -> List[str]:
+    parts: List[str] = []
+    current: List[str] = []
+    depth = 0
+    for char in content:
+        if char == "|" and depth == 0:
+            parts.append("".join(current))
+            current = []
+            continue
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth = max(depth - 1, 0)
+        current.append(char)
+    if current:
+        parts.append("".join(current))
+    return parts
+
+
+def _render_template(content: str) -> str:
+    parts = _split_template(content)
+    if not parts:
+        return ""
+    candidates: List[str] = []
+    for param in parts[1:]:
+        segment = param.strip()
+        if not segment:
+            continue
+        if "=" in segment:
+            key, _, value = segment.partition("=")
+            if key.strip().lower() in {"display", "text", "title", "name"} and value.strip():
+                candidates.append(value.strip())
+            continue
+        candidates.append(segment)
+    if candidates:
+        return candidates[-1]
+    return ""
+
+
+def _strip_templates(text: str) -> str:
+    result: List[str] = []
+    index = 0
+    length = len(text)
+    while index < length:
+        if text.startswith("{{", index):
+            depth = 1
+            cursor = index + 2
+            while cursor < length and depth:
+                if text.startswith("{{", cursor):
+                    depth += 1
+                    cursor += 2
+                    continue
+                if text.startswith("}}", cursor):
+                    depth -= 1
+                    if depth == 0:
+                        content = text[index + 2 : cursor]
+                        rendered = _render_template(content)
+                        if rendered:
+                            result.append(rendered)
+                        cursor += 2
+                        break
+                    cursor += 2
+                    continue
+                cursor += 1
+            index = cursor
+        else:
+            result.append(text[index])
+            index += 1
+    return "".join(result)
+
+
+def _normalise_wiki_line(line: str) -> str:
+    if line.lower().startswith("[[file:"):
+        return ""
+    line = _strip_templates(line)
+    def _replace_link(match: re.Match[str]) -> str:
+        body = match.group(1)
+        parts = [segment for segment in body.split("|") if segment]
+        if not parts:
+            return ""
+        text = parts[-1]
+        if text.lower().startswith("file:"):
+            return ""
+        return text
+
+    line = re.sub(r"\[\[([^\]]+)\]\]", _replace_link, line)
+    line = re.sub(r"\[(https?://[^\s]+)\s([^\]]+)\]", r"\2", line)
+    line = re.sub(r"<ref[^>]*>.*?</ref>", "", line, flags=re.DOTALL)
+    line = re.sub(r"<[^>]+>", "", line)
+    line = line.replace("&nbsp;", " ")
+    line = line.replace("–", "-").replace("—", "-")
+    line = line.replace("“", '"').replace("”", '"').replace("’", "'")
+    line = line.replace("\\'", "'")
+    line = re.sub(r"''+", "", line)
+    line = re.sub(r"\s+", " ", line)
+    return line.strip()
+
+
+def _extract_wiki_chunks(wikitext: str) -> List[tuple[str, List[str]]]:
+    chunks: List[tuple[str, List[str]]] = []
+    buffer: List[str] = []
+    current_kind: str | None = None
+    for raw_line in wikitext.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            if buffer:
+                chunks.append((current_kind or "paragraph", buffer))
+                buffer = []
+                current_kind = None
+            continue
+        if stripped.startswith("="):
+            if buffer:
+                chunks.append((current_kind or "paragraph", buffer))
+                buffer = []
+                current_kind = None
+            continue
+        kind = "list" if stripped[0] in "*#:;" else "paragraph"
+        cleaned = _normalise_wiki_line(stripped)
+        if not cleaned:
+            continue
+        if kind == "list":
+            cleaned = cleaned.lstrip("-*#:; ")
+        if not cleaned:
+            continue
+        if current_kind != kind and buffer:
+            chunks.append((current_kind or "paragraph", buffer))
+            buffer = []
+        buffer.append(cleaned)
+        current_kind = kind
+    if buffer:
+        chunks.append((current_kind or "paragraph", buffer))
+    return chunks
+
+
+def _summarise_text(text: str) -> str:
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    for sentence in sentences:
+        cleaned = sentence.strip()
+        if cleaned:
+            return cleaned
+    return text.strip()
+
+
+def _chunk_to_entry(category: str, kind: str, lines: List[str], index: int) -> dict | None:
+    if not lines:
+        return None
+    if kind == "list":
+        meaningful = [line for line in lines if line]
+        if not meaningful:
+            return None
+        if len(meaningful) == 1 and meaningful[0].lower().startswith("the following is a list"):
+            return None
+        headline = re.split(r"[:–-]", meaningful[0])[0].strip()
+        if len(headline) < 3:
+            headline = f"Highlights {index + 1}"
+        name = f"{category} – {headline.title()}"
+        summary = f"Highlights: {', '.join(meaningful[:3])}"
+        details = "\n".join(f"- {item}" for item in meaningful)
+    else:
+        text = " ".join(lines).strip()
+        if len(text) < 40:
+            return None
+        summary = _summarise_text(text)
+        words = re.findall(r"[A-Za-z0-9']+", summary)
+        if words:
+            name = " ".join(words[:6]).title()
+        else:
+            name = f"{category} Insight {index + 1}"
+        details = text
+    return {"category": category, "name": name, "summary": summary, "details": details}
+
+
 def fetch_map_rows() -> List[dict]:
     params = {
         "title": "Special:CargoExport",
@@ -285,8 +457,10 @@ def fetch_map_rows() -> List[dict]:
     return rows
 
 
-def fetch_wikitext(title: str) -> str | None:
+def fetch_wikitext(title: str, section: int | None = None) -> str | None:
     params = {"action": "parse", "page": title, "prop": "wikitext", "format": "json"}
+    if section is not None:
+        params["section"] = section
     response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
     if response.status_code != 200:
         return None
@@ -417,11 +591,47 @@ def sync_harvest_data(translator: StatTranslator) -> None:
     write_json("harvest_crafts.json", curated)
 
 
+def sync_item_fundamentals() -> None:
+    sources = [
+        {"category": "Implicit Mods", "page": "Modifier", "sections": [8]},
+        {"category": "Explicit Mods", "page": "Modifier", "sections": [11]},
+        {"category": "Base Items", "page": "Modifier", "sections": [3]},
+        {"category": "Item Rarity", "page": "Rarity", "sections": [3, 4, 5, 6]},
+        {"category": "Influence Mechanics", "page": "Influenced item", "sections": [0, 1]},
+    ]
+
+    curated: List[dict] = []
+    category_counts: dict[str, int] = {}
+    seen: set[tuple[str, str]] = set()
+
+    for source in sources:
+        category = source["category"]
+        count = category_counts.get(category, 0)
+        for section in source.get("sections", [None]):
+            wikitext = fetch_wikitext(source["page"], section)
+            if not wikitext:
+                LOGGER.warning("Failed to load wikitext for %s section %s", source["page"], section)
+                continue
+            for kind, lines in _extract_wiki_chunks(wikitext):
+                entry = _chunk_to_entry(category, kind, lines, count)
+                if not entry:
+                    continue
+                key = (entry["category"], entry["details"])
+                if key in seen:
+                    continue
+                seen.add(key)
+                curated.append(entry)
+                count += 1
+        category_counts[category] = count
+
+    write_json("item_fundamentals.json", curated)
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "essences", "harvest", "item_fundamentals"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +642,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "essences", "harvest", "item_fundamentals"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
@@ -442,6 +652,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
+    if "item_fundamentals" in sections:
+        LOGGER.info("Syncing item fundamentals...")
+        sync_item_fundamentals()
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()
