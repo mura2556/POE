@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import re
-from typing import Iterable, List, Sequence
+from typing import List, Sequence
 
 from .utils import load_json
 
@@ -15,7 +15,7 @@ class Essence:
     name: str
     tier: str
     level: int
-    type: str
+    type: dict[str, object] | str
     mods: Sequence[str]
     item_level_restriction: int | None
     spawn_level_min: int | None
@@ -36,8 +36,12 @@ class _EssenceIndex:
         needle = self._normalise(query)
         matches: List[Essence] = []
         for essence in self._entries:
-            haystack: Iterable[str] = [essence.name, essence.type, *essence.mods]
-            if any(needle in self._normalise(candidate) for candidate in haystack):
+            candidates: List[str] = [essence.name, *essence.mods]
+            if isinstance(essence.type, str):
+                candidates.append(essence.type)
+            elif isinstance(essence.type, dict):
+                candidates.extend(str(value) for value in essence.type.values())
+            if any(needle in self._normalise(candidate) for candidate in candidates):
                 matches.append(essence)
         return matches
 
