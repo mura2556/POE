@@ -860,20 +860,85 @@ def sync_crafting_methods(translator: StatTranslator) -> None:
 def sync_harvest_data(translator: StatTranslator) -> None:
     mods_url = f"{REPOE_BASE}/mods.min.json"
     mods = fetch_json(mods_url)
+    horticraft_rows = fetch_cargo_rows(
+        "harvest_crafting_options",
+        "id,effect,cost_wild,cost_vivid,cost_primal,cost_sacred",
+    )
+    horticraft_data = {row.get("id"): row for row in horticraft_rows if row.get("id")}
+
+    def _format_cost(row: dict) -> str | None:
+        parts: List[str] = []
+        for colour, key in (
+            ("Wild", "cost wild"),
+            ("Vivid", "cost vivid"),
+            ("Primal", "cost primal"),
+            ("Sacred", "cost sacred"),
+        ):
+            raw_value = row.get(key)
+            if not raw_value:
+                continue
+            try:
+                value = int(float(str(raw_value)))
+            except ValueError:
+                continue
+            if value:
+                parts.append(f"{value:,} {colour} Lifeforce")
+        if not parts:
+            return None
+        return "Cost: " + ", ".join(parts)
+
     curated: List[dict] = []
     for identifier, mod in mods.items():
-        if not identifier.lower().startswith("harvest"):
+        include = identifier.lower().startswith("harvest") or identifier in horticraft_data
+        if not include:
             continue
         description = translator.translate(mod.get("stats", [])) or [identifier]
+        cost_note = None
+        horticraft_row = horticraft_data.pop(identifier, None)
+        title_line = None
+        if horticraft_row:
+            effect = horticraft_row.get("effect")
+            if effect:
+                if not description or description == [identifier]:
+                    description = [effect]
+                elif effect not in description:
+                    description = [effect, *description]
+            cost_note = _format_cost(horticraft_row)
+            title = humanise_descriptor(identifier)
+            if title and title not in description:
+                title_line = title
+        entry = {
+            "identifier": identifier,
+            "description": [
+                *([title_line] if title_line else []),
+                *description,
+                *( [cost_note] if cost_note else []),
+            ],
+            "groups": mod.get("groups", []),
+            "tags": sorted({*mod.get("adds_tags", []), *mod.get("implicit_tags", [])}),
+            "item_classes": mod.get("item_classes", []),
+        }
+        curated.append(entry)
+
+    for identifier, row in horticraft_data.items():
+        effect = row.get("effect") or identifier
+        cost_note = _format_cost(row)
+        title = humanise_descriptor(identifier)
         curated.append(
             {
                 "identifier": identifier,
-                "description": description,
-                "groups": mod.get("groups", []),
-                "tags": list({*mod.get("adds_tags", []), *mod.get("implicit_tags", [])}),
-                "item_classes": mod.get("item_classes", []),
+                "description": [
+                    *([title] if title else []),
+                    effect,
+                    *([cost_note] if cost_note else []),
+                ],
+                "groups": [],
+                "tags": [],
+                "item_classes": [],
             }
         )
+
+    curated.sort(key=lambda item: item["identifier"].lower())
     write_json("harvest_crafts.json", curated)
 
 
