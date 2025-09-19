@@ -9,6 +9,7 @@ import logging
 import re
 import sys
 from dataclasses import dataclass
+from html import unescape
 from pathlib import Path
 from typing import Iterable, List, Sequence
 
@@ -21,6 +22,8 @@ POEWIKI_API = "https://www.poewiki.net/w/api.php"
 REPOE_BASE = "https://raw.githubusercontent.com/brather1ng/RePoE/master/RePoE/data"
 
 LOGGER = logging.getLogger("sync_static_data")
+
+HTML_TAG_RE = re.compile(r"<[^>]+>")
 
 
 @dataclass
@@ -124,6 +127,41 @@ def fetch_json(url: str) -> object:
     if response.headers.get("Content-Type", "").startswith("application/json"):
         return response.json()
     return json.loads(response.text)
+
+
+def cargo_query(table: str, fields: Sequence[str] | str, where: str | None = None) -> List[dict]:
+    if isinstance(fields, str):
+        fields_param = fields
+    else:
+        fields_param = ",".join(fields)
+    limit = 500
+    offset = 0
+    rows: List[dict] = []
+    while True:
+        params = {
+            "action": "cargoquery",
+            "format": "json",
+            "tables": table,
+            "fields": fields_param,
+            "limit": limit,
+            "offset": offset,
+        }
+        if where:
+            params["where"] = where
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        payload = response.json()
+        if "error" in payload:
+            raise RuntimeError(f"Cargo query for {table} failed: {payload['error']}")
+        chunk = payload.get("cargoquery", [])
+        if not chunk:
+            break
+        for entry in chunk:
+            rows.append(entry.get("title", {}))
+        if len(chunk) < limit:
+            break
+        offset += limit
+    return rows
 
 
 def ensure_data_dir() -> None:
@@ -417,11 +455,113 @@ def sync_harvest_data(translator: StatTranslator) -> None:
     write_json("harvest_crafts.json", curated)
 
 
+def _parse_int(value: object) -> int | None:
+    try:
+        if value is None:
+            return None
+        text = str(value).strip()
+        if not text:
+            return None
+        return int(float(text))
+    except (TypeError, ValueError):
+        return None
+
+
+def _clean_html(value: object) -> str | None:
+    if value is None:
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    cleaned = HTML_TAG_RE.sub("", unescape(text))
+    cleaned = cleaned.strip()
+    return cleaned or None
+
+
+def sync_vendor_data() -> None:
+    recipe_rows = cargo_query(
+        "acquisition_recipes",
+        [
+            "_pageName=page",
+            "recipe_id=recipe_id",
+            "result_amount=result_amount",
+            "description=description",
+            "automatic=automatic",
+        ],
+        where="automatic=0",
+    )
+    recipes: dict[tuple[str, int], dict] = {}
+    for row in recipe_rows:
+        page = (row.get("page") or "").strip()
+        recipe_id = _parse_int(row.get("recipe_id"))
+        if not page or recipe_id is None:
+            continue
+        description = _clean_html(row.get("description"))
+        result_amount = _parse_int(row.get("result_amount"))
+        recipes[(page, recipe_id)] = {
+            "page": page,
+            "recipe_id": recipe_id,
+            "result_amount": result_amount,
+            "description": description,
+            "automatic": False,
+            "parts": [],
+        }
+
+    if not recipes:
+        write_json("vendor_recipes.json", [])
+        return
+
+    part_rows = cargo_query(
+        "acquisition_recipe_parts",
+        [
+            "_pageName=page",
+            "recipe_id=recipe_id",
+            "part_id=part_id",
+            "item_name=item_name",
+            "item_page=item_page",
+            "item_id=item_id",
+            "amount=amount",
+            "notes=notes",
+        ],
+    )
+    for row in part_rows:
+        page = (row.get("page") or "").strip()
+        recipe_id = _parse_int(row.get("recipe_id"))
+        if not page or recipe_id is None:
+            continue
+        recipe = recipes.get((page, recipe_id))
+        if not recipe:
+            continue
+        part = {
+            "part_id": _parse_int(row.get("part_id")),
+            "item_name": (row.get("item_name") or "").strip(),
+            "item_page": (row.get("item_page") or "").strip() or None,
+            "item_id": (row.get("item_id") or "").strip() or None,
+            "amount": _parse_int(row.get("amount")),
+            "notes": _clean_html(row.get("notes")),
+        }
+        if not part["item_name"] and not part["item_page"] and not part["item_id"]:
+            continue
+        recipe["parts"].append(part)
+
+    curated: List[dict] = []
+    for recipe in recipes.values():
+        parts = recipe["parts"]
+        if not parts:
+            continue
+        parts.sort(key=lambda part: ((part["part_id"] or 0), part["item_name"]))
+        recipe["parts"] = parts
+        curated.append(recipe)
+
+    curated.sort(key=lambda entry: (entry["page"].lower(), entry["recipe_id"]))
+    write_json("vendor_recipes.json", curated)
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "essences", "harvest", "vendor"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +572,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "essences", "harvest", "vendor"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
@@ -442,6 +582,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
+    if "vendor" in sections:
+        LOGGER.info("Syncing vendor and combination recipes...")
+        sync_vendor_data()
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()

@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bosses, essences, harvest, vendor_recipes
 from .models import CraftingStep
 
 
@@ -85,6 +85,29 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for essence in essence_hits[:3]
             ]
             section = _format_section("Essence Notes:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        vendor_hits = vendor_recipes.find(base_text)
+        if vendor_hits:
+            metadata["vendor_recipes"] = [asdict(recipe) for recipe in vendor_hits]
+            lines = []
+            for recipe in vendor_hits[:3]:
+                components = []
+                for part in recipe.parts:
+                    name = part.item_name or part.item_page or part.item_id or "Unknown"
+                    amount = part.amount or 1
+                    text = f"{amount}x {name}"
+                    if part.notes:
+                        text += f" ({part.notes})"
+                    components.append(text)
+                output_amount = recipe.result_amount or 1
+                output_text = f"{output_amount}x {recipe.page}"
+                line = f"- {', '.join(components)} → {output_text}"
+                if recipe.description:
+                    line += f" – {recipe.description}"
+                lines.append(line)
+            section = _format_section("Vendor & Combination Recipes:", lines)
             if section:
                 instruction_parts.append(section)
 
