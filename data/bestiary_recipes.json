@@ -1,0 +1,2160 @@
+[
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask1",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of Convection\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask2",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of Damping\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask4",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of Earthing\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask3",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of Sealing\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask6",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of Warding\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Life or Mana Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask5",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Antitoxin\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Utility Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask9",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Conger\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Utility Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask10",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Deer\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Utility Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask7",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Lizard\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Utility Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask8",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Skunk\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Add a Mod to a Utility Flask",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftFlask11",
+    "notes": "Requires Flask to have no existing Suffix",
+    "outcome": "Adds \"of the Urchin\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGemFrog",
+        "name": "Craicic Chimeral"
+      }
+    ],
+    "category": "Apply a Hinekora's Lock",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan5",
+    "notes": null,
+    "outcome": "To a Magic Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGemFrog",
+        "name": "Craicic Chimeral"
+      }
+    ],
+    "category": "Apply a Hinekora's Lock",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftMorrigan5HardMode",
+    "notes": null,
+    "outcome": "To a Magic Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastScorpion",
+        "name": "Fenumal Scorpion"
+      }
+    ],
+    "category": "Convert this Unique Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft33",
+    "notes": null,
+    "outcome": "Into Another Random Unique Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastScorpion",
+        "name": "Fenumal Scorpion"
+      }
+    ],
+    "category": "Convert this Unique Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft33HardMode",
+    "notes": null,
+    "outcome": "Into Another Random Unique Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "name": "Craicic Vassal"
+      }
+    ],
+    "category": "Corrupt a Map",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft32HardMode",
+    "notes": null,
+    "outcome": "To have 30% Quality"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "name": "Craicic Vassal"
+      }
+    ],
+    "category": "Corrupt a Map",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft28",
+    "notes": null,
+    "outcome": "To have 30% base Quality"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "name": "Craicic Vassal"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastScorpion",
+        "name": "Fenumal Scorpion"
+      }
+    ],
+    "category": "Corrupt a Map",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft34HardMode",
+    "notes": null,
+    "outcome": "Twice"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastParasiticSquid",
+        "name": "Craicic Vassal"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastScorpion",
+        "name": "Fenumal Scorpion"
+      }
+    ],
+    "category": "Corrupt a Map",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft48",
+    "notes": null,
+    "outcome": "Twice"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossAvian",
+        "name": "Saqawal, First of the Sky"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft39",
+    "notes": null,
+    "outcome": "Aspect of the Avian skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossTiger",
+        "name": "Farrul, First of the Plains"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft38",
+    "notes": null,
+    "outcome": "Aspect of the Cat skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossCrab",
+        "name": "Craiceann, First of the Deep"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft41",
+    "notes": null,
+    "outcome": "Aspect of the Crab skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossSpider",
+        "name": "Fenumus, First of the Night"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft40",
+    "notes": null,
+    "outcome": "Aspect of the Spider skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossAvian",
+        "name": "Saqawal, First of the Sky"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft40HardMode",
+    "notes": null,
+    "outcome": "Level 20 Aspect of the Avian skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossTiger",
+        "name": "Farrul, First of the Plains"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft39HardMode",
+    "notes": null,
+    "outcome": "Level 20 Aspect of the Cat skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossCrab",
+        "name": "Craiceann, First of the Deep"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft42HardMode",
+    "notes": null,
+    "outcome": "Level 20 Aspect of the Crab skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "SpiritBossSpider",
+        "name": "Fenumus, First of the Night"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft41HardMode",
+    "notes": null,
+    "outcome": "Level 20 Aspect of the Spider skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossAvian",
+        "name": "Saqawal, First of the Sky"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan2",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Avian skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossAvian",
+        "name": "Saqawal, First of the Sky"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftMorrigan2HardMode",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Avian skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossTiger",
+        "name": "Farrul, First of the Plains"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan1",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Cat skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossTiger",
+        "name": "Farrul, First of the Plains"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftMorrigan1HardMode",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Cat skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossCrab",
+        "name": "Craiceann, First of the Deep"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan4",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Crab skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossCrab",
+        "name": "Craiceann, First of the Deep"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftMorrigan4HardMode",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Crab skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossSpider",
+        "name": "Fenumus, First of the Night"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan3",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Spider skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "SpiritBossSpider",
+        "name": "Fenumus, First of the Night"
+      }
+    ],
+    "category": "Craft an Aspect Skill onto an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftMorrigan3HardMode",
+    "notes": null,
+    "outcome": "Level 30 Aspect of the Spider skill"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastIguana",
+        "name": "Saqawine Chimeral"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft26",
+    "notes": null,
+    "outcome": "A Stack of 10 Random Currency"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSpitter",
+        "name": "Craicic Sand Spitter"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastShieldCrab",
+        "name": "Craicic Shield Crab"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft50",
+    "notes": null,
+    "outcome": "A Stack of 2 Orbs of Binding"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHellionIce",
+        "name": "Farric Frost Hellion Alpha"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastBeast",
+        "name": "Farric Gargantuan"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft51",
+    "notes": null,
+    "outcome": "A Stack of 3 Orbs of Horizons"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastShieldCrab",
+        "name": "Craicic Shield Crab"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft2",
+    "notes": null,
+    "outcome": "A Stack of 4 Jeweller's Orbs"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastRhoa",
+        "name": "Saqawine Rhoa"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft1",
+    "notes": null,
+    "outcome": "A Stack of 8 Chromatic Orbs"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSpitter",
+        "name": "Craicic Sand Spitter"
+      }
+    ],
+    "category": "Create Currency Items",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft3",
+    "notes": null,
+    "outcome": "Orb of Fusing"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSirenSpawn",
+        "name": "Craicic Squid"
+      }
+    ],
+    "category": "Create a Rare",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft13",
+    "notes": null,
+    "outcome": "Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastShieldCrab",
+        "name": "Craicic Shield Crab"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft2HardMode",
+    "notes": null,
+    "outcome": "Ashscale Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHellionIce",
+        "name": "Farric Frost Hellion Alpha"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft26HardMode",
+    "notes": null,
+    "outcome": "Avian Twins Talisman (Cold)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "name": "Fenumal Plagued Arachnid"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft24HardMode",
+    "notes": null,
+    "outcome": "Avian Twins Talisman (Fire)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastVulture",
+        "name": "Saqawine Vulture"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft25HardMode",
+    "notes": null,
+    "outcome": "Avian Twins Talisman (Lightning)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastKiweth",
+        "name": "Saqawine Retch"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft11HardMode",
+    "notes": null,
+    "outcome": "Black Maw Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGoatman",
+        "name": "Farric Goatman"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft8HardMode",
+    "notes": null,
+    "outcome": "Bonespire Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastRhoa",
+        "name": "Saqawine Rhoa"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft1HardMode",
+    "notes": null,
+    "outcome": "Breakrib Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHellionFire",
+        "name": "Farric Flame Hellion Alpha"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft5HardMode",
+    "notes": null,
+    "outcome": "Chrysalis Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSirenSpawn",
+        "name": "Craicic Squid"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft13HardMode",
+    "notes": null,
+    "outcome": "Clutching Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastBeast",
+        "name": "Farric Gargantuan"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft9HardMode",
+    "notes": null,
+    "outcome": "Deadhand Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCrab",
+        "name": "Craicic Savage Crab"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft4HardMode",
+    "notes": null,
+    "outcome": "Deep One Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSnake",
+        "name": "Saqawine Blood Viper"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft17HardMode",
+    "notes": null,
+    "outcome": "Fangjaw Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastDevourer",
+        "name": "Fenumal Devourer"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft16HardMode",
+    "notes": null,
+    "outcome": "Hexclaw Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSquid",
+        "name": "Craicic Watcher"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft14HardMode",
+    "notes": null,
+    "outcome": "Horned Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSpitter",
+        "name": "Craicic Sand Spitter"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft3HardMode",
+    "notes": null,
+    "outcome": "Lone Antler Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastBull",
+        "name": "Farric Taurus"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft21HardMode",
+    "notes": null,
+    "outcome": "Longtooth Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastMonkey",
+        "name": "Farric Ape"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft7HardMode",
+    "notes": null,
+    "outcome": "Mandible Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft29HardMode",
+    "notes": null,
+    "outcome": "Monkey Paw Talisman (Endurance)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastWolf",
+        "name": "Farric Wolf Alpha"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft28HardMode",
+    "notes": null,
+    "outcome": "Monkey Paw Talisman (Frenzy)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastLynx",
+        "name": "Farric Lynx Alpha"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft27HardMode",
+    "notes": null,
+    "outcome": "Monkey Paw Talisman (Power)"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSpiker",
+        "name": "Farric Goliath"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft19HardMode",
+    "notes": null,
+    "outcome": "Monkey Twins Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastForestSnake",
+        "name": "Saqawine Cobra"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft15HardMode",
+    "notes": null,
+    "outcome": "Primal Skull Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHound",
+        "name": "Farric Magma Hound"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft22HardMode",
+    "notes": null,
+    "outcome": "Rotfeather Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSpider",
+        "name": "Fenumal Widow"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft12HardMode",
+    "notes": null,
+    "outcome": "Splitnewt Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandLeaper",
+        "name": "Fenumal Scrabbler"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft20HardMode",
+    "notes": null,
+    "outcome": "Three Hands Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPitbull",
+        "name": "Farric Pit Hound"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft23HardMode",
+    "notes": null,
+    "outcome": "Three Rat Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastUrsa",
+        "name": "Farric Ursa"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft10HardMode",
+    "notes": null,
+    "outcome": "Undying Flesh Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "name": "Fenumal Queen"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft18HardMode",
+    "notes": null,
+    "outcome": "Wereclaw Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastChieftain",
+        "name": "Farric Chieftain"
+      }
+    ],
+    "category": "Create a Talisman",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft6HardMode",
+    "notes": null,
+    "outcome": "Writhing Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastChieftain",
+        "name": "Farric Chieftain"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft6",
+    "notes": null,
+    "outcome": "Amulet"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastMonkey",
+        "name": "Farric Ape"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft7",
+    "notes": null,
+    "outcome": "Belt"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastUrsa",
+        "name": "Farric Ursa"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft10",
+    "notes": null,
+    "outcome": "Body Armour"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastKiweth",
+        "name": "Saqawine Retch"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft11",
+    "notes": null,
+    "outcome": "Boots"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSpiker",
+        "name": "Farric Goliath"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft20",
+    "notes": null,
+    "outcome": "Bow"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSquid",
+        "name": "Craicic Watcher"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft14",
+    "notes": null,
+    "outcome": "Claw or Dagger"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGoatman",
+        "name": "Farric Goatman"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft8",
+    "notes": null,
+    "outcome": "Flask"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSpider",
+        "name": "Fenumal Widow"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft12",
+    "notes": null,
+    "outcome": "Gloves"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastBeast",
+        "name": "Farric Gargantuan"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft9",
+    "notes": null,
+    "outcome": "Helmet"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCrab",
+        "name": "Craicic Savage Crab"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft4",
+    "notes": null,
+    "outcome": "Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastForestSnake",
+        "name": "Saqawine Cobra"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft15",
+    "notes": null,
+    "outcome": "Mace or Sceptre"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastBull",
+        "name": "Farric Taurus"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft22",
+    "notes": null,
+    "outcome": "Map"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHellionFire",
+        "name": "Farric Flame Hellion Alpha"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft5",
+    "notes": null,
+    "outcome": "Ring"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastDevourer",
+        "name": "Fenumal Devourer"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft16",
+    "notes": null,
+    "outcome": "Shield or Quiver"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "name": "Fenumal Queen"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft18",
+    "notes": null,
+    "outcome": "Staff"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSnake",
+        "name": "Saqawine Blood Viper"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft17",
+    "notes": null,
+    "outcome": "Sword or Axe"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandLeaper",
+        "name": "Fenumal Scrabbler"
+      }
+    ],
+    "category": "Create a Unique",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft21",
+    "notes": null,
+    "outcome": "Wand"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGemFrog",
+        "name": "Craicic Chimeral"
+      }
+    ],
+    "category": "Create an Imprint",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft27",
+    "notes": null,
+    "outcome": "Of a Magic Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastGemFrog",
+        "name": "Craicic Chimeral"
+      }
+    ],
+    "category": "Create an Imprint",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft31HardMode",
+    "notes": null,
+    "outcome": "Of a Magic Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHound",
+        "name": "Farric Magma Hound"
+      }
+    ],
+    "category": "Create an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft23",
+    "notes": null,
+    "outcome": "23% Quality Corrupted Gem"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastVulture",
+        "name": "Saqawine Vulture"
+      }
+    ],
+    "category": "Create an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft25",
+    "notes": null,
+    "outcome": "Fully-linked Six-socket Rare"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPitbull",
+        "name": "Farric Pit Hound"
+      }
+    ],
+    "category": "Create an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft24",
+    "notes": null,
+    "outcome": "Level 21 Corrupted Gem"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestPlatedScorpionT3",
+        "name": "Vivid Abberarach"
+      }
+    ],
+    "category": "Create an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine6",
+    "notes": null,
+    "outcome": "Shaper Guardian, Elder Guardian or Conqueror Map"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestRhexT3",
+        "name": "Primal Rhex Matriarch"
+      }
+    ],
+    "category": "Create an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine7",
+    "notes": null,
+    "outcome": "Synthesis Unique Map"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask2",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Reused at the end of this Flask's effect\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask3",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when Charges reach full\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask1",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when an adjacent Flask is used\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask13",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you Block\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask6",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you Hit a Rare or Unique Enemy, if not already in effect\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask4",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you Use a Guard Skill\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask5",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you Use a Travel Skill\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask8",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you become Chilled\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask7",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you become Frozen\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask10",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you become Ignited\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask12",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you become Poisoned\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask9",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you become Shocked\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask11",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you start Bleeding\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask14",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you take a Savage Hit\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "AnyRareLevel20Plus",
+        "family": "Any Creature",
+        "min_level": 20,
+        "name": "Any Rare Level 20 Plus",
+        "rarity": "Rare"
+      }
+    ],
+    "category": "Enchant a Utility Flask",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraftHardModeFlask15",
+    "notes": "Replaces any existing Enchantment",
+    "outcome": "Adds \"Used when you use a Life Flask\""
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestGoatmanT3",
+        "name": "Primal Cystcaller"
+      }
+    ],
+    "category": "Gain Atlas Crafts",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine9",
+    "notes": "Colour of Missions based on Level of Red Beast",
+    "outcome": "Gain Five Kirac Missions"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestNessaCrabT3",
+        "name": "Primal Crushclaw"
+      }
+    ],
+    "category": "Gain Atlas Crafts",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine8",
+    "notes": null,
+    "outcome": "Gain a free use of each Map Crafting Option"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSpiker",
+        "name": "Farric Goliath"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft46",
+    "notes": null,
+    "outcome": "Add a Mod to a Crusader Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSquid",
+        "name": "Craicic Watcher"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft45",
+    "notes": null,
+    "outcome": "Add a Mod to a Hunter Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCrab",
+        "name": "Craicic Savage Crab"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastForestSnake",
+        "name": "Saqawine Cobra"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft49",
+    "notes": "Only works on rare maps",
+    "outcome": "Add a Mod to a Rare Map"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCarrionQueen",
+        "name": "Fenumal Queen"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft44",
+    "notes": null,
+    "outcome": "Add a Mod to a Redeemer Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastDevourer",
+        "name": "Fenumal Devourer"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft42",
+    "notes": null,
+    "outcome": "Add a Mod to a Shaper Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandLeaper",
+        "name": "Fenumal Scrabbler"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft47",
+    "notes": null,
+    "outcome": "Add a Mod to a Warlord Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastFrog",
+        "name": "Craicic Maw"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSnake",
+        "name": "Saqawine Blood Viper"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft43",
+    "notes": null,
+    "outcome": "Add a Mod to an Elder Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastWolf",
+        "name": "Farric Wolf Alpha"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft31",
+    "notes": "Only works on rare items",
+    "outcome": "Add a Prefix, Remove a Random Suffix"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastLynx",
+        "name": "Farric Lynx Alpha"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft30",
+    "notes": "Only works on rare items",
+    "outcome": "Add a Suffix, Remove a Random Prefix"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestBeastT3",
+        "name": "Wild Bristle Matron"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine1",
+    "notes": null,
+    "outcome": "Add a crafted Meta-modifier to a non-Unique Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestHellionT3",
+        "name": "Wild Hellion Alpha"
+      }
+    ],
+    "category": "Modify Mods on an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine2",
+    "notes": "Cannot reroll Maximum Life, Mana or Energy Shield modifiers",
+    "outcome": "Reroll a Watcher's Eye Modifier"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastSandSpitter",
+        "name": "Craicic Sand Spitter"
+      }
+    ],
+    "category": "Modify an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan7",
+    "notes": null,
+    "outcome": "to Have Maximum Possible Links"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastShieldCrab",
+        "name": "Craicic Shield Crab"
+      }
+    ],
+    "category": "Modify an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan8",
+    "notes": null,
+    "outcome": "to Have Maximum Possible Number of Sockets"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCrab2",
+        "name": "Craicic Spider Crab"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft37",
+    "notes": null,
+    "outcome": "to Craiceann's Cove"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastCrab2",
+        "name": "Craicic Spider Crab"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft38HardMode",
+    "notes": null,
+    "outcome": "to Craiceann's Cove"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastTiger",
+        "name": "Farric Tiger Alpha"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft34",
+    "notes": null,
+    "outcome": "to Farrul's Den"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastTiger",
+        "name": "Farric Tiger Alpha"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft35HardMode",
+    "notes": null,
+    "outcome": "to Farrul's Den"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPlatedSpider",
+        "name": "Fenumal Hybrid Arachnid"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft36",
+    "notes": null,
+    "outcome": "to Fenumus' Lair"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPlatedSpider",
+        "name": "Fenumal Hybrid Arachnid"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft37HardMode",
+    "notes": null,
+    "outcome": "to Fenumus' Lair"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastRhex",
+        "name": "Saqawine Rhex"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft35",
+    "notes": null,
+    "outcome": "to Saqawal's Roost"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastRhex",
+        "name": "Saqawine Rhex"
+      }
+    ],
+    "category": "Open a Portal",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft36HardMode",
+    "notes": null,
+    "outcome": "to Saqawal's Roost"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "Morrigan",
+        "name": "Black Mórrigan"
+      },
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "name": "Fenumal Plagued Arachnid"
+      }
+    ],
+    "category": "Split an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMorrigan6",
+    "notes": "Does not work on Influenced or Split items, must have 6+ mods",
+    "outcome": "Into Three Items, with Two Mods on Each Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastPlagueSpider",
+        "name": "Fenumal Plagued Arachnid"
+      }
+    ],
+    "category": "Split an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft32",
+    "notes": "Does not work on Influenced or Split items, Must have 4+ mods",
+    "outcome": "Into Two Items, with Half the Mods on Each Item"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestBrambleHulkT3",
+        "name": "Wild Brambleback"
+      }
+    ],
+    "category": "Transform an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine3",
+    "notes": null,
+    "outcome": "Increase level of non-Corrupted Awakened Gem by 1"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestVultureParasiteT3",
+        "name": "Vivid Vulture"
+      }
+    ],
+    "category": "Transform an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine5",
+    "notes": null,
+    "outcome": "Reroll a Synthesis Implicit Modifier"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "MemoryLineLegendaryBeastHarvestSquidT3",
+        "name": "Vivid Watcher"
+      }
+    ],
+    "category": "Transform an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraftMemoryLine4",
+    "notes": "Cannot result in Awakened Empower, Enhance or Enlighten",
+    "outcome": "Reroll an Awakened Support Gem"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastHellionIce",
+        "name": "Farric Frost Hellion Alpha"
+      }
+    ],
+    "category": "Transform an Item",
+    "game_mode": "default",
+    "identifier": "EinharMasterCraft29",
+    "notes": "Does not work on Influenced items",
+    "outcome": "from an Amulet into a Talisman"
+  },
+  {
+    "beasts": [
+      {
+        "amount": 1,
+        "component_id": "LegendaryBeastIguana",
+        "name": "Saqawine Chimeral"
+      }
+    ],
+    "category": "Transform an Item",
+    "game_mode": "ruthless",
+    "identifier": "EinharMasterCraft30HardMode",
+    "notes": "Does not work on Influenced items",
+    "outcome": "from an Amulet into a Talisman"
+  }
+]

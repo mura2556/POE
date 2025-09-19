@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bestiary, bosses, essences, harvest
 from .models import CraftingStep
 
 
@@ -63,6 +63,34 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for recipe in bench_hits[:3]
             ]
             section = _format_section("Workbench Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        beastcraft_hits = bestiary.find(base_text)
+        if beastcraft_hits:
+            metadata["bestiary_recipes"] = [asdict(recipe) for recipe in beastcraft_hits]
+            lines = []
+            for recipe in beastcraft_hits[:3]:
+                beasts_summary = []
+                for beast in recipe.beasts:
+                    descriptor = f"{beast.amount}× {beast.name}"
+                    extras = [part for part in (beast.rarity, beast.group, beast.family) if part]
+                    if beast.min_level:
+                        extras.append(f"lvl {beast.min_level}+")
+                    if extras:
+                        descriptor += f" ({', '.join(extras)})"
+                    beasts_summary.append(descriptor)
+                beasts_text = ", ".join(beasts_summary) or "Unknown beasts"
+                tags = []
+                if recipe.category and recipe.category != recipe.outcome:
+                    tags.append(recipe.category)
+                if recipe.game_mode == "ruthless":
+                    tags.append("Ruthless")
+                tag_text = f" [{' ; '.join(tags)}]" if tags else ""
+                note_text = f" – {recipe.notes}" if recipe.notes else ""
+                title = recipe.outcome or recipe.category or recipe.identifier
+                lines.append(f"- {title}{tag_text} – Requires {beasts_text}{note_text}")
+            section = _format_section("Beastcraft Options:", lines)
             if section:
                 instruction_parts.append(section)
 

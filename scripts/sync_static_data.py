@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
@@ -13,6 +14,8 @@ from pathlib import Path
 from typing import Iterable, List, Sequence
 
 import requests
+
+GAME_MODE_MAP = {"1": "default", "2": "ruthless"}
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 HEADERS = {"User-Agent": "poe-mcp-static-sync/1.0"}
@@ -136,10 +139,144 @@ def write_json(name: str, payload: object) -> None:
     LOGGER.info("Wrote %s", path)
 
 
+def fetch_cargo_rows(tables: str, fields: str, where: str | None = None) -> List[dict]:
+    params = {
+        "action": "cargoquery",
+        "tables": tables,
+        "fields": fields,
+        "format": "json",
+        "limit": 500,
+    }
+    if where:
+        params["where"] = where
+    results: List[dict] = []
+    offset = 0
+    while True:
+        params["offset"] = offset
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        chunk = [entry.get("title", {}) for entry in data.get("cargoquery", [])]
+        if not chunk:
+            break
+        results.extend(chunk)
+        offset += len(chunk)
+        if len(chunk) < params["limit"]:
+            break
+    return results
+
+
 def build_translator() -> StatTranslator:
     stats_url = f"{REPOE_BASE}/stat_translations.min.json"
     translations = fetch_json(stats_url)
     return StatTranslator(translations)
+
+
+def _format_component_name(identifier: str) -> str:
+    text = identifier.replace("_", " ")
+    text = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", text)
+    text = re.sub(r"(?<=\D)(?=\d)", " ", text)
+    text = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def sync_bestiary_data() -> None:
+    recipes = fetch_cargo_rows(
+        "bestiary_recipes",
+        "id=identifier,header,subheader,notes,game_mode=game_mode",
+    )
+    components = fetch_cargo_rows(
+        "bestiary_recipe_components",
+        "recipe_id=recipe_id,component_id=component_id,amount=amount",
+    )
+    beasts_raw = fetch_cargo_rows(
+        "bestiary_components",
+        "id=component_id,monster=monster,beast_group=group,family=family,genus=genus,min_level=min_level,mod_id=mod_id,rarity=rarity",
+    )
+
+    beast_lookup: dict[str, dict] = {}
+    for entry in beasts_raw:
+        identifier = entry.get("component_id")
+        if not identifier:
+            continue
+        min_level_raw = entry.get("min_level")
+        min_level: int | None = None
+        if isinstance(min_level_raw, str):
+            min_level_raw = min_level_raw.strip()
+        if min_level_raw:
+            try:
+                min_level = int(min_level_raw)
+            except (TypeError, ValueError):
+                min_level = None
+        beast_lookup[identifier] = {
+            "monster": entry.get("monster"),
+            "group": entry.get("group"),
+            "family": entry.get("family"),
+            "genus": entry.get("genus"),
+            "rarity": entry.get("rarity"),
+            "min_level": min_level if min_level and min_level > 0 else None,
+            "mod_id": entry.get("mod_id"),
+        }
+
+    requirements: dict[str, List[dict]] = {}
+    for link in components:
+        recipe_id = link.get("recipe_id")
+        component_id = link.get("component_id")
+        if not recipe_id or not component_id:
+            continue
+        amount_raw = link.get("amount")
+        try:
+            amount = int(amount_raw)
+        except (TypeError, ValueError):
+            amount = 1
+        if amount <= 0:
+            amount = 1
+        beast = beast_lookup.get(component_id, {})
+        monster_name = beast.get("monster")
+        name = html.unescape(monster_name) if monster_name else _format_component_name(component_id)
+        requirement: dict[str, object] = {
+            "component_id": component_id,
+            "name": name,
+            "amount": amount,
+        }
+        for key in ("group", "family", "genus", "rarity", "mod_id"):
+            value = beast.get(key)
+            if value:
+                requirement[key] = value
+        min_level = beast.get("min_level")
+        if isinstance(min_level, int):
+            requirement["min_level"] = min_level
+        requirements.setdefault(recipe_id, []).append(requirement)
+
+    curated: List[dict] = []
+    for recipe in recipes:
+        identifier = recipe.get("identifier")
+        if not identifier:
+            continue
+        category = html.unescape((recipe.get("header") or "").strip())
+        outcome = html.unescape((recipe.get("subheader") or "").strip())
+        notes_raw = (recipe.get("notes") or "").strip()
+        notes = html.unescape(notes_raw) or None
+        raw_game_mode = str(recipe.get("game_mode") or "").strip()
+        game_mode = GAME_MODE_MAP.get(raw_game_mode, raw_game_mode or "default")
+        beasts = sorted(
+            (requirements.get(identifier) or []),
+            key=lambda item: (str(item.get("name", "")), str(item.get("component_id", ""))),
+        )
+        curated.append(
+            {
+                "identifier": identifier,
+                "category": category,
+                "outcome": outcome,
+                "notes": notes,
+                "game_mode": game_mode,
+                "beasts": beasts,
+            }
+        )
+
+    curated.sort(key=lambda entry: (entry.get("category", ""), entry.get("outcome", ""), entry.get("identifier", "")))
+    write_json("bestiary_recipes.json", curated)
 
 
 def sync_bench_data(translator: StatTranslator) -> None:
@@ -421,7 +558,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "bestiary", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -430,16 +567,26 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO, format="%(message)s")
     ensure_data_dir()
-    translator = build_translator()
-
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "bestiary", "essences", "harvest"])
+    translator: StatTranslator | None = None
+    if sections & {"bench", "essences", "harvest"}:
+        translator = build_translator()
+    if "bestiary" in sections:
+        LOGGER.info("Syncing beastcraft recipes...")
+        sync_bestiary_data()
     if "bench" in sections:
+        if translator is None:
+            translator = build_translator()
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
     if "essences" in sections:
+        if translator is None:
+            translator = build_translator()
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)
     if "harvest" in sections:
+        if translator is None:
+            translator = build_translator()
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
     if "bosses" in sections:
