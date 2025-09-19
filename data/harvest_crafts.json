@@ -1,0 +1,416 @@
+[
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1% to Cold Resistance per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityColdResistance",
+    "item_classes": [],
+    "tags": [
+      "cold",
+      "defences",
+      "elemental",
+      "resistance"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1 to Dexterity per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityDexterity",
+    "item_classes": [],
+    "tags": [
+      "defences",
+      "attribute"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1% to Fire Resistance per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityFireResistance",
+    "item_classes": [],
+    "tags": [
+      "resistance",
+      "fire",
+      "defences",
+      "elemental"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1 to Maximum Life per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityIncreasedLife",
+    "item_classes": [],
+    "tags": [
+      "life",
+      "defences",
+      "resource"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1 to Maximum Mana per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityIncreasedMana",
+    "item_classes": [],
+    "tags": [
+      "mana",
+      "defences",
+      "resource"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1 to Intelligence per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityIntelligence_",
+    "item_classes": [],
+    "tags": [
+      "defences",
+      "attribute"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1% to Lightning Resistance per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityLightningResistance",
+    "item_classes": [],
+    "tags": [
+      "resistance",
+      "lightning",
+      "defences",
+      "elemental"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Defences",
+      "Grants +1 to Strength per 2% Quality"
+    ],
+    "groups": [
+      "AlternateArmourQuality"
+    ],
+    "identifier": "HarvestAlternateArmourQualityStrength",
+    "item_classes": [],
+    "tags": [
+      "defences",
+      "attribute"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "Grants 1% increased Accuracy per 2% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityAccuracyRatingIncrease_",
+    "item_classes": [],
+    "tags": [
+      "damage",
+      "attack",
+      "physical",
+      "physical_damage"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "Grants 1% increased Area of Effect per 4% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityAreaOfEffect_",
+    "item_classes": [],
+    "tags": [
+      "damage",
+      "attack",
+      "physical",
+      "physical_damage"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "Grants 1% increased Elemental Damage per 2% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityElementalDamagePercent",
+    "item_classes": [],
+    "tags": [
+      "physical_damage",
+      "damage",
+      "elemental_damage",
+      "attack",
+      "physical",
+      "elemental"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "1% increased Critical Strike Chance per 4% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityLocalCriticalStrikeChance__",
+    "item_classes": [],
+    "tags": [
+      "physical_damage",
+      "damage",
+      "critical",
+      "attack",
+      "physical"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "1% increased Attack Speed per 8% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityLocalIncreasedAttackSpeed",
+    "item_classes": [],
+    "tags": [
+      "physical_damage",
+      "damage",
+      "attack",
+      "speed",
+      "physical"
+    ]
+  },
+  {
+    "description": [
+      "Quality does not increase Physical Damage",
+      "+1 Weapon Range per 10% Quality"
+    ],
+    "groups": [
+      "AlternateWeaponQuality"
+    ],
+    "identifier": "HarvestAlternateWeaponQualityLocalMeleeWeaponRange_",
+    "item_classes": [],
+    "tags": [
+      "damage",
+      "attack",
+      "physical",
+      "physical_damage"
+    ]
+  },
+  {
+    "description": [
+      "-50% increased Charges per use"
+    ],
+    "groups": [
+      "FlaskEnchantment"
+    ],
+    "identifier": "HarvestFlaskEnchantmentChargesUsedLoweredOnUse4",
+    "item_classes": [],
+    "tags": [
+      "flask"
+    ]
+  },
+  {
+    "description": [
+      "100% increased Duration"
+    ],
+    "groups": [
+      "FlaskEnchantment"
+    ],
+    "identifier": "HarvestFlaskEnchantmentDurationLoweredOnUse1_",
+    "item_classes": [],
+    "tags": [
+      "flask"
+    ]
+  },
+  {
+    "description": [
+      "50% increased effect"
+    ],
+    "groups": [
+      "FlaskEnchantment"
+    ],
+    "identifier": "HarvestFlaskEnchantmentEffectLoweredOnUse2",
+    "item_classes": [],
+    "tags": [
+      "flask"
+    ]
+  },
+  {
+    "description": [
+      "+100 to Maximum Charges"
+    ],
+    "groups": [
+      "FlaskEnchantment"
+    ],
+    "identifier": "HarvestFlaskEnchantmentMaximumChargesLoweredOnUse3_",
+    "item_classes": [],
+    "tags": [
+      "flask"
+    ]
+  },
+  {
+    "description": [
+      "Area can contain Mysterious Harbingers",
+      "Area contains an additional Harbinger",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "HarbingerLeague"
+    ],
+    "identifier": "HarvestInfusedHarbingerLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "map_item_drop_quantity_+% 0",
+      "Area is inhabited by 12 additional Rogue Exile",
+      "map_ignore_rogue_exile_rarity_bias 1",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapAnarchyLeague"
+    ],
+    "identifier": "HarvestInfusedMapAnarchyExiles",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "map_item_drop_quantity_+% 0",
+      "Slaying Enemies close together can attract monsters from Beyond this realm",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapBeyondLeagueCrafted"
+    ],
+    "identifier": "HarvestInfusedMapBeyondLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "map_magic_pack_mod_rules 1",
+      "Area contains an additional Magic Monster pack",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapBloodlines"
+    ],
+    "identifier": "HarvestInfusedMapBloodlinesLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Areas can contain Essences",
+      "Area contains an additional Essence",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapEssenceLeague"
+    ],
+    "identifier": "HarvestInfusedMapEssenceLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Area contains an additional Shrine",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "AllowShrines"
+    ],
+    "identifier": "HarvestInfusedMapExtraShrinesCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Area contains an additional Strongbox",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "StrongBoxNum"
+    ],
+    "identifier": "HarvestInfusedMapExtraStrongBoxes_",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Area contains an additional pack with a Rare monster",
+      "map_rare_monsters_have_nemesis_mod 1",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapRareMonsters"
+    ],
+    "identifier": "HarvestInfusedMapNemesisZana",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Area contains an additional Perandus Chest",
+      "Area has a 100% chance to contain Cadiro Perandus",
+      "map_extra_content_weighting 1"
+    ],
+    "groups": [
+      "MapPerandusLeague"
+    ],
+    "identifier": "HarvestInfusedMapPerandusLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  },
+  {
+    "description": [
+      "Slaying Enemies in a kill streak grants Rampage bonuses",
+      "map_item_drop_quantity_+% 20"
+    ],
+    "groups": [
+      "MapRampageLeagueCrafted"
+    ],
+    "identifier": "HarvestInfusedMapRampageLeagueCrafted",
+    "item_classes": [],
+    "tags": []
+  }
+]
