@@ -19,6 +19,7 @@ HEADERS = {"User-Agent": "poe-mcp-static-sync/1.0"}
 POEWIKI_EXPORT = "https://www.poewiki.net/w/index.php"
 POEWIKI_API = "https://www.poewiki.net/w/api.php"
 REPOE_BASE = "https://raw.githubusercontent.com/brather1ng/RePoE/master/RePoE/data"
+BETRAYAL_MEMBER_LIST = "List of Immortal Syndicate members"
 
 LOGGER = logging.getLogger("sync_static_data")
 
@@ -260,6 +261,154 @@ def clean_wiki_markup(text: str) -> str:
     return text.strip()
 
 
+def _render_betrayal_lines(text: str) -> List[str]:
+    text = text.strip()
+    if not text:
+        return []
+    text = text.replace("<br>", "\n").replace("\xa0", " ")
+    text = re.sub(r"<ref[^>]*>.*?</ref>", "", text, flags=re.DOTALL)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\{\{il\|([^|}]+)(?:\|[^}]*)?\}\}", r"\1", text)
+    text = re.sub(r"\{\{c\|[^|}]+\|([^}]*)\}\}", r"\1", text)
+    text = re.sub(r"\{\{([^}|]+)\|([^}]*)\}\}", r"\2", text)
+    text = re.sub(r"\{\{[^}]+\}\}", "", text)
+    text = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", text)
+    text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
+    text = re.sub(r"''+", "", text)
+    lines = [line.strip(" -*") for line in text.splitlines()]
+    return [line for line in lines if line]
+
+
+def _parse_betrayal_cell(cell: str) -> tuple[str, List[str]] | None:
+    lines = _render_betrayal_lines(cell)
+    if not lines:
+        return None
+    first = lines[0]
+    lower = first.lower()
+    skip_prefixes = (
+        "chest",
+        "trapped",
+        "interactable",
+        "special",
+        "piles",
+        "items",
+        "cadiro",
+        "random currency",
+        "sacrifice",
+        "random scarab",
+    )
+    if lower.startswith(skip_prefixes):
+        return None
+    if "crafting bench" in lower:
+        first = first[lower.index("crafting bench") + len("crafting bench") :]
+    description = first.lstrip(": ").rstrip(": ").strip()
+    extras = [line.rstrip(": ").strip() for line in lines[1:]]
+    if not description and not extras:
+        return None
+    return description, [extra for extra in extras if extra]
+
+
+def _extract_betrayal_members() -> List[tuple[str, str]]:
+    wikitext = fetch_wikitext(BETRAYAL_MEMBER_LIST)
+    if not wikitext:
+        LOGGER.warning("Failed to fetch betrayal member list.")
+        return []
+    pattern = re.compile(r"\|\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
+    members: List[tuple[str, str]] = []
+    for raw_line in wikitext.splitlines():
+        line = raw_line.strip()
+        if not line.startswith("|[[") or "File:" in line:
+            continue
+        match = pattern.match(line)
+        if not match:
+            continue
+        title = match.group(1).strip()
+        display = (match.group(2) or title).strip()
+        if "Catarina" in display:
+            continue
+        members.append((title, display))
+    return members
+
+
+def _extract_betrayal_rows(wikitext: str) -> tuple[List[str], List[List[str]]]:
+    marker = "==safehouse rewards=="
+    lower = wikitext.lower()
+    index = lower.find(marker)
+    if index == -1:
+        return [], []
+    table_start = wikitext.find("{|", index)
+    if table_start == -1:
+        return [], []
+    table_end = wikitext.find("|}", table_start)
+    if table_end == -1:
+        return [], []
+    table_text = wikitext[table_start:table_end]
+    rows = re.split(r"\n\|-\n?", table_text)
+    if len(rows) < 3:
+        return [], []
+    header_row = next((row for row in rows if row.strip().startswith("!")), rows[0])
+    header_parts = [part.strip() for part in header_row.strip().lstrip("!").split("!!")]
+    headers = [clean_wiki_markup(part) for part in header_parts]
+    data_rows: List[List[str]] = []
+    for row in rows:
+        stripped = row.strip()
+        if not stripped or stripped == header_row.strip() or stripped.startswith("!"):
+            continue
+        cells = []
+        for part in row.split("\n|"):
+            part = part.strip()
+            if not part:
+                continue
+            if part.startswith("|"):
+                part = part[1:]
+            cells.append(part)
+        if not cells:
+            continue
+        first_cell_lines = _render_betrayal_lines(cells[0])
+        if first_cell_lines and first_cell_lines[0].lower().startswith("in-game"):
+            continue
+        data_rows.append(cells)
+    return headers, data_rows
+
+
+def sync_betrayal_data() -> None:
+    members = _extract_betrayal_members()
+    entries: List[dict] = []
+    for title, display in members:
+        wikitext = fetch_wikitext(title)
+        if not wikitext:
+            LOGGER.warning("Skipping %s – missing wikitext.", title)
+            continue
+        headers, rows = _extract_betrayal_rows(wikitext)
+        if not headers or len(headers) < 2:
+            LOGGER.warning("Skipping %s – no safehouse table found.", title)
+            continue
+        for row in rows:
+            rank_lines = _render_betrayal_lines(row[0]) if row else []
+            match = re.search(r"(\d+)", rank_lines[0]) if rank_lines else None
+            if not match:
+                continue
+            rank = int(match.group(1))
+            for index, division in enumerate(headers[1:], start=1):
+                if index >= len(row):
+                    continue
+                parsed = _parse_betrayal_cell(row[index])
+                if not parsed:
+                    continue
+                description, limitations = parsed
+                entries.append(
+                    {
+                        "owner": display,
+                        "division": division,
+                        "rank": rank,
+                        "description": description,
+                        "limitations": limitations,
+                    }
+                )
+    entries.sort(key=lambda entry: (entry["owner"], entry["division"], entry["rank"]))
+    write_json("betrayal_benches.json", entries)
+
+
 def fetch_map_rows() -> List[dict]:
     params = {
         "title": "Special:CargoExport",
@@ -421,7 +570,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["betrayal", "bosses", "bench", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +581,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["betrayal", "bosses", "bench", "essences", "harvest"])
+    if "betrayal" in sections:
+        LOGGER.info("Syncing Betrayal benches...")
+        sync_betrayal_data()
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)

@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import betrayal, bench_recipes, bosses, essences, harvest
 from .models import CraftingStep
 
 
@@ -20,6 +20,15 @@ def _format_costs(costs: Sequence[bench_recipes.BenchCost]) -> str:
     if not costs:
         return "free"
     return ", ".join(f"{cost.amount} {cost.currency}" for cost in costs)
+
+
+def _format_limitations(items: Sequence[str]) -> str:
+    if not items:
+        return ""
+    preview = ", ".join(items[:3])
+    if len(items) > 3:
+        preview += ", …"
+    return preview
 
 
 def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
@@ -63,6 +72,24 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for recipe in bench_hits[:3]
             ]
             section = _format_section("Workbench Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        betrayal_hits = betrayal.find(base_text)
+        if betrayal_hits:
+            metadata["betrayal_benches"] = [asdict(bench) for bench in betrayal_hits]
+            lines = []
+            for bench in betrayal_hits[:3]:
+                limitation_text = _format_limitations(bench.limitations)
+                if limitation_text:
+                    lines.append(
+                        f"- {bench.owner} – {bench.division} Rank {bench.rank}: {bench.description} (Costs: {limitation_text})"
+                    )
+                else:
+                    lines.append(
+                        f"- {bench.owner} – {bench.division} Rank {bench.rank}: {bench.description}"
+                    )
+            section = _format_section("Betrayal Benches:", lines)
             if section:
                 instruction_parts.append(section)
 
