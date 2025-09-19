@@ -4,13 +4,16 @@
 from __future__ import annotations
 
 import argparse
+import csv
+import html
+import io
 import json
 import logging
 import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, List, Sequence
+from typing import Dict, Iterable, List, Sequence, Tuple
 
 import requests
 
@@ -19,6 +22,8 @@ HEADERS = {"User-Agent": "poe-mcp-static-sync/1.0"}
 POEWIKI_EXPORT = "https://www.poewiki.net/w/index.php"
 POEWIKI_API = "https://www.poewiki.net/w/api.php"
 REPOE_BASE = "https://raw.githubusercontent.com/brather1ng/RePoE/master/RePoE/data"
+CARGO_PAGE_SIZE = 500
+TARGET_VERSION = (3, 26)
 
 LOGGER = logging.getLogger("sync_static_data")
 
@@ -140,6 +145,197 @@ def build_translator() -> StatTranslator:
     stats_url = f"{REPOE_BASE}/stat_translations.min.json"
     translations = fetch_json(stats_url)
     return StatTranslator(translations)
+
+
+def fetch_cargo_rows(
+    table: str,
+    fields: Sequence[str],
+    where: str | None = None,
+    order_by: str | None = None,
+) -> List[Dict[str, str]]:
+    rows: List[Dict[str, str]] = []
+    offset = 0
+    while True:
+        params = {
+            "title": "Special:CargoExport",
+            "tables": table,
+            "fields": ",".join(fields),
+            "limit": CARGO_PAGE_SIZE,
+            "offset": offset,
+            "format": "csv",
+        }
+        if where:
+            params["where"] = where
+        if order_by:
+            params["order_by"] = order_by
+        response = requests.get(POEWIKI_EXPORT, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        text = response.text.strip()
+        if not text:
+            break
+        reader = csv.DictReader(io.StringIO(text))
+        chunk: List[Dict[str, str]] = []
+        for row in reader:
+            cleaned: Dict[str, str] = {}
+            for key, value in row.items():
+                if key is None:
+                    continue
+                if isinstance(value, str):
+                    cleaned[key] = value.strip()
+                else:
+                    cleaned[key] = value
+            if cleaned:
+                chunk.append(cleaned)
+        if not chunk:
+            break
+        rows.extend(chunk)
+        if len(chunk) < CARGO_PAGE_SIZE:
+            break
+        offset += CARGO_PAGE_SIZE
+    return rows
+
+
+def _normalise_tags(raw: str) -> List[str]:
+    tags = [tag.strip() for tag in (raw or "").split(",")]
+    seen: Dict[str, None] = {}
+    for tag in tags:
+        if tag and tag not in seen:
+            seen[tag] = None
+    return list(seen.keys())
+
+
+def _version_key_map() -> Dict[str, Tuple[int, int, int, Tuple[int, ...]]]:
+    rows = fetch_cargo_rows(
+        "versions",
+        [
+            "versions.version=version",
+            "versions.major_part=major",
+            "versions.minor_part=minor",
+            "versions.patch_part=patch",
+            "versions.revision_part=revision",
+        ],
+    )
+    mapping: Dict[str, Tuple[int, int, int, Tuple[int, ...]]] = {}
+    for row in rows:
+        version = row.get("version", "").strip()
+        if not version:
+            continue
+        major = int(row.get("major") or 0)
+        minor = int(row.get("minor") or 0)
+        patch = int(row.get("patch") or 0)
+        revision_text = (row.get("revision") or "").strip()
+        revision_key = tuple(ord(char) for char in revision_text)
+        mapping[version] = (major, minor, patch, revision_key)
+    return mapping
+
+
+def _parse_version_key(version: str, mapping: Dict[str, Tuple[int, int, int, Tuple[int, ...]]]) -> Tuple[int, int, int, Tuple[int, ...]] | None:
+    version = (version or "").strip()
+    if not version:
+        return None
+    cached = mapping.get(version)
+    if cached:
+        return cached
+    match = re.match(r"^(\d+)\.(\d+)(?:\.(\d+))?(.*)$", version)
+    if not match:
+        return None
+    major = int(match.group(1))
+    minor = int(match.group(2))
+    patch = int(match.group(3) or 0)
+    revision_text = match.group(4).strip()
+    revision_key = tuple(ord(char) for char in revision_text)
+    key = (major, minor, patch, revision_key)
+    mapping[version] = key
+    return key
+
+
+def _is_removed(version_key: Tuple[int, int, int, Tuple[int, ...]] | None) -> bool:
+    if version_key is None:
+        return False
+    major, minor, patch, revision = version_key
+    target_major, target_minor = TARGET_VERSION
+    if major < target_major:
+        return True
+    if major > target_major:
+        return False
+    if minor < target_minor:
+        return True
+    if minor > target_minor:
+        return False
+    # Removal during target cycle counts as removed for catalogue purposes.
+    return True
+
+
+def _parse_bool(value: str | None) -> bool:
+    return (value or "").strip().lower() in {"1", "true", "yes"}
+
+
+def _clean_text(raw: str | None) -> str:
+    text = html.unescape(raw or "")
+    text = text.replace("<br />", "\n").replace("<br/>", "\n").replace("<br>", "\n")
+    text = re.sub(r"<[^>]+>", "", text)
+    text = text.replace("\n", "; ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip(" ;")
+
+
+def sync_currency_data() -> None:
+    version_map = _version_key_map()
+    rows = fetch_cargo_rows(
+        "items",
+        [
+            "items.metadata_id=metadata_id",
+            "items.name=name",
+            "items.tags=tags",
+            "items.description=action",
+            "items.help_text=constraints",
+            "items.release_version=release_version",
+            "items.removal_version=removal_version",
+            "items.is_in_game=is_in_game",
+        ],
+        where='items.frame_type="currency" AND items.tags HOLDS "currency"',
+        order_by="items.name",
+    )
+
+    entries: List[dict] = []
+    seen_ids: set[str] = set()
+    target_revision_ceiling: Tuple[int, int, int, Tuple[int, ...]] = (
+        TARGET_VERSION[0],
+        TARGET_VERSION[1],
+        999,
+        (255,),
+    )
+
+    for row in rows:
+        metadata_id = row.get("metadata_id", "").strip()
+        name = row.get("name", "").strip()
+        if not name:
+            continue
+        if metadata_id:
+            if metadata_id in seen_ids:
+                continue
+            seen_ids.add(metadata_id)
+        if not _parse_bool(row.get("is_in_game")):
+            continue
+        release_key = _parse_version_key(row.get("release_version"), version_map)
+        if release_key and release_key > target_revision_ceiling:
+            continue
+        removal_key = _parse_version_key(row.get("removal_version"), version_map)
+        if _is_removed(removal_key):
+            continue
+        entry = {
+            "metadata_id": metadata_id or None,
+            "name": name,
+            "tags": _normalise_tags(row.get("tags", "")),
+            "action": _clean_text(row.get("action")),
+            "constraints": _clean_text(row.get("constraints")),
+            "release_version": (row.get("release_version") or "").strip() or None,
+            "removal_version": (row.get("removal_version") or "").strip() or None,
+        }
+        entries.append(entry)
+
+    entries.sort(key=lambda item: item["name"].lower())
+    write_json("currency.json", entries)
 
 
 def sync_bench_data(translator: StatTranslator) -> None:
@@ -421,7 +617,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "currency", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +628,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "currency", "essences", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
@@ -442,6 +638,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
+    if "currency" in sections:
+        LOGGER.info("Syncing currency catalogue...")
+        sync_currency_data()
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()
