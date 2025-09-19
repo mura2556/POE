@@ -1,0 +1,415 @@
+{
+  "fossils": [
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Chaos modifiers",
+        "No Lightning modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingChaos",
+      "name": "Aberrant Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Caster modifiers",
+        "Fewer Attack modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingCasterMods",
+      "name": "Aetheric Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "Corrupted\r\nHas a Corrupted implicit modifier"
+      ],
+      "forbidden_tags": [
+        "heist_blueprint",
+        "heist_contract",
+        "heist_equipment"
+      ],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingVaal",
+      "name": "Bloodstained Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Minion, Aura or Curse modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras",
+      "name": "Bound Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Physical Ailment or Chaos Ailment modifiers",
+        "No Elemental modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison",
+      "name": "Corroded Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Critical modifiers",
+        "No Attribute modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingEnchant",
+      "name": "Deft Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Defence modifiers",
+        "No Life modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingDefences",
+      "name": "Dense Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Gem modifiers",
+        "+1 to Level of Socketed Strength Gems",
+        "+1 to Level of Socketed Dexterity Gems",
+        "+1 to Level of Socketed Intelligence Gems"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingGemLevel",
+      "name": "Faceted Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "Creates a split copy",
+        "Creates a mirrored copy of the item."
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingMirror",
+      "name": "Fractured Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Cold modifiers",
+        "No Fire modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingCold",
+      "name": "Frigid Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Attribute modifiers",
+        "No Critical modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingSockets",
+      "name": "Fundamental Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "Item is overvalued by vendors"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingSellPrice",
+      "name": "Gilded Fossil"
+    },
+    {
+      "allowed_tags": [
+        "amulet",
+        "belt",
+        "body_armour",
+        "boots",
+        "gloves",
+        "helmet",
+        "quiver",
+        "ring",
+        "shield",
+        "weapon"
+      ],
+      "effects": [
+        "Has a Corrupt Essence modifier",
+        "100% chance to corrupt an Essence outcome."
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence",
+      "name": "Glyphic Fossil"
+    },
+    {
+      "allowed_tags": [
+        "body_armour",
+        "boots",
+        "gloves",
+        "helmet",
+        "weapon"
+      ],
+      "effects": [
+        "Has an Abyssal socket",
+        "Has 1 Abyssal Socket"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingAbyss",
+      "name": "Hollow Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Physical modifiers",
+        "No Chaos modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingPhysical",
+      "name": "Jagged Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Mana modifiers",
+        "No Speed modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingMana",
+      "name": "Lucent Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Lightning modifiers",
+        "No Physical modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingLightning",
+      "name": "Metallic Fossil"
+    },
+    {
+      "allowed_tags": [
+        "body_armour",
+        "boots",
+        "gloves",
+        "helmet",
+        "map",
+        "shield",
+        "weapon"
+      ],
+      "effects": [
+        "Improved Quality",
+        "Reforges and randomises the item's quality."
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingQuality",
+      "name": "Perfect Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Elemental modifiers",
+        "No Physical Ailment or Chaos Ailment Modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingElemental",
+      "name": "Prismatic Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Life modifiers",
+        "No Defence modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingLife",
+      "name": "Pristine Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "Numeric modifier values are lucky\r\nHigh Level modifiers are more common",
+        "Rolls crafting values twice and keeps the best outcome."
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls",
+      "name": "Sanctified Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Fire modifiers",
+        "No Cold modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingFire",
+      "name": "Scorched Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Attack modifiers",
+        "Fewer Caster modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingAttackMods",
+      "name": "Serrated Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "More Speed modifiers",
+        "No Mana modifiers"
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingSpeed",
+      "name": "Shuddering Fossil"
+    },
+    {
+      "allowed_tags": [],
+      "effects": [
+        "Random effects revealed when resonator is fully socketed",
+        "+1 to Level of Socketed Strength Gems",
+        "+1 to Level of Socketed Dexterity Gems",
+        "+1 to Level of Socketed Intelligence Gems",
+        "Non-Aura Vaal Skills require -20% increased Souls Per Use",
+        "Non-Aura Vaal Skills require -40% increased Souls Per Use",
+        "5-8% chance to gain an additional Vaal Soul on Kill",
+        "80-120% increased Vaal Skill Critical Strike Chance",
+        "15-25% increased Vaal Skill Effect Duration",
+        "20-40% increased Damage with Vaal Skills",
+        "3-5% chance to gain an additional Vaal Soul on Kill",
+        "Has 1 Abyssal Socket",
+        "10% chance to corrupt an Essence outcome."
+      ],
+      "forbidden_tags": [],
+      "identifier": "Metadata/Items/Currency/CurrencyDelveCraftingRandom",
+      "name": "Tangled Fossil"
+    }
+  ],
+  "resonators": [
+    {
+      "effects": [
+        "Upgrades a normal item to a rare item",
+        "Allows 1 fossil",
+        "1-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyUpgrade1",
+      "name": "Primitive Alchemical Resonator",
+      "socket_count": 1,
+      "tags": [
+        "1-socket",
+        "alchemical",
+        "primitive"
+      ]
+    },
+    {
+      "effects": [
+        "Reforges a rare item with new random modifiers",
+        "Allows 1 fossil",
+        "1-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyReroll1",
+      "name": "Primitive Chaotic Resonator",
+      "socket_count": 1,
+      "tags": [
+        "1-socket",
+        "chaotic",
+        "primitive"
+      ]
+    },
+    {
+      "effects": [
+        "Upgrades a normal item to a rare item",
+        "Allows 2 fossils",
+        "2-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyUpgrade2",
+      "name": "Potent Alchemical Resonator",
+      "socket_count": 2,
+      "tags": [
+        "2-socket",
+        "alchemical",
+        "potent"
+      ]
+    },
+    {
+      "effects": [
+        "Reforges a rare item with new random modifiers",
+        "Allows 2 fossils",
+        "2-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyReroll2",
+      "name": "Potent Chaotic Resonator",
+      "socket_count": 2,
+      "tags": [
+        "2-socket",
+        "chaotic",
+        "potent"
+      ]
+    },
+    {
+      "effects": [
+        "Upgrades a normal item to a rare item",
+        "Allows 3 fossils",
+        "3-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyUpgrade3",
+      "name": "Powerful Alchemical Resonator",
+      "socket_count": 3,
+      "tags": [
+        "3-socket",
+        "alchemical",
+        "powerful"
+      ]
+    },
+    {
+      "effects": [
+        "Reforges a rare item with new random modifiers",
+        "Allows 3 fossils",
+        "3-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyReroll3",
+      "name": "Powerful Chaotic Resonator",
+      "socket_count": 3,
+      "tags": [
+        "3-socket",
+        "chaotic",
+        "powerful"
+      ]
+    },
+    {
+      "effects": [
+        "Upgrades a normal item to a rare item",
+        "Allows 4 fossils",
+        "4-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyUpgrade4",
+      "name": "Prime Alchemical Resonator",
+      "socket_count": 4,
+      "tags": [
+        "4-socket",
+        "alchemical",
+        "prime"
+      ]
+    },
+    {
+      "effects": [
+        "Reforges a rare item with new random modifiers",
+        "Allows 4 fossils",
+        "4-socket resonator"
+      ],
+      "identifier": "Metadata/Items/Delve/DelveSocketableCurrencyReroll4",
+      "name": "Prime Chaotic Resonator",
+      "socket_count": 4,
+      "tags": [
+        "4-socket",
+        "chaotic",
+        "prime"
+      ]
+    }
+  ]
+}

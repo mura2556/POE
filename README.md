@@ -6,7 +6,7 @@ snapshots live under [`data/`](data/) and are loaded at runtime via the
 [`poe_mcp_server.datasources`](poe_mcp_server/datasources) package.  The primary
 consumer is [`assemble_crafting_plan`](poe_mcp_server/planner.py), which
 augments free-form crafting steps with map boss unlocks, harvest crafts,
-essence details, and bench recipe metadata.
+essence details, fossil/resonator pairings, and bench recipe metadata.
 
 ## Curated datasets
 
@@ -15,6 +15,8 @@ The sync script stores the following files inside [`data/`](data/):
 * `bench_recipes.json` – Master crafting bench options, including translated
   modifier text, bench tiers, supported item classes, action keywords, and
   exact crafting costs.
+* `fossils.json` – Delve fossils (effects, allowed item tags) and resonator
+  socket counts so fossil/resonator combos can be surfaced inline.
 * `essences.json` – Essence tiers, minimum area level, and the translated
   modifiers they apply when used on an item.
 * `harvest_crafts.json` – Harvest crafting options with their groups, tags, and
@@ -45,9 +47,9 @@ stays current across leagues.
    python scripts/sync_static_data.py
    ```
 3. To shorten reruns while iterating you can limit the sections.  For example,
-   regenerate the boss dataset after tweaking keyword logic:
+   regenerate the fossil dataset after tweaking keyword logic:
    ```bash
-   python scripts/sync_static_data.py --sections bosses
+   python scripts/sync_static_data.py --sections fossils
    ```
 4. Inspect the updated files under `data/` (e.g. spot-check that
    `bosses.json` unlock strings look clean) and commit the refreshed JSON along

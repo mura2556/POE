@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bosses, essences, fossils, harvest
 from .models import CraftingStep
 
 
@@ -85,6 +85,27 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for essence in essence_hits[:3]
             ]
             section = _format_section("Essence Notes:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        fossil_hits = fossils.find(base_text)
+        if fossil_hits.fossils or fossil_hits.resonators:
+            if fossil_hits.fossils:
+                metadata["fossils"] = [asdict(entry) for entry in fossil_hits.fossils]
+            if fossil_hits.resonators:
+                metadata["resonators"] = [asdict(entry) for entry in fossil_hits.resonators]
+            fossil_lines = []
+            for entry in fossil_hits.fossils[:3]:
+                summary = "; ".join(entry.effects[:2])
+                if entry.allowed_tags:
+                    allowed = ", ".join(entry.allowed_tags[:3])
+                    summary = f"{summary} [Allowed: {allowed}]" if summary else f"Allowed: {allowed}"
+                fossil_lines.append(f"- {entry.name} – {summary or 'See metadata for details'}")
+            for entry in fossil_hits.resonators[:3]:
+                socket = f" ({entry.socket_count}-socket)" if entry.socket_count else ""
+                effect = "; ".join(entry.effects[:1]) or "Supports fossil crafting"
+                fossil_lines.append(f"- {entry.name}{socket} – {effect}")
+            section = _format_section("Fossil & Resonator Options:", fossil_lines)
             if section:
                 instruction_parts.append(section)
 

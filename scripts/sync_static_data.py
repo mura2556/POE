@@ -251,6 +251,177 @@ def sync_essence_data(translator: StatTranslator) -> None:
     write_json("essences.json", curated)
 
 
+def sync_fossil_data(translator: StatTranslator) -> None:
+    fossils_url = f"{REPOE_BASE}/fossils.min.json"
+    resonators_url = f"{REPOE_BASE}/resonators.min.json"
+    mods_url = f"{REPOE_BASE}/mods.min.json"
+
+    fossils_raw = fetch_json(fossils_url)
+    mods = fetch_json(mods_url)
+
+    try:
+        resonators_raw = fetch_json(resonators_url)
+    except requests.HTTPError as exc:  # pragma: no cover - network error fallback
+        status = getattr(exc.response, "status_code", None)
+        if status == 404:
+            LOGGER.warning("resonators.min.json not found upstream; falling back to base_items.")
+            resonators_raw = None
+        else:
+            raise
+
+    def dedupe(lines: Iterable[str]) -> List[str]:
+        seen: set[str] = set()
+        result: List[str] = []
+        for line in lines:
+            text = (line or "").strip()
+            if not text or text in seen:
+                continue
+            seen.add(text)
+            result.append(text)
+        return result
+
+    def is_readable(text: str) -> bool:
+        cleaned = (text or "").strip()
+        if not cleaned:
+            return False
+        if " " in cleaned:
+            return True
+        if any(char.isdigit() for char in cleaned):
+            return True
+        return any(char in cleaned for char in "+-%/()")
+
+    def translate_mods(mod_ids: Sequence[str]) -> List[str]:
+        rendered: List[str] = []
+        for mod_id in mod_ids:
+            mod = mods.get(mod_id)
+            if not mod:
+                continue
+            for line in translator.translate(mod.get("stats", [])):
+                cleaned = (line or "").strip()
+                if not is_readable(cleaned):
+                    continue
+                rendered.append(cleaned)
+        return rendered
+
+    fossils_curated: List[dict] = []
+    for identifier, data in sorted(
+        fossils_raw.items(), key=lambda item: item[1].get("name", item[0])
+    ):
+        name = data.get("name", "")
+        if not name:
+            continue
+        descriptions = [line.strip() for line in data.get("descriptions", []) if line and line.strip()]
+        blocked = [line.strip() for line in data.get("blocked_descriptions", []) if is_readable(line)]
+        forced = translate_mods(data.get("forced_mods", []))
+        added = translate_mods(data.get("added_mods", []))
+        extra: List[str] = []
+        if data.get("rolls_lucky"):
+            extra.append("Rolls crafting values twice and keeps the best outcome.")
+        if data.get("mirrors"):
+            extra.append("Creates a mirrored copy of the item.")
+        if data.get("changes_quality"):
+            extra.append("Reforges and randomises the item's quality.")
+        chance = data.get("corrupted_essence_chance", 0)
+        if chance:
+            extra.append(f"{chance}% chance to corrupt an Essence outcome.")
+        effects = dedupe([*descriptions, *blocked, *forced, *added, *extra])
+        allowed_tags = sorted(set(data.get("allowed_tags", [])))
+        forbidden_tags = sorted(set(data.get("forbidden_tags", [])))
+        fossils_curated.append(
+            {
+                "identifier": identifier,
+                "name": name,
+                "effects": effects,
+                "allowed_tags": allowed_tags,
+                "forbidden_tags": forbidden_tags,
+            }
+        )
+
+    def infer_socket_count(name: str) -> int | None:
+        lower = name.lower()
+        if "primitive" in lower:
+            return 1
+        if "potent" in lower:
+            return 2
+        if "powerful" in lower:
+            return 3
+        if "prime" in lower:
+            return 4
+        return None
+
+    resonators_curated: List[dict] = []
+    if isinstance(resonators_raw, dict):
+        for identifier, data in sorted(
+            resonators_raw.items(), key=lambda item: item[1].get("name", item[0])
+        ):
+            name = data.get("name", identifier.split("/")[-1])
+            descriptions = list(data.get("descriptions", []))
+            other = list(data.get("extra_descriptions", []))
+            mod_lines = []
+            for key in ("mods", "forced_mods", "added_mods", "implicit_mods"):
+                mod_lines.extend(translate_mods(data.get(key, [])))
+            socket_count = None
+            for key in ("socket_count", "sockets", "socketCount", "socket_count_min"):
+                value = data.get(key)
+                if isinstance(value, int):
+                    socket_count = value
+                    break
+                if isinstance(value, Sequence) and value and isinstance(value[0], int):
+                    socket_count = int(value[0])
+                    break
+            tags = data.get("tags", [])
+            if isinstance(tags, dict):
+                tags = list(tags.keys())
+            if not isinstance(tags, list):
+                tags = []
+            effects = dedupe([*descriptions, *other, *mod_lines])
+            resonators_curated.append(
+                {
+                    "identifier": identifier,
+                    "name": name,
+                    "effects": effects,
+                    "socket_count": socket_count,
+                    "tags": sorted({str(tag) for tag in tags if tag}),
+                }
+            )
+    else:
+        base_items_url = f"{REPOE_BASE}/base_items.min.json"
+        base_items = fetch_json(base_items_url)
+        for identifier, data in base_items.items():
+            if data.get("item_class") != "DelveSocketableCurrency":
+                continue
+            name = data.get("name", identifier.split("/")[-1])
+            properties = data.get("properties", {}) or {}
+            description = properties.get("description", "")
+            socket_count = infer_socket_count(name)
+            effects = [description]
+            if socket_count:
+                plural = "s" if socket_count != 1 else ""
+                effects.append(f"Allows {socket_count} fossil{plural}")
+                effects.append(f"{socket_count}-socket resonator")
+            tags = {
+                part.lower()
+                for part in name.split()
+                if part.lower() not in {"resonator"}
+            }
+            if socket_count:
+                tags.add(f"{socket_count}-socket")
+            resonators_curated.append(
+                {
+                    "identifier": identifier,
+                    "name": name,
+                    "effects": dedupe(effects),
+                    "socket_count": socket_count,
+                    "tags": sorted(tag for tag in tags if tag),
+                }
+            )
+
+    resonators_curated.sort(key=lambda entry: ((entry.get("socket_count") or 0), entry["name"]))
+
+    payload = {"fossils": fossils_curated, "resonators": resonators_curated}
+    write_json("fossils.json", payload)
+
+
 def clean_wiki_markup(text: str) -> str:
     text = re.sub(r"\{\{.*?\}\}", "", text)
     text = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", text)
@@ -421,7 +592,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "essences", "harvest", "fossils"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,7 +603,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "essences", "harvest", "fossils"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
@@ -442,6 +613,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
+    if "fossils" in sections:
+        LOGGER.info("Syncing fossils and resonators...")
+        sync_fossil_data(translator)
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()
