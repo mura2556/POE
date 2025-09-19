@@ -29,7 +29,7 @@ class _EssenceIndex:
 
     @staticmethod
     def _normalise(text: str) -> str:
-        cleaned = re.sub(r"[^a-z0-9]+", " ", text.lower())
+        cleaned = re.sub(r"[^a-z0-9]+", " ", str(text).lower())
         return " ".join(cleaned.split())
 
     def search(self, query: str) -> List[Essence]:
