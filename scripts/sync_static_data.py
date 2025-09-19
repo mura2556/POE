@@ -307,11 +307,24 @@ def sync_essence_data(translator: StatTranslator) -> None:
     mods = fetch_json(mods_url)
     curated: List[dict] = []
     for identifier, data in essences_raw.items():
+        raw_mods = data.get("mods") or {}
+        if isinstance(raw_mods, dict):
+            mod_ids_iterable = raw_mods.values()
+        else:
+            mod_ids_iterable = raw_mods
+
+        mod_ids = dedupe_strings(mod_ids_iterable)
         mod_texts: List[str] = []
-        for mod_id in data.get("mods", []):
+        for mod_id in mod_ids:
             mod = mods.get(mod_id)
-            if mod:
-                mod_texts.extend(translator.translate(mod.get("stats", [])))
+            if not mod:
+                continue
+            translations = translator.translate(mod.get("stats", []))
+            if translations:
+                mod_texts.extend(translations)
+            else:
+                mod_texts.append(mod_id)
+        mod_texts = dedupe_strings(mod_texts)
         tier = data.get("name", "").split(" Essence ")[0]
         curated.append(
             {
