@@ -196,6 +196,41 @@ def collect_keywords(*values: object) -> List[str]:
     return sorted(terms)
 
 
+def describe_essence_type(name: str, metadata: object) -> str:
+    """Render the raw essence type metadata into a descriptive string."""
+
+    display_name = (name or "").strip()
+    family_label = display_name
+    if "Essence of " in display_name:
+        family = display_name.split("Essence of ", 1)[1].strip()
+        if family:
+            family_label = f"{family} essence"
+    if not family_label:
+        family_label = "Unknown essence"
+
+    suffix_parts: List[str] = []
+    if isinstance(metadata, dict):
+        tier_value = metadata.get("tier")
+        if tier_value is not None:
+            try:
+                tier_int = int(tier_value)
+            except (TypeError, ValueError):
+                tier_text = str(tier_value)
+            else:
+                tier_text = str(tier_int)
+            suffix_parts.append(f"Tier {tier_text}")
+        if metadata.get("is_corruption_only"):
+            suffix_parts.append("corruption-only")
+        else:
+            suffix_parts.append("standard availability")
+    else:
+        suffix_parts.append("standard availability")
+
+    if suffix_parts:
+        return f"{family_label} ({', '.join(suffix_parts)})"
+    return family_label
+
+
 def humanise_descriptor(text: str) -> str:
     if not text:
         return ""
@@ -312,14 +347,16 @@ def sync_essence_data(translator: StatTranslator) -> None:
             mod = mods.get(mod_id)
             if mod:
                 mod_texts.extend(translator.translate(mod.get("stats", [])))
-        tier = data.get("name", "").split(" Essence ")[0]
+        name = data.get("name", identifier)
+        tier = name.split(" Essence ")[0]
+        type_description = describe_essence_type(name, data.get("type"))
         curated.append(
             {
                 "identifier": identifier,
-                "name": data.get("name", identifier),
+                "name": name,
                 "tier": tier,
                 "level": data.get("level", 0),
-                "type": data.get("type", ""),
+                "type": type_description,
                 "mods": mod_texts,
                 "item_level_restriction": data.get("item_level_restriction"),
                 "spawn_level_min": data.get("spawn_level_min"),
