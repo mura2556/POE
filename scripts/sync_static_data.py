@@ -142,6 +142,57 @@ def build_translator() -> StatTranslator:
     return StatTranslator(translations)
 
 
+def _dedupe_lines(lines: Iterable[str]) -> List[str]:
+    seen: set[str] = set()
+    result: List[str] = []
+    for line in lines:
+        cleaned = line.strip()
+        if not cleaned or cleaned in seen:
+            continue
+        seen.add(cleaned)
+        result.append(cleaned)
+    return result
+
+
+def _describe_tag_weights(weights: Sequence[dict], direction: str) -> List[str]:
+    descriptions: List[str] = []
+    for entry in weights:
+        tag = entry.get("tag")
+        weight = entry.get("weight")
+        if not tag:
+            continue
+        if weight is not None:
+            descriptions.append(f"{direction} chance of {tag} modifiers (weight {weight})")
+        else:
+            descriptions.append(f"{direction} chance of {tag} modifiers")
+    return descriptions
+
+
+def _infer_resonator_sockets(entry: dict) -> int:
+    for key in ("sockets", "socket_count", "number_of_sockets", "socket_number", "num_sockets"):
+        value = entry.get(key)
+        if isinstance(value, int) and value > 0:
+            return value
+    name = str(entry.get("name", "")).lower()
+    for keyword, count in {
+        "primitive": 1,
+        "single": 1,
+        "potent": 2,
+        "double": 2,
+        "powerful": 3,
+        "triple": 3,
+        "prime": 4,
+        "quad": 4,
+        "quadruple": 4,
+    }.items():
+        if keyword in name:
+            return count
+    height = entry.get("inventory_height")
+    if isinstance(height, int) and height > 0:
+        return height
+    return 0
+
+
 def sync_bench_data(translator: StatTranslator) -> None:
     bench_url = f"{REPOE_BASE}/crafting_bench_options.min.json"
     mods_url = f"{REPOE_BASE}/mods.min.json"
@@ -249,6 +300,134 @@ def sync_essence_data(translator: StatTranslator) -> None:
             }
         )
     write_json("essences.json", curated)
+
+
+def sync_fossil_data(translator: StatTranslator) -> None:
+    fossils_url = f"{REPOE_BASE}/fossils.min.json"
+    mods_url = f"{REPOE_BASE}/mods.min.json"
+    resonators_url = f"{REPOE_BASE}/resonators.min.json"
+
+    fossils_raw = fetch_json(fossils_url)
+    mods = fetch_json(mods_url)
+    try:
+        resonators_raw = fetch_json(resonators_url)
+    except requests.HTTPError as exc:  # type: ignore[attr-defined]
+        if exc.response is not None and exc.response.status_code == 404:
+            LOGGER.warning("resonators.min.json not found, deriving resonators from base items dataset")
+            base_items_url = f"{REPOE_BASE}/base_items.min.json"
+            base_items = fetch_json(base_items_url)
+            resonators_raw = {}
+            for identifier, entry in base_items.items():
+                if entry.get("item_class") != "DelveSocketableCurrency":
+                    continue
+                resonators_raw[identifier] = {
+                    "name": entry.get("name", identifier.split("/")[-1]),
+                    "description": entry.get("properties", {}).get("description", ""),
+                    "sockets": _infer_resonator_sockets(entry),
+                    "mods": [],
+                    "notes": [],
+                }
+        else:
+            raise
+
+    def render_mod_texts(mod_ids: Sequence[str], label: str | None = None) -> List[str]:
+        rendered: List[str] = []
+        for mod_id in mod_ids:
+            mod = mods.get(mod_id)
+            if not mod:
+                continue
+            lines = translator.translate(mod.get("stats", []))
+            if not lines:
+                if label:
+                    rendered.append(f"{label}: {mod_id}")
+                else:
+                    rendered.append(mod_id)
+                continue
+            for line in lines:
+                if label:
+                    rendered.append(f"{label}: {line}")
+                else:
+                    rendered.append(line)
+        return rendered
+
+    curated_fossils: List[dict] = []
+    for identifier, data in sorted(fossils_raw.items(), key=lambda item: (item[1].get("name") or item[0]).lower()):
+        descriptions = [text.strip() for text in data.get("descriptions", []) if text]
+        mod_sections: List[str] = []
+        mod_sections.extend(render_mod_texts(data.get("forced_mods", []), "Forces"))
+        mod_sections.extend(render_mod_texts(data.get("added_mods", []), "Adds"))
+        mod_sections.extend(render_mod_texts(data.get("sell_price_mods", []), "Vendor"))
+        notes: List[str] = []
+        notes.extend(_describe_tag_weights(data.get("positive_mod_weights", []), "Increases"))
+        notes.extend(_describe_tag_weights(data.get("negative_mod_weights", []), "Decreases"))
+        if data.get("mirrors"):
+            notes.append("Mirrors the item")
+        if data.get("rolls_white_sockets"):
+            notes.append("Can roll white sockets")
+        if data.get("changes_quality"):
+            notes.append("Rerolls item quality (15-30)")
+        if data.get("rolls_lucky"):
+            notes.append("Rolls values Lucky")
+        if data.get("enchants"):
+            notes.append("Adds a Labyrinth enchant")
+        chance = data.get("corrupted_essence_chance", 0)
+        if isinstance(chance, (int, float)) and chance:
+            notes.append(f"{chance}% chance to add a corrupted Essence modifier")
+
+        curated_fossils.append(
+            {
+                "identifier": identifier,
+                "name": data.get("name", identifier.split("/")[-1]),
+                "descriptions": descriptions,
+                "blocked_descriptions": [text.strip() for text in data.get("blocked_descriptions", []) if text],
+                "mod_texts": _dedupe_lines(mod_sections),
+                "notes": _dedupe_lines(notes),
+                "allowed_tags": list(data.get("allowed_tags", [])),
+                "forbidden_tags": list(data.get("forbidden_tags", [])),
+                "positive_mod_weights": list(data.get("positive_mod_weights", [])),
+                "negative_mod_weights": list(data.get("negative_mod_weights", [])),
+            }
+        )
+
+    def extract_resonator_mods(entry: dict) -> List[str]:
+        collected: List[str] = []
+        for key in ("mods", "implicit_mods", "explicit_mods"):
+            value = entry.get(key)
+            if isinstance(value, dict):
+                collected.extend(str(item) for item in value.values())
+            elif isinstance(value, list):
+                collected.extend(str(item) for item in value)
+        return collected
+
+    curated_resonators: List[dict] = []
+    for identifier, data in sorted(resonators_raw.items(), key=lambda item: (item[1].get("name") or item[0]).lower()):
+        name = data.get("name", identifier.split("/")[-1])
+        sockets = _infer_resonator_sockets(data)
+        description_field = data.get("description")
+        if not description_field:
+            descriptions = data.get("descriptions")
+            if isinstance(descriptions, list):
+                description_field = "; ".join(str(text).strip() for text in descriptions if text)
+        description = str(description_field or "").strip()
+        mod_texts = _dedupe_lines(render_mod_texts(extract_resonator_mods(data)))
+        note_lines = [*(data.get("notes", []) or [])]
+        if sockets:
+            note_lines.insert(0, f"Supports up to {sockets} fossil{'s' if sockets != 1 else ''}")
+        notes = _dedupe_lines(note_lines)
+        curated_resonators.append(
+            {
+                "identifier": identifier,
+                "name": name,
+                "sockets": sockets,
+                "description": description,
+                "effects": mod_texts,
+                "notes": notes,
+                "allowed_fossils": list(data.get("allowed_fossils", []) or []),
+            }
+        )
+
+    payload = {"fossils": curated_fossils, "resonators": curated_resonators}
+    write_json("fossils.json", payload)
 
 
 def clean_wiki_markup(text: str) -> str:
@@ -421,7 +600,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "essences", "fossils", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,13 +611,16 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "essences", "fossils", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)
+    if "fossils" in sections:
+        LOGGER.info("Syncing fossils and resonators...")
+        sync_fossil_data(translator)
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
         sync_harvest_data(translator)
