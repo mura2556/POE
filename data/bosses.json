@@ -1,0 +1,1583 @@
+{
+  "atlas_bosses": [
+    {
+      "aliases": [
+        "maven",
+        "maven's crucible"
+      ],
+      "encounter": "Maven's Crucible",
+      "name": "The Maven",
+      "notes": [
+        "Chilling Orbs: Casts several orb that when triggered, explodes and drops  which deals cold damage over time",
+        "==Drops=="
+      ],
+      "unlock": [
+        "The Maven is an NPC and boss encountered within maps. Progressing the Maven's questline allows the player to unlock the Maven's Beacon, which lets the player call upon the Maven to the map to witness you. Defeating enough unique bosses while the Maven is witnessing you will earn you a Maven's Invitation to challenge them all at once for rewards. Completing each Invitation for the first time earns you an atlas passive skill point.",
+        "The Maven can also be fought as a boss after collecting enough Crescent Splinters from challenging Invitations to form . Defeating the Maven for the first time will reward the player with an Atlas Book of Skill and a .",
+        "Activate the Maven's Beacon on your map device to call upon the Maven to the map. She will appear when you fight the map boss, empowering it in various ways. Once defeated, the boss will be marked as being witnessed by the Maven.",
+        "The Maven cannot be called to maps if she has already witnessed the boss, until you encounter them in a Maven's Invitation. To know if the map is eligible to have Maven's presence, you can check if her symbol is highlighted before activating your map device.",
+        "Maven-witnessed bosses have a chance to drop Maven's Chisels and certain awakened support gems.",
+        "By slaying 3 map bosses in the Maven's presence, you'll earn an invitation to The Maven's Crucible where she will request that you defeat these bosses simultaneously. Having demonstrated your strength, she challenges you to defeat four bosses, then five, then six and finally ten at the same time. Only then can you take on the new pinnacle boss of the Atlas: the Maven herself. The Atlas Quick Guide takes the player through all the steps required to find The Maven and to unlock The Maven's Crucible.",
+        "Players must use the  with the map device to fight the Maven.  The writ can be formed by collecting  from fights within The Maven's Crucible.",
+        "Brain Blast: \"\"/\"\"/\"\" - charges up an arena-wide explosion; the player must move to one of the two smaller platforms that are now accessible on the edges of the arena. Explodes with the line \"Space aligns.\" Removes all remaining Volatile Orbs. Deals 3 extremely high physical damage hits converted to each element, always inflicting Ignite/Shock/Freeze, and bypasses all Block or Dodge chance."
+      ]
+    },
+    {
+      "aliases": [
+        "sirus",
+        "awakener"
+      ],
+      "encounter": "Eye of the Storm",
+      "name": "Sirus, Awakener of Worlds",
+      "notes": [
+        "Sirus has various exclusive and high-value drops such as the  used for end-game crafting, and Thread of Hope, a jewel which allows allocating unconnected passives from a long distance.",
+        "==Drops==",
+        "| Encounter-<br>specific<br>drops"
+      ],
+      "unlock": [
+        "Sirus can be fought at the Eye of the Storm, accessed by using the Crest of the Elderslayers fragments in the map device. Acquired by defeating and obtaining each conqueror map fragment.",
+        "{{Mbox|text= Estimated drop rates from version 3.26.0. n=308<sup>u</sup><ref>Prohibited Library <sup>(requires membership to view)</sup> - https://discord.com/channels/991073626721763429/991092770959675412/1395746597584896062<br>https://discord.com/channels/991073626721763429/991092770959675412/1398850275317518458<br>https://discord.com/channels/991073626721763429/991092770959675412/1402449800426815641</ref> Actual drop rates may vary.<br>",
+        "The Cosmic Wounds, Memento Mori, Thirst for Knowledge, Insatiable Appetite, Throw the Gauntlet, and The Perfect Storm Atlas Keystone Passives have been removed. Instead, we have added a new set of fragments that can be used to access the Uber Pinnacle Bosses."
+      ]
+    },
+    {
+      "aliases": [
+        "shaper"
+      ],
+      "encounter": "The Shaper's Realm",
+      "name": "The Shaper",
+      "notes": [
+        "==Drops==",
+        "| Encounter-<br>specific<br>drops"
+      ],
+      "unlock": [
+        "The Shaper is one of the bosses of the Atlas end game system. He is a pinnacle boss in the the Shaper's Realm. The Shaper also occasionally appears in Shaper-influenced maps. Players can fight the Shaper using the Key to the Crucible map fragment set. These map fragments can be obtained by defeating the Guardians of the Void.",
+        "Defeating the Shaper is guaranteed to drop a map fragment required for the Uber Elder encounter, either  or . The other 2 fragments are dropped by The Elder.",
+        "Players must use the Key to the Crucible fragments in their map device to fight The Shaper. They can be collected by fighting various bosses, and can also be traded amongst players.",
+        "{{Mbox|text= Estimated drop rates from version 3.26.0. n=752<sup>u</sup><ref>https://www.reddit.com/r/pathofexile/comments/1ll4146/loot_from_250_uber_shapers/</ref><ref>https://www.reddit.com/r/pathofexile/comments/1m5ueyk/loot_form_102_uber_shaper_runs/</ref><ref>Prohibited Library <sup>(requires membership to view)</sup> - https://discord.com/channels/991073626721763429/991092770959675412/1394962171863236748<br>https://discord.com/channels/991073626721763429/991092770959675412/1396778989166530660<br>https://discord.com/channels/991073626721763429/991092770959675412/1398760385200263310</ref> Actual drop rates may vary.<br>"
+      ]
+    },
+    {
+      "aliases": [
+        "elder"
+      ],
+      "encounter": "The Elder",
+      "name": "The Elder",
+      "notes": [
+        "==Drops==",
+        "Always drops one of the two:",
+        "Always drops one of the following:"
+      ],
+      "unlock": [
+        "Defeating the Elder is guaranteed to drop a map fragment required for the Uber Elder encounter, either  or . The other 2 fragments are dropped by The Shaper.",
+        "Players must use the Key to Decay fragments in their map device to fight The Elder. These fragments drop from the Elder Guardians, or rarely from Fragment rewards, and they can also be traded amongst players.",
+        "The Elder is a boss that is invading the Atlas of Worlds. It was the main antagonist of the War for the Atlas expansion, where it would take over maps of the Atlas. As of the Conquerors of the Atlas expansion, as part of the canonization of the defeat of the Elder, it no longer actively interacts with the Atlas. The player characters who fought during the War for the Atlas expansion are represented by the Elderslayers led by Sirus, Awakener of Worlds.<ref>https://www.pathofexile.com/forum/view-thread/2912852</ref> Players can still fight the Elder aka Red (map) Elder, using the Key to Decay map fragments set, and do not need to chase the Elder and Shaper across the Atlas anymore. While the Yellow map Elder which has a lower area level is not in-game anymore. These map fragments can be obtained by defeating the Elder Guardians. Like other fragment bosses, the fight in the current Siege of the Atlas expansion is re-enactment of the fight as memories, rather than occurring in real-time in-universe. <ref>Based on Commander Kirac's dialogue on opening Elder Guardian Map as his atlas mission as well as the quest </ref>"
+      ]
+    },
+    {
+      "aliases": [
+        "uber elder"
+      ],
+      "encounter": "Uber Elder",
+      "name": "The Uber Elder",
+      "notes": [],
+      "unlock": []
+    },
+    {
+      "aliases": [
+        "eater"
+      ],
+      "encounter": "Absence of Symmetry and Harmony",
+      "name": "The Eater of Worlds",
+      "notes": [
+        "}}The Eater of Worlds is one of the Eldritch Horrors. Defeating The Eater of Worlds for the first time drops a  that can be socketed into the Atlas.",
+        "==Drops=="
+      ],
+      "unlock": [
+        "Players must use the  in their map device to fight The Eater of Worlds.  The invitation drops after defeating The Infinite Hunger and following the quest steps.",
+        "Avoid rolling the  invitation mod, as the boss will recharge to full Energy Shield if not actively taking damage for some time, or during immunity phases such as the Doom Phase. This mod will significantly increase the effective health of the boss and is not recommended for builds with low damage.",
+        "<ref>https://www.reddit.com/r/pathofexile/comments/1eonkdp/455_uber_eater_fragments_91_uber_eaters_again/</ref>"
+      ]
+    },
+    {
+      "aliases": [
+        "exarch",
+        "searing exarch"
+      ],
+      "encounter": "Absence of Patience and Wisdom",
+      "name": "The Searing Exarch",
+      "notes": [
+        "==Drops==",
+        "| Encounter-<br>specific<br>drops"
+      ],
+      "unlock": [
+        "Players must use the  in their map device to fight Searing Exarch.  The invitation drops after defeating The Black Star and following the quest steps.",
+        "Avoid rolling the  invitation mod, as the boss will recharge to full Energy Shield if the player fails to consecutively hit the boss or during immunity phases such as the Rolling Meteor Wall Phase. This mod will significantly increase the effective health of the boss and is not recommended for builds with low damage.",
+        "{{Mbox|text= Estimated drop rates from version 3.26.0. n=196<sup>r</sup><ref>Prohibited Library <sup>(requires membership to view)</sup> - https://discord.com/channels/991073626721763429/991092770959675412/1391076418951184495</ref>/650<sup>u</sup><ref>https://www.reddit.com/r/pathofexile/comments/1m4uggl/250_uber_exarch_results_cost_416_div/</ref><ref>https://www.reddit.com/r/pathofexile/comments/1mtsf7n/i_ran_300_uber_exarchs_so_you_dont_have_to/</ref><ref>Prohibited Library <sup>(requires membership to view)</sup> - https://discord.com/channels/991073626721763429/991092770959675412/1398760612200448070</ref>Actual drop rates may vary.<br>"
+      ]
+    }
+  ],
+  "map_bosses": [
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Acton's Nightmare",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Winterfang",
+        "Arctic Breath",
+        "Storm Eye",
+        "Solus, Pack Alpha"
+      ],
+      "map": "Caer Blaidd, Wolfpack's Den",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Avatar of Ash",
+        "Avatar of Winter",
+        "Avatar of Silence",
+        "Avatar of Apocalypse"
+      ],
+      "map": "Death and Taxes",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Vaal Oversoul"
+      ],
+      "map": "Doryani's Machinarium",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Hall of Grandmasters",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Maker of Mires",
+        "Brutus, Lord Incarcerator",
+        "Jaesyn",
+        "Hillock",
+        "Nightwane",
+        "Jik'shah",
+        "Vaal Oversoul",
+        "Modifier:MonsterAuraSpeedUniqueMap1|a hidden mod",
+        "Monster:Metadata/Monsters/IncaShadowBoss/BossIncaShadowUniqueMap",
+        "Balah, Duke",
+        "The Weaver",
+        "Tarred Ground",
+        "Kruug, the Frayed",
+        "Fidelitas, the Mourning",
+        "Grinning Totem"
+      ],
+      "map": "Hallowed Ground",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Harbinger",
+        "King Harbinger",
+        "Harbinger Scroll"
+      ],
+      "map": "Infused Beachhead",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Merveil, the Reflection",
+        "Merveil, the Returned"
+      ],
+      "map": "Maelström of Chaos",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Fairgraves, Never Dying",
+        "Movement Speed",
+        "Attack Speed"
+      ],
+      "map": "Mao Kun",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Nightmare of the Depraved Trinity",
+        "The Depraved Trinity",
+        "The Rotting Core",
+        "He of Many Pieces",
+        "Maligaro the Mutilator",
+        "Liantra",
+        "Shavronne the Sickening",
+        "Portentia, the Foul",
+        "Doedre the Defiler",
+        "Amalgam of Nightmares",
+        "Effluent",
+        "action speed|slower"
+      ],
+      "map": "Abomination Map",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Arbiter of Knowledge",
+        "Trinian, Intellectus Prime",
+        "The Archives",
+        "Act 3",
+        "curses"
+      ],
+      "map": "Academy Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Warband",
+        "Rama, The Kinslayer",
+        "Kalria, The Fallen",
+        "Kalria, The Risen",
+        "Invari, The Bloodshaper",
+        "Lokan, The Deceiver",
+        "Marchak, The Betrayer",
+        "Berrots, The Breaker",
+        "Vessider, The Unrivaled",
+        "Morgrants, The Deafening"
+      ],
+      "map": "Acid Caverns Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Calderus"
+      ],
+      "map": "Alleyways Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Legius Garhall",
+        "Captain Arteri",
+        "Blackguard",
+        "Cleave",
+        "Double Strike",
+        "Leap Slam"
+      ],
+      "map": "Ancient City Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Hybrid Widow",
+        "Black Death"
+      ],
+      "map": "Arachnid Tomb Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Solaris Temple Level 1|Solaris Temple",
+        "Herald of Ashes",
+        "Flame Sentinel",
+        "Firestorm",
+        "Flammability",
+        "Herald of Thunder (unique monster)|Herald of Thunder",
+        "Galvanic Ribbon",
+        "Arc",
+        "Shock Nova",
+        "Conductivity"
+      ],
+      "map": "Arcade Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Drought-Maddened Rhoa"
+      ],
+      "map": "Arid Lake Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Warmonger",
+        "General Gravicius"
+      ],
+      "map": "Armoury Map",
+      "tier": 13,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Steel Soul",
+        "Animated Weapon"
+      ],
+      "map": "Arsenal Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Lord of the Ashen Arrow",
+        "bandit",
+        "Blast Rain",
+        "Flame Dash",
+        "Flame Surge",
+        "Vaal Burning Arrow"
+      ],
+      "map": "Ashen Wood Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Puruna, the Challenger"
+      ],
+      "map": "Atoll Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "High Templar Avarius",
+        "the Chamber of Innocence"
+      ],
+      "map": "Basilica Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Ancient Sculptor",
+        "Marceus the Hidden",
+        "Purity Restored"
+      ],
+      "map": "Bazaar Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Glace",
+        "Hailrake",
+        "The Tidal Island (Act 1)",
+        "Ice Spear",
+        "Glacial Cascade",
+        "Ice Nova",
+        "Arctic Armour"
+      ],
+      "map": "Beach Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Lord of the Grey",
+        "Kitava",
+        "Champion of the Feast",
+        "Shaman of the Feast"
+      ],
+      "map": "Belfry Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Skullbeak",
+        "Bone Rhoa|bone rhoa"
+      ],
+      "map": "Bog Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Xixic, High Necromancer",
+        "Sawbones"
+      ],
+      "map": "Bone Crypt Map",
+      "tier": 1,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Melur Thornmaul",
+        "Orvi Acidbeak",
+        "Elida Blisterclaw",
+        "harvest",
+        "Ersi, Mother of Thorns",
+        "Janaar, the Omen",
+        "Namharim, Born of Night"
+      ],
+      "map": "Bramble Valley Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Map",
+        "Stonebeak, Battle Fowl",
+        "Eyepecker",
+        "Split Arrow",
+        "Caustic Arrow",
+        "Vaal Rain of Arrows",
+        "Gnar, Eater of Carrion",
+        "Steelchaw",
+        "Counterattack|Vengeance",
+        "bleed"
+      ],
+      "map": "Canyon Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Leif, the Swift-Handed",
+        "Kraityn"
+      ],
+      "map": "Castle Ruins Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Erebix, Light's Bane",
+        "Gruthkul, Mother of Despair"
+      ],
+      "map": "Cemetery Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Cardinal of Fear",
+        "Cardinal Sanctus Vox"
+      ],
+      "map": "Chambers of Impurity Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Winged Death",
+        "The Hundred Foot Shadow"
+      ],
+      "map": "Channel Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Hephaeus, The Hammer",
+        "Argus"
+      ],
+      "map": "Chateau Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Uhtred, Covetous Traitor",
+        "Vorana, Last to Fall",
+        "Medved, Feller of Heroes"
+      ],
+      "map": "Citadel Map",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Matriarch",
+        "The Rotten Matriarch",
+        "Twisted Effigy",
+        "enrage"
+      ],
+      "map": "City Square Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Ara, Sister of Light",
+        "Khor, Sister of Shadows",
+        "Solaris",
+        "Lunaris",
+        "File:Solaris sniper's mark.gif|embed|left|thumb|Ara (Solaris) using her spear attack against Khor (Lunaris) affected by a player's Sniper's Mark effect"
+      ],
+      "map": "Cold River Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Tyrant (unique monster)|Tyrant",
+        "General Gravicius",
+        "Act 3"
+      ],
+      "map": "Colonnade Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Ambrius, Legion Slayer",
+        "Daresso, King of Swords",
+        "Act 4"
+      ],
+      "map": "Colosseum Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Forgotten Soldier",
+        "Hector Titucius, Eternal Servant"
+      ],
+      "map": "Conservatory Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Captain Tanner Lightfoot",
+        "Gemling Legionnaire",
+        "The Grain Gate"
+      ],
+      "map": "Coral Ruins Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Prodigy of Pain",
+        "Prodigy of Hexes",
+        "Prodigy of Darkness",
+        "Eater of Souls"
+      ],
+      "map": "Core Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Oriath's Virtue",
+        "Oriath's Vengeance",
+        "Oriath's Vigil",
+        "Imperator Stantinus Bitterblade",
+        "Draconarius Wilhelm Flamebrand",
+        "Compulsor Octavia Sparkfist",
+        "Dominus",
+        "Act 3"
+      ],
+      "map": "Courtyard Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Neglected Flame",
+        "Sirus, the Awakener",
+        "action speed"
+      ],
+      "map": "Courtyard of Wasting Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Telvar, the Inebriated",
+        "First Mate Crastus",
+        "Pirate Treasure",
+        "Guardian of the Vault"
+      ],
+      "map": "Coves Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Kadaris, Crimson Mayor"
+      ],
+      "map": "Crimson Township Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Crystal Ore Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Pagan Bishop of Agony"
+      ],
+      "map": "Cursed Crypt Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Cursed King (boss)|The Cursed King"
+      ],
+      "map": "Dark Forest Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Monster:Metadata/Monsters/AvariusCasticus/AvariusCasticusWickermanMap|Woad, Mockery of Man",
+        "Avarius, Reassembled",
+        "Heretical Flare",
+        "damage over time",
+        "pantheon"
+      ],
+      "map": "Defiled Cathedral Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Terror of the Infinite Drifts",
+        "Shakari, Queen of the Sands"
+      ],
+      "map": "Desert Spring Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Stalker of the Endless Dunes",
+        "Garukhan, Queen of the Winds"
+      ],
+      "map": "Dig Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Blacksmith",
+        "Hillock"
+      ],
+      "map": "Dunes Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Penitentiary Incarcerator",
+        "Brutus, Lord Incarcerator"
+      ],
+      "map": "Dungeon Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Engraved Ultimatum",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Sumter the Twisted"
+      ],
+      "map": "Estuary Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Eroding One",
+        "Stone golem (monster type)|stone golem"
+      ],
+      "map": "Flooded Mine Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Skictis, Frostkeeper",
+        "Takatax Brittlethorn",
+        "Corruptor Eedaiak"
+      ],
+      "map": "Forbidden Woods Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Guardian of the Phoenix"
+      ],
+      "map": "Forge of the Phoenix Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Unbreakable",
+        "Magnetic Storm",
+        "debuff",
+        "action speed"
+      ],
+      "map": "Fortress Map",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Ciergan, Shadow Alchemist"
+      ],
+      "map": "Foundry Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Captain Clayborne, The Accursed"
+      ],
+      "map": "Frozen Cabins Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Avatar of Undoing",
+        "Chaos golem (monster type)|Chaos golem"
+      ],
+      "map": "Geode Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Lady Stormflay",
+        "Whipping Miscreation"
+      ],
+      "map": "Ghetto Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Rek'tar, the Breaker"
+      ],
+      "map": "Glacier Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The_Restless_Shade|The Restless Shade"
+      ],
+      "map": "Grave Trough Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Void Anomaly"
+      ],
+      "map": "Grotto Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Harbinger Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Mutewind",
+        "Yorishi, Aurora-sage",
+        "Jeinei Yuushu",
+        "Otesha, the Giantslayer",
+        "Whirling Blades",
+        "Cold Snap|Cold snap",
+        "Icestorm"
+      ],
+      "map": "Iceberg Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Ivory Temple Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Queen of the Great Tangle",
+        "The Weaver",
+        "Eldritch Altar"
+      ],
+      "map": "Jungle Valley Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Riftwalker"
+      ],
+      "map": "Laboratory Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Guardian of the Hydra"
+      ],
+      "map": "Lair of the Hydra Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "File:Kitava, The Destroyer.jpg|thumb|Kitava, the Destroyer",
+        "Kitava, The Destroyer",
+        "Kitava, the Insatiable",
+        "The Feeding Trough"
+      ],
+      "map": "Lava Lake Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Mirage of Bones",
+        "Nightwane"
+      ],
+      "map": "Leyline Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "warband",
+        "Uruk Baleh",
+        "El'Abin, Bloodeater",
+        "Leli Goya, Daughter of Ash",
+        "Bin'aia, Crimson Rain"
+      ],
+      "map": "Lighthouse Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Nightmare Manifest",
+        "Piety, the Abomination",
+        "Cleave",
+        "Corrupted Blood",
+        "Ball Lightning",
+        "Floating Eye"
+      ],
+      "map": "Malformation Map",
+      "tier": 13,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Tolman, the Exhumer",
+        "Tolman",
+        "The Quay",
+        "Desecrated Ground",
+        "Undying Evangelist",
+        "Eldritch Altar"
+      ],
+      "map": "Mausoleum Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Shadow of the Vaal (unique monster)|Shadow of the Vaal",
+        "Vaal Oversoul",
+        "Act 2"
+      ],
+      "map": "Maze Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Guardian of the Minotaur",
+        "stone golem"
+      ],
+      "map": "Maze of the Minotaur Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Oak the Mighty",
+        "Oak"
+      ],
+      "map": "Mesa Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Shock and Horror",
+        "Amarissa, Daughter of Merveil"
+      ],
+      "map": "Mineral Pools Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Sebbert, Crescent's Point"
+      ],
+      "map": "Moon Temple Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "He of Many Pieces"
+      ],
+      "map": "Museum Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Burtok, Conjurer of Bones",
+        "Bone Roil"
+      ],
+      "map": "Necropolis Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Orchard Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Maligaro the Mutilator",
+        "Maligaro, The Broken"
+      ],
+      "map": "Overgrown Shrine Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "God's Chosen",
+        "The Hallowed Husk",
+        "High Templar Dominus",
+        "Dominus, Ascendant"
+      ],
+      "map": "Palace Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Suncaller Asha"
+      ],
+      "map": "Park Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Titan of the Grove",
+        "Gneiss",
+        "The Old Fields",
+        "Act 2",
+        "Allies Cannot Die"
+      ],
+      "map": "Peninsula Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Erythrophagia",
+        "Doedre Darktongue",
+        "Molten Strike"
+      ],
+      "map": "Phantasmagoria Map",
+      "tier": 9,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Ancient Architect"
+      ],
+      "map": "Pier Map",
+      "tier": 13,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Olof, Son of the Headsman",
+        "Barkhul",
+        "Daresso's Dream"
+      ],
+      "map": "Pit Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Guardian of the Chimera"
+      ],
+      "map": "Pit of the Chimera Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "totems",
+        "Puruna, the Challenger",
+        "Poporo, the Highest Spire"
+      ],
+      "map": "Plateau Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Rogue exile|rogue exiles",
+        "Torr Olgosso",
+        "Damoi Tui",
+        "Orra Greengate",
+        "Augustina Solaria",
+        "Wilorin Demontamer",
+        "Eoin Greyfur",
+        "Igna Phoenix"
+      ],
+      "map": "Precinct Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "High Lithomancer"
+      ],
+      "map": "Primordial Blocks Map",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Blackguard Avenger",
+        "Captain Arteri",
+        "Cleave",
+        "Double Strike",
+        "Blackguard Tempest",
+        "Blackguard Mage",
+        "Spark",
+        "Lightning Thorns",
+        "Conductivity"
+      ],
+      "map": "Promenade Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Crusher of Gladiators",
+        "Shredder of Gladiators",
+        "Bringer of Blood"
+      ],
+      "map": "Racecourse Map",
+      "tier": 5,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Reaver",
+        "Perpetus"
+      ],
+      "map": "Ramparts Map",
+      "tier": 1,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Excellis Aurafix",
+        "Caliga, Imperatrix"
+      ],
+      "map": "Residence Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Lycia, Herald of the Scourge",
+        "Beidat, Archangel of Death",
+        "return",
+        "Heretic's Ire",
+        "Nightmare of Beidat",
+        "Beidat",
+        "Eternal Scourge"
+      ],
+      "map": "Sanctuary Map",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Gisale, Thought Thief",
+        "Shavronne of Umbra (unique monster)|Shavronne of Umbra"
+      ],
+      "map": "Scriptorium Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Doedre the Defiler"
+      ],
+      "map": "Sepulchre Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Warband",
+        "Musky \"Two-Eyes\" Grenn",
+        "Susara, Siren of Pondium",
+        "Lussi \"Rotmother\" Roth"
+      ],
+      "map": "Shipyard Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Belcer, the Pirate Lord",
+        "Captain Fairgraves (monster)|Fairgraves",
+        "Tormented Bootlegger",
+        "Tormented Buccaneer",
+        "Tormented Spirit",
+        "Power charge|power charges",
+        "Frenzy charge|frenzy charges",
+        "Pirate Lord's Treasure",
+        "Pirate Lord's Crewman"
+      ],
+      "map": "Shore Map",
+      "tier": 6,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Tahsin, Warmaker",
+        "Tukohama, Karui God of War"
+      ],
+      "map": "Siege Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Renkarr, The Kiln Keeper",
+        "Vilenta (monster)|Vilenta",
+        "Vilenta's Beam",
+        "Act 10"
+      ],
+      "map": "Silo Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Enticer of Rot",
+        "Alira"
+      ],
+      "map": "Spider Forest Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Strand Map",
+      "tier": 3,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Armala, the Widow",
+        "Arakaali"
+      ],
+      "map": "Sunken City Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Synthesised Map",
+      "tier": 11,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Jorus, Sky's Edge",
+        "Dawn, Harbinger of Solaris",
+        "Scorching Ray",
+        "Bladefall"
+      ],
+      "map": "Temple Map",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Varhesh, Shimmering Aberration"
+      ],
+      "map": "Terrace Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Shaper",
+        "The Cursed King",
+        "God's Chosen",
+        "The Hallowed Husk",
+        "Eater of Souls",
+        "Tyrant (unique monster)|Tyrant",
+        "Ambrius, Legion Slayer",
+        "The Infernal King",
+        "Piety the Empyrean",
+        "Shadow of the Vaal",
+        "Merveil, the Reflection",
+        "Merveil, the Returned",
+        "Penitentiary Incarcerator",
+        "Fire and Fury",
+        "Shock and Horror",
+        "Spinner of False Hope",
+        "Olof, Son of the Headsman",
+        "The Goddess",
+        "Nightmare Manifest",
+        "The Uncreated",
+        "The Unshaped"
+      ],
+      "map": "The Shaper's Realm",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Deceitful God",
+        "Innocence, God-Emperor of Eternity"
+      ],
+      "map": "Theatre of Lies Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Bazur",
+        "Liantra",
+        "Reassembled Brutus",
+        "Shavronne the Returned",
+        "Act 6"
+      ],
+      "map": "Tower Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Arachnoxia"
+      ],
+      "map": "Toxic Sewer Map",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Blood Progenitor",
+        "ape chieftain"
+      ],
+      "map": "Tropical Island Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "It That Fell",
+        "Q'uru"
+      ],
+      "map": "Underground River Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Merveil, the Reflection",
+        "Merveil, the Returned"
+      ],
+      "map": "Underground Sea Map",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Fallen Queen",
+        "The Hollow Lady",
+        "The Broken Prince",
+        "Dominus",
+        "The Upper Sceptre of God"
+      ],
+      "map": "Vaal Pyramid Map",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Atziri trio",
+        "the Apex of Sacrifice",
+        "the Alluring Abyss",
+        "Sacrifice of the Vaal",
+        "demon"
+      ],
+      "map": "Vaal Temple Map",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Guardian of the Vault"
+      ],
+      "map": "Vault Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The High Templar",
+        "Dominus",
+        "Cold Beam",
+        "Shocking Ground"
+      ],
+      "map": "Villa Map",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Portentia, the Foul",
+        "Doedre the Vile|Doedre"
+      ],
+      "map": "Waste Pool Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "The Brittle Emperor (unique monster)|The Brittle Emperor",
+        "Voll"
+      ],
+      "map": "Wasteland Map",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Fragment of Winter"
+      ],
+      "map": "Waterways Map",
+      "tier": 7,
+      "unlock": [
+        "Fragment of Winter"
+      ]
+    },
+    {
+      "bosses": [
+        "Stone of the Currents"
+      ],
+      "map": "Wharf Map",
+      "tier": 8,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Catarina, Master of Undeath",
+        "Kurgal",
+        "Ulaman",
+        "Amanamu",
+        "Evasion|Evaded",
+        "area of effect"
+      ],
+      "map": "Ziggurat Map",
+      "tier": 17,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Oba's Cursed Trove",
+      "tier": 10,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Olmec's Sanctum",
+      "tier": 1,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Talin, Faithbreaker"
+      ],
+      "map": "Pillars of Arun",
+      "tier": 2,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Mistress Hyseria"
+      ],
+      "map": "Poorjoy's Asylum",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Replica Poorjoy's Asylum",
+      "tier": 14,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "The Beachhead",
+      "tier": 15,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Infector of Dreams",
+        "Necromancer (monster type)|Necromancer",
+        "Modifier:MonsterAuraElementalDamage1|Allies deal increased Elemental Damage",
+        "Thresher",
+        "spectre",
+        "Primeval Watcher",
+        "Brittle Born-again",
+        "Rotting Damned",
+        "Frost Priest",
+        "Thunder Priest",
+        "Frost Harbinger",
+        "Flame Harbinger",
+        "item level",
+        "unique item"
+      ],
+      "map": "The Coward's Trial",
+      "tier": 7,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Headmistress Braeta"
+      ],
+      "map": "The Putrid Cloister",
+      "tier": 12,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "The Tower of Ordeals",
+      "tier": 16,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Helial, the Day Unending",
+        "Selenia, the Endless Night",
+        "Aloris, the First Light",
+        "Nebria, the Last Light",
+        "Blackguard",
+        "Solaris Concourse|Solaris",
+        "Lunaris Concourse",
+        "Opid, Helial's Herald",
+        "Arteth, Selenia's Herald",
+        "Dawn, Harbinger of Solaris|Harbingers of Solaris",
+        "Dusk, Harbinger of Lunaris|Lunaris"
+      ],
+      "map": "The Twilight Temple",
+      "tier": 4,
+      "unlock": [
+        "Completing all three fights on one side lets the player access the respective boss. If both sides are completed, the player can choose either of the bosses. The selection is triggered by standing on the relevant pressure plate (blue = Selenia, red = Helial)."
+      ]
+    },
+    {
+      "bosses": [
+        "Unknown"
+      ],
+      "map": "Vaults of Atziri",
+      "tier": 4,
+      "unlock": []
+    },
+    {
+      "bosses": [
+        "Shade of a Witch",
+        "Shade of a Duelist",
+        "Shade of a Shadow",
+        "Shade of a Marauder",
+        "Shade of a Ranger",
+        "Shade of a Scion",
+        "Shade of a Templar",
+        "Tormented Temptress",
+        "Arctic Breath"
+      ],
+      "map": "Whakawairua Tuahu",
+      "tier": 3,
+      "unlock": []
+    }
+  ]
+}
