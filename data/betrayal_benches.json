@@ -1,0 +1,707 @@
+[
+  {
+    "description": "random normal item",
+    "division": "Fortification",
+    "limitations": [
+      "30 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x10",
+      "Chaos Orb x10",
+      "Exalted Orb x10",
+      "Veiled Exalted Orb x1"
+    ],
+    "member": "Aisling",
+    "rank": 1
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x10",
+      "Exalted Orb x10",
+      "Chaos Orb x10",
+      "Veiled Chaos Orb x10"
+    ],
+    "member": "Aisling",
+    "rank": 1
+  },
+  {
+    "description": "random normal item",
+    "division": "Fortification",
+    "limitations": [
+      "60 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Chaos Orb x20",
+      "Exalted Orb x20",
+      "Veiled Exalted Orb x2"
+    ],
+    "member": "Aisling",
+    "rank": 2
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Exalted Orb x20",
+      "Chaos Orb x20",
+      "Veiled Chaos Orb x20"
+    ],
+    "member": "Aisling",
+    "rank": 2
+  },
+  {
+    "description": "random normal item",
+    "division": "Fortification",
+    "limitations": [
+      "90 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x30",
+      "Chaos Orb x30",
+      "Exalted Orb x30",
+      "Veiled Exalted Orb x3"
+    ],
+    "member": "Aisling",
+    "rank": 3
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x30",
+      "Exalted Orb x30",
+      "Chaos Orb x30",
+      "Veiled Chaos Orb x30"
+    ],
+    "member": "Aisling",
+    "rank": 3
+  },
+  {
+    "description": "random +1 ilvl regular/abyss/cluster jewel",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Orb of Transmutation x30",
+      "Orb of Alteration x30",
+      "Orb of Augmentation x30",
+      "Regal Orb x30",
+      "Exalted Orb x30",
+      "Orb of Scouring x30",
+      "Orb of Annulment x30",
+      "Divine Orb x5"
+    ],
+    "member": "Cameria",
+    "rank": 1
+  },
+  {
+    "description": "random +2 ilvl regular/abyss/cluster jewel",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Transmutation x50",
+      "Orb of Alteration x50",
+      "Orb of Augmentation x50",
+      "Regal Orb x50",
+      "Exalted Orb x50",
+      "Orb of Scouring x50",
+      "Orb of Annulment x50",
+      "Divine Orb x7"
+    ],
+    "member": "Cameria",
+    "rank": 2
+  },
+  {
+    "description": "random regular/abyss/cluster jewel",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Transmutation x70",
+      "Orb of Alteration x70",
+      "Orb of Augmentation x70",
+      "Regal Orb x70",
+      "Exalted Orb x70",
+      "Orb of Scouring x70",
+      "Orb of Annulment x70",
+      "Divine Orb x10"
+    ],
+    "member": "Cameria",
+    "rank": 3
+  },
+  {
+    "description": "random corrupted rare item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Tainted Chaos Orb x10",
+      "Tainted Exalted Orb x10",
+      "Tainted Divine Teardrop x2"
+    ],
+    "member": "Elreon",
+    "rank": 1
+  },
+  {
+    "description": "random corrupted rare item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Tainted Chaos Orb x20",
+      "Tainted Exalted Orb x20",
+      "Tainted Divine Teardrop x4"
+    ],
+    "member": "Elreon",
+    "rank": 2
+  },
+  {
+    "description": "random corrupted rare item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Tainted Chaos Orb x30",
+      "Tainted Exalted Orb x30",
+      "Tainted Divine Teardrop x6"
+    ],
+    "member": "Elreon",
+    "rank": 3
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card",
+    "division": "Research",
+    "limitations": [],
+    "member": "Gravicius",
+    "rank": 1
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card",
+    "division": "Research",
+    "limitations": [],
+    "member": "Gravicius",
+    "rank": 2
+  },
+  {
+    "description": "swap a divination card for a random one, with a greater chance to obtain a rarer card (x2)",
+    "division": "Research",
+    "limitations": [],
+    "member": "Gravicius",
+    "rank": 3
+  },
+  {
+    "description": "random normal ring or amulet",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x20",
+      "Exalted Orb x20",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "member": "Guff",
+    "rank": 1
+  },
+  {
+    "description": "random normal ring or amulet",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x40",
+      "Exalted Orb x40",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "member": "Guff",
+    "rank": 2
+  },
+  {
+    "description": "random normal ring or amulet",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Alchemy x1",
+      "Orb of Annulment x60",
+      "Exalted Orb x60",
+      "Divine Orb x5",
+      "Blessed Orb x5",
+      "Fading Reflecting Mist x1 (1.4x mod multi)"
+    ],
+    "member": "Guff",
+    "rank": 3
+  },
+  {
+    "description": "",
+    "division": "Research",
+    "limitations": [],
+    "member": "Haku",
+    "rank": 1
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Alchemy x1",
+      "Hinekora's Lock x4",
+      "Exalted Orb x20",
+      "Orb of Annulment x20",
+      "Random single stack of the following currency types (can be duplicate) x4",
+      "Warlord's Exalted Orb",
+      "Redeemer's Exalted Orb",
+      "Crusader's Exalted Orb",
+      "Hunter's Exalted Orb",
+      "Shaper's Exalted Orb",
+      "Elder's Exalted Orb",
+      "Veiled Exalted Orb"
+    ],
+    "member": "Haku",
+    "rank": 2
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Alchemy x1",
+      "Hinekora's Lock x5",
+      "Exalted Orb x20",
+      "Orb of Annulment x20",
+      "Random single stack of the following currency types (can be duplicate) x4",
+      "Warlord's Exalted Orb",
+      "Redeemer's Exalted Orb",
+      "Crusader's Exalted Orb",
+      "Hunter's Exalted Orb",
+      "Shaper's Exalted Orb",
+      "Elder's Exalted Orb",
+      "Veiled Exalted Orb"
+    ],
+    "member": "Haku",
+    "rank": 3
+  },
+  {
+    "description": "random rare item",
+    "division": "Fortification",
+    "limitations": [
+      "30 sec",
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x20",
+      "Exalted Orb x20"
+    ],
+    "member": "Hillock",
+    "rank": 1
+  },
+  {
+    "description": "random rare armour",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Lesser Eldritch Ember x20",
+      "Lesser Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "member": "Hillock",
+    "rank": 1
+  },
+  {
+    "description": "random rare item",
+    "division": "Fortification",
+    "limitations": [
+      "60 sec",
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x30",
+      "Exalted Orb x30"
+    ],
+    "member": "Hillock",
+    "rank": 2
+  },
+  {
+    "description": "random rare armour",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Greater Eldritch Ember x20",
+      "Greater Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "member": "Hillock",
+    "rank": 2
+  },
+  {
+    "description": "random rare item",
+    "division": "Fortification",
+    "limitations": [
+      "90 sec",
+      "Warlord's Exalted Orb x1",
+      "Redeemer's Exalted Orb x1",
+      "Crusader's Exalted Orb x1",
+      "Hunter's Exalted Orb x1",
+      "Shaper's Exalted Orb x1",
+      "Elder's Exalted Orb x1",
+      "Chaos Orb x40",
+      "Exalted Orb x40"
+    ],
+    "member": "Hillock",
+    "rank": 3
+  },
+  {
+    "description": "random rare armour",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Grand Eldritch Ember x20",
+      "Grand Eldritch Ichor x20",
+      "Orb of Conflict x1"
+    ],
+    "member": "Hillock",
+    "rank": 3
+  },
+  {
+    "description": "random corrupted rare body armour",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Tainted Orb of Fusing x10",
+      "Tainted Jeweller's Orb x10",
+      "Tainted Chromatic Orb x10"
+    ],
+    "member": "It That Fled",
+    "rank": 1
+  },
+  {
+    "description": "random corrupted rare body armour",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Tainted Orb of Fusing x15",
+      "Tainted Jeweller's Orb x15",
+      "Tainted Chromatic Orb x15"
+    ],
+    "member": "It That Fled",
+    "rank": 2
+  },
+  {
+    "description": "random corrupted rare body armour",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Tainted Orb of Fusing x20",
+      "Tainted Jeweller's Orb x20",
+      "Tainted Chromatic Orb x20"
+    ],
+    "member": "It That Fled",
+    "rank": 3
+  },
+  {
+    "description": "random anointed rare Talisman",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Tainted Chaos Orb x10",
+      "Tainted Exalted Orb x10",
+      "Tainted Divine Teardrop x2"
+    ],
+    "member": "Jorgin",
+    "rank": 1
+  },
+  {
+    "description": "random anointed rare Talisman",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Tainted Chaos Orb x20",
+      "Tainted Exalted Orb x20",
+      "Tainted Divine Teardrop x4"
+    ],
+    "member": "Jorgin",
+    "rank": 2
+  },
+  {
+    "description": "random anointed rare Talisman",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Tainted Chaos Orb x30",
+      "Tainted Exalted Orb x30",
+      "Tainted Divine Teardrop x6"
+    ],
+    "member": "Jorgin",
+    "rank": 2
+  },
+  {
+    "description": "random Essence mod rare item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Orb of Scouring x20",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x9",
+      "random Screaming (T5) Essence x5",
+      "random Shrieking (T6) Essence x3",
+      "random Deafening (T7) Essence x2",
+      "random Corrupted (T8) Essence x1"
+    ],
+    "member": "Korell",
+    "rank": 1
+  },
+  {
+    "description": "random Essence mod rare item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Scouring x30",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x11",
+      "random Screaming (T5) Essence x7",
+      "random Shrieking (T6) Essence x5",
+      "random Deafening (T7) Essence x4",
+      "random Corrupted (T8) Essence x3"
+    ],
+    "member": "Korell",
+    "rank": 2
+  },
+  {
+    "description": "random Essence mod rare item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Scouring x40",
+      "Exalted Orb x20",
+      "Vaal Orb x1",
+      "random Essence x13",
+      "random Screaming (T5)  Essence x9",
+      "random Shrieking (T6)  Essence x7",
+      "random Deafening (T7) Essence x6",
+      "random Corrupted (T8) Essence x5"
+    ],
+    "member": "Korell",
+    "rank": 3
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "20 sec",
+      "Djinn-Touched Vaal Orb x5"
+    ],
+    "member": "Leo",
+    "rank": 1
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Djinn-Touched Vaal Orb x10"
+    ],
+    "member": "Leo",
+    "rank": 2
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "40 sec",
+      "Djinn-Touched Vaal Orb x15"
+    ],
+    "member": "Leo",
+    "rank": 3
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Ancient Orb x10"
+    ],
+    "member": "Riker",
+    "rank": 1
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Ancient Orb x20"
+    ],
+    "member": "Riker",
+    "rank": 2
+  },
+  {
+    "description": "random unique item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Ancient Orb x30"
+    ],
+    "member": "Riker",
+    "rank": 3
+  },
+  {
+    "description": "",
+    "division": "Research",
+    "limitations": [],
+    "member": "Rin",
+    "rank": 1
+  },
+  {
+    "description": "",
+    "division": "Research",
+    "limitations": [],
+    "member": "Rin",
+    "rank": 2
+  },
+  {
+    "description": "random skill or support gem",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Gemcutters Lens x10",
+      "Facetor's Lens - 60M gem experience x1",
+      "Gemcutter's Prism x10",
+      "Vaal Orb x1"
+    ],
+    "member": "Tora",
+    "rank": 1
+  },
+  {
+    "description": "random skill or support gem",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Gemcutters Lens x15",
+      "Facetor's Lens - 120M gem experience x1",
+      "Gemcutter's Prism x15",
+      "Vaal Orb x1"
+    ],
+    "member": "Tora",
+    "rank": 2
+  },
+  {
+    "description": "random skill or support gem",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Gemcutters Lens x20",
+      "Facetor's Lens - 180M gem experience x1",
+      "Gemcutter's Prism x20",
+      "Vaal Orb x1"
+    ],
+    "member": "Tora",
+    "rank": 3
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "30 sec",
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x10",
+      "Exalted Orb x10",
+      "Orb of Annulment x10"
+    ],
+    "member": "Vagan",
+    "rank": 1
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "60 sec",
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x20",
+      "Exalted Orb x20",
+      "Orb of Annulment x20"
+    ],
+    "member": "Vagan",
+    "rank": 2
+  },
+  {
+    "description": "random normal item",
+    "division": "Research",
+    "limitations": [
+      "90 sec",
+      "Orb of Alchemy x1",
+      "Fracturing Orb x1",
+      "Chaos Orb x30",
+      "Exalted Orb x30",
+      "Orb of Annulment x30"
+    ],
+    "member": "Vagan",
+    "rank": 3
+  },
+  {
+    "description": "reforge socket colours 100 times, keeping the greatest number of less-common coloured sockets",
+    "division": "Fortification",
+    "limitations": [],
+    "member": "Vorici",
+    "rank": 1
+  },
+  {
+    "description": "your own normal item",
+    "division": "Research",
+    "limitations": [
+      "50 sec",
+      "Orb of Chance x30",
+      "Orb of Scouring x30"
+    ],
+    "member": "Vorici",
+    "rank": 1
+  },
+  {
+    "description": "reforge socket number 100 times on your own item, keeping the greatest number of sockets",
+    "division": "Fortification",
+    "limitations": [],
+    "member": "Vorici",
+    "rank": 2
+  },
+  {
+    "description": "your own normal item",
+    "division": "Research",
+    "limitations": [
+      "100 sec",
+      "Orb of Chance x60",
+      "Orb of Scouring x60"
+    ],
+    "member": "Vorici",
+    "rank": 2
+  },
+  {
+    "description": "reforge socket links 100 times on your own item, keeping the greatest number of links",
+    "division": "Fortification",
+    "limitations": [],
+    "member": "Vorici",
+    "rank": 3
+  },
+  {
+    "description": "your own normal item",
+    "division": "Research",
+    "limitations": [
+      "150 sec",
+      "Orb of Chance x90",
+      "Orb of Scouring x90"
+    ],
+    "member": "Vorici",
+    "rank": 3
+  }
+]

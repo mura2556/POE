@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, betrayal, bosses, essences, harvest
 from .models import CraftingStep
 
 
@@ -63,6 +63,21 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for recipe in bench_hits[:3]
             ]
             section = _format_section("Workbench Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        betrayal_hits = betrayal.find(base_text)
+        if betrayal_hits:
+            metadata["betrayal_benches"] = [asdict(bench) for bench in betrayal_hits]
+            lines = []
+            for bench in betrayal_hits[:3]:
+                base = f"- {bench.member} ({bench.division} rank {bench.rank})"
+                description = bench.description or "Unknown craft"
+                base += f" – {description}"
+                if bench.limitations:
+                    base += f" [{'; '.join(bench.limitations)}]"
+                lines.append(base)
+            section = _format_section("Betrayal Benches:", lines)
             if section:
                 instruction_parts.append(section)
 

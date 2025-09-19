@@ -11,6 +11,8 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, List, Sequence
+from urllib.parse import urlencode
+from xml.etree import ElementTree as ET
 
 import requests
 
@@ -222,6 +224,113 @@ def sync_bench_data(translator: StatTranslator) -> None:
     write_json("bench_recipes.json", curated)
 
 
+def _clean_html_cell(cell: ET.Element) -> List[str]:
+    for parent in list(cell.iter()):
+        for child in list(parent):
+            if child.tag == "span":
+                cls = child.attrib.get("class", "")
+                if "hoverbox__display" in cls or "c-item-hoverbox__display" in cls or "hoverbox_display" in cls:
+                    parent.remove(child)
+    for br in cell.findall(".//br"):
+        tail = br.tail or ""
+        br.tail = "\n" + tail
+    text = "".join(cell.itertext()).strip()
+    lines = [segment.strip() for segment in text.split("\n") if segment.strip()]
+    return lines
+
+
+def sync_betrayal_data() -> None:
+    params = {
+        "action": "parse",
+        "page": "Immortal_Syndicate",
+        "prop": "text",
+        "format": "json",
+        "formatversion": 2,
+    }
+    url = f"{POEWIKI_API}?{urlencode(params)}"
+    payload = fetch_json(url)
+    html_text = payload.get("parse", {}).get("text", "")
+    if not html_text:
+        raise RuntimeError("Failed to fetch Immortal Syndicate wiki text")
+
+    lower_html = html_text.lower()
+    table_positions: List[int] = []
+    search_from = 0
+    while True:
+        idx = lower_html.find('<table class="wikitable"', search_from)
+        if idx == -1:
+            break
+        table_positions.append(idx)
+        search_from = idx + 1
+    if len(table_positions) < 2:
+        raise RuntimeError("Could not locate Betrayal bench table in wiki payload")
+    table_start = table_positions[1]
+    table_end = lower_html.find("</table>", table_start)
+    if table_end == -1:
+        raise RuntimeError("Could not locate Betrayal bench table end")
+    fragment = html_text[table_start:table_end + len("</table>")]
+
+    wrapped = f"<root>{fragment}</root>"
+    root = ET.fromstring(wrapped)
+    table = root.find("table")
+    if table is None:
+        raise RuntimeError("Parsed Betrayal bench table is empty")
+
+    rows = table.findall("./tbody/tr")
+    if not rows:
+        raise RuntimeError("Parsed Betrayal bench table has no rows")
+
+    header = ["".join(cell.itertext()).strip() for cell in list(rows[0])]
+    columns = header[1:]
+
+    curated: List[dict] = []
+    member: str | None = None
+    bench_pattern = re.compile(r"^Rank (\d+): Crafting Bench:\s*(.*)$", re.DOTALL)
+    for row in rows[1:]:
+        cells = list(row)
+        if not cells:
+            continue
+        if len(cells) == len(header):
+            member = "".join(cells[0].itertext()).strip()
+            continue
+        if member is None:
+            continue
+        cleaned_cells = [_clean_html_cell(cell) for cell in cells]
+        for division, lines in zip(columns, cleaned_cells):
+            if not lines:
+                continue
+            first = lines[0]
+            if "Crafting Bench" not in first:
+                continue
+            match = bench_pattern.match(first)
+            if not match:
+                continue
+            rank = int(match.group(1))
+            remainder = match.group(2)
+            extra = [line for line in lines[1:] if line]
+            main = remainder.rstrip(":").strip()
+            description = main
+            time_limit = None
+            time_match = re.search(r"\(([^()]*)\)$", description)
+            if time_match and any(token in time_match.group(1).lower() for token in ("sec", "second")):
+                time_limit = time_match.group(1).strip()
+                description = description[: time_match.start()].strip()
+            limitations = [entry.rstrip(":").strip() for entry in extra]
+            if time_limit:
+                limitations.insert(0, time_limit)
+            curated.append(
+                {
+                    "member": member,
+                    "division": division,
+                    "rank": rank,
+                    "description": description,
+                    "limitations": limitations,
+                }
+            )
+
+    write_json("betrayal_benches.json", curated)
+
+
 def sync_essence_data(translator: StatTranslator) -> None:
     essences_url = f"{REPOE_BASE}/essences.min.json"
     mods_url = f"{REPOE_BASE}/mods.min.json"
@@ -421,7 +530,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "betrayal", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -432,10 +541,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     ensure_data_dir()
     translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "betrayal", "essences", "harvest"])
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
         sync_bench_data(translator)
+    if "betrayal" in sections:
+        LOGGER.info("Syncing Betrayal benches...")
+        sync_betrayal_data()
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
         sync_essence_data(translator)
