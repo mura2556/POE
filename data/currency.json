@@ -1,0 +1,5111 @@
+[
+  {
+    "action": "More Chaos modifiers No Lightning modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Aberrant Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Attack modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Abrasive Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Abyss Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Abyssal Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Speed modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Accelerating Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Caster modifiers Fewer Attack modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Aetheric Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "No documented crafting action.",
+    "constraints": [],
+    "name": "Albino Rhoa Feather",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Alchemy.",
+    "constraints": [],
+    "name": "Alchemy Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Alteration.",
+    "constraints": [],
+    "name": "Alteration Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Amber Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a unique equipment as another of the same item class",
+    "constraints": [
+      "Right click this item then left click a unique item to apply it."
+    ],
+    "name": "Ancient Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Ancient Orb.",
+    "constraints": [],
+    "name": "Ancient Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Annulment.",
+    "constraints": [],
+    "name": "Annulment Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of an armour",
+    "constraints": [
+      "Right click this item then left click an armour to apply it.",
+      "Has greater effect on lower item level, non-unique armours.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Armourer's Scrap",
+    "tags": [
+      "quality_currency",
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Armour reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Armoursmith's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be brought to Gwennen to refresh her vendor inventory.",
+    "constraints": [],
+    "name": "Astragali",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Destroys an item, applying its influence to another of the same item class The second item is reforged as a rare item with both influence types and new modifiers",
+    "constraints": [
+      "Right click this item, then left click the item you wish to take the influence from, then left click an item of the same item class you wish to apply it to."
+    ],
+    "name": "Awakener's Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Azure Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Stores a Beast in an item",
+    "constraints": [
+      "Right click on this item then left click on a Beast in your Menagerie to itemise the Beast."
+    ],
+    "name": "Bestiary Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Binding.",
+    "constraints": [],
+    "name": "Binding Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Black Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Weapons reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Blacksmith's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a weapon",
+    "constraints": [
+      "Right click this item then left click a weapon to apply it.",
+      "Has greater effect on lower item level, non-unique weapons.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Blacksmith's Whetstone",
+    "tags": [
+      "quality_currency",
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the values of the implicit modifiers of an item",
+    "constraints": [
+      "Right click this item then left click another item to apply it."
+    ],
+    "name": "Blessed Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a breach unique item or breachstone to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable breach unique item to upgrade it."
+    ],
+    "name": "Blessing of Chayula",
+    "tags": [
+      "breach_blessing",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a breach unique item or breachstone to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable breach unique item to upgrade it."
+    ],
+    "name": "Blessing of Esh",
+    "tags": [
+      "breach_blessing",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a breach unique item or breachstone to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable breach unique item to upgrade it."
+    ],
+    "name": "Blessing of Tul",
+    "tags": [
+      "breach_blessing",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a breach unique item or breachstone to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable breach unique item to upgrade it."
+    ],
+    "name": "Blessing of Uul-Netol",
+    "tags": [
+      "breach_blessing",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a breach unique item or breachstone to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable breach unique item to upgrade it."
+    ],
+    "name": "Blessing of Xoph",
+    "tags": [
+      "breach_blessing",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Blight reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Blighted Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, including at least one Blighted Map",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Blighted Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Corrupted Has a Corrupted implicit modifier",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Bloodstained Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Minion, Aura or Curse modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Bound Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be brought to Dannig to refresh his vendor inventory.",
+    "constraints": [],
+    "name": "Burial Medallion",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Cartographer's Chisel",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Map Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Cartographer's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a rare item with new random modifiers",
+    "constraints": [
+      "Right click this item then left click a rare item to apply it."
+    ],
+    "name": "Chaos Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes a Chaos Orb.",
+    "constraints": [],
+    "name": "Chaos Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges the colour of sockets on an item",
+    "constraints": [
+      "Right click this item then left click a socketed item to apply it."
+    ],
+    "name": "Chromatic Orb",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Clear Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, adding additional mission options",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Comprehensive Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Physical Ailment or Chaos Ailment modifiers No Elemental modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Corroded Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 10 Crescent Splinters to create The Maven's Writ.",
+    "constraints": [],
+    "name": "Crescent Splinter",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Crimson Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Crusader influence and a new Crusader modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Crusader's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (149-203) to (302-351) [[Fire Damage]] Two Handed Melee Weapon: Adds (149-203) to (302-351) [[Fire Damage]] Other Weapon: Adds (80-109) to (162-189) [[Fire Damage]] Armour: +(46-48)% to [[Fire Resistance]] Quiver: +(46-48)% to [[Fire Resistance]] Belt: +(46-48)% to [[Fire Resistance]] Other Jewellery: (31-34)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (49-66) to (98-115) [[Fire Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (66-88) to (132-155) [[Fire Damage]] to [[Spell|Spells]] Gloves: Adds (11-15) to (23-27) [[Fire Damage]] to [[Attack|Attacks]] Body Armour: (9-10)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Shield: (9-10)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Other Armour: (56-60)% chance to Avoid being Ignited Quiver: Adds (41-55) to (81-96) [[Fire Damage]] to [[Attack|Attacks]] Belt: (56-60)% chance to Avoid being Ignited Other Jewellery: Adds (23-27) to (43-48) [[Fire Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Anguish",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (20-26) to (40-47) [[Physical Damage]] Two Handed Weapon: Adds (31-42) to (65-75) [[Physical Damage]] Gloves: Adds (6-7) to (10-11) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (151-200) [[Physical Damage]] to Melee Attackers Quiver: Adds (16-18) to (27-30) [[Physical Damage]] to [[Attack|Attacks]] Amulet: Adds (16-18) to (27-30) [[Physical Damage]] to [[Attack|Attacks]] Ring: Adds (10-11) to (16-17) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (151-200) [[Physical Damage]] to Melee Attackers",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: +(625-780) to [[Accuracy Rating]] Body Armour: +(390-475) to [[Evasion Rating]] Helmet: +(161-180) to [[Evasion Rating]] Shield: +(301-375) to [[Evasion Rating]] Other Armour: +(121-135) to [[Evasion Rating]] Quiver: +(481-600) to [[Accuracy Rating]] Amulet: (32-33)% increased [[Evasion Rating]] Other Jewellery: +(151-180) to [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Doubt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (22-25)% increased Impale Effect Wand: (47-52)% increased Projectile Speed Bow: +2 to [[Level]] of [[Item socket|Socketed]] [[Bow]] Gems Two Handed Melee Weapon: (35-38)% increased Impale Effect Body Armour: +(390-475) to [[Armour]] Helmet: +(161-180) to [[Armour]] Shield: +(301-375) to [[Armour]] Other Armour: +(121-135) to [[Armour]] Quiver: (47-52)% increased Projectile Speed Amulet: (32-33)% increased [[Armour]] Ring: +(201-300) to [[Armour]] Belt: +(481-520) to [[Armour]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Dread",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (53-79) to (101-131) [[Chaos Damage]] Two Handed Weapon: Adds (89-131) to (181-229) [[Chaos Damage]] Armour: +(31-35)% to [[Chaos Resistance]] Quiver: Adds (23-37) to (49-61) [[Chaos Damage]] to [[Attack|Attacks]] Belt: +(31-35)% to [[Chaos Resistance]] Other Jewellery: (31-34)% increased [[Chaos Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Envy",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: [[Minion|Minions]] deal (83-94)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (123-144)% increased Damage Gloves: [[Minion|Minions]] deal (28-30)% increased Damage Helmet: (28-30)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (28-30)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (28-30)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (28-30)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (28-30)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (4.1-4.4)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(91-105) to maximum [[Life]] Boots: +(91-105) to maximum [[Life]] Helmet: +(91-105) to maximum [[Life]] Shield: +(130-144) to maximum [[Life]] Other Armour: +(160-174) to maximum [[Life]] Quiver: (1.1-1.3)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (32-35)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (48.1-64) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (134-184) to (270-313) [[Cold Damage]] Two Handed Melee Weapon: Adds (134-184) to (270-313) [[Cold Damage]] Other Weapon: Adds (73-100) to (147-170) [[Cold Damage]] Armour: +(46-48)% to [[Cold Resistance]] Quiver: +(46-48)% to [[Cold Resistance]] Belt: +(46-48)% to [[Cold Resistance]] Other Jewellery: (31-34)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (35-38)% increased [[Critical Strike Chance]] Gloves: (24-26)% increased Global [[Critical Strike Chance]] Boots: (31-35)% chance to Avoid Elemental Ailments Shield: (70-75)% increased Chance to [[Block]] Other Armour: (9-10)% increased [[Mana Reservation]] Efficiency of [[Skill|Skills]] Quiver: (39-42)% increased Global [[Critical Strike Chance]] Amulet: (39-42)% increased Global [[Critical Strike Chance]] Ring: (24-26)% increased Global [[Critical Strike Chance]] Belt: (36-39)% increased Stun Duration on Enemies",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Loathing",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (29-32)% increased [[Cast Speed]] Two Handed Weapon: (44-49)% increased [[Cast Speed]] Shield: (70-76)% increased [[Mana]] Regeneration Rate Other Armour: +(69-77) to maximum [[Mana]] Quiver: (0.9-1)% of Physical [[Attack Damage]] Leeched as [[Mana]] Belt: (21-25)% increased [[Flask]] [[Mana]] Recovery rate Other Jewellery: (70-76)% increased [[Mana]] Regeneration Rate",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Misery",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 8% [[Fire Resistance]] Two Handed Weapon: Damage Penetrates (15-16)% [[Fire Resistance]] Other Items: +(51-58) to [[Strength]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Rage",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (110-119)% increased [[Spell]] [[Critical Strike Chance]] Body Armour: (46-60)% increased Stun Threshold Shield: (110-119)% increased [[Spell]] [[Critical Strike Chance]] Other Armour: (31-44)% chance to Avoid being Stunned Quiver: +(35-41)% to Global [[Critical Strike Multiplier]] Amulet: +(35-41)% to Global [[Critical Strike Multiplier]] Ring: +(21-25)% to Global [[Critical Strike Multiplier]] Belt: (16-17)% reduced Enemy Stun Threshold",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Scorn",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 8% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (15-16)% [[Cold Resistance]] Other Items: +(51-58) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 8% [[Lightning Resistance]] Two Handed Weapon: Damage Penetrates (15-16)% [[Lightning Resistance]] Other Items: +(51-58) to [[Intelligence]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Spite",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (41-54) to (81-93) [[Cold Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (61-81) to (120-140) [[Cold Damage]] to [[Spell|Spells]] Gloves: Adds (10-13) to (20-24) [[Cold Damage]] to [[Attack|Attacks]] Body Armour: (9-10)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Shield: (9-10)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Other Armour: (56-60)% chance to Avoid being [[Freeze|Frozen]] Quiver: Adds (36-50) to (74-86) [[Cold Damage]] to [[Attack|Attacks]] Belt: (56-60)% chance to Avoid being [[Freeze|Frozen]] Other Jewellery: Adds (20-24) to (38-44) [[Cold Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Suffering",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (4-14) to (170-179) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (7-20) to (255-270) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds (1-4) to (40-43) [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (9-10)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (9-10)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (56-60)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds (6-13) to (136-155) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (56-60)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds (4-8) to (71-76) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (83-94)% increased [[Spell Damage]] Two Handed Weapon: (123-144)% increased [[Spell Damage]] Body Armour: +(88-95) to maximum [[Energy Shield]] Helmet: +(52-58) to maximum [[Energy Shield]] Shield: +(75-85) to maximum [[Energy Shield]] Other Armour: +(38-45) to maximum [[Energy Shield]] Quiver: (43-50)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (18-19)% increased maximum [[Energy Shield]] Ring: +(44-47) to maximum [[Energy Shield]] Belt: +(38-43) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (13-19) to (266-310) [[Lightning Damage]] Bow: Adds (25-34) to (494-575) [[Lightning Damage]] Two Handed Melee Weapon: Adds (25-34) to (494-575) [[Lightning Damage]] Other Weapon: Adds (13-19) to (266-310) [[Lightning Damage]] Armour: +(46-48)% to [[Lightning Resistance]] Quiver: +(46-48)% to [[Lightning Resistance]] Belt: +(46-48)% to [[Lightning Resistance]] Other Jewellery: (31-34)% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Wrath",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Melee Weapon: (28-30)% increased [[Attack Speed]] Ranged Weapon: (17-18)% increased [[Attack Speed]] Gloves: (17-18)% increased [[Attack Speed]] Boots: 32% increased [[Movement Speed]] Body Armour: (36-45)% increased [[Totem]] Placement speed Helmet: (31-35)% increased Warcry Speed Other Armour: (29-34)% increased Stun and [[Block]] Recovery Quiver: (13-15)% increased [[Attack Speed]] Amulet: (17-20)% increased [[Cast Speed]] Ring: (15-16)% increased [[Cast Speed]] Belt: (18-21)% increased [[Trap]] and [[Mine]] Throwing Speed",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Deafening Essence of Zeal",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Critical modifiers No Attribute modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Deft Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, adding layers of Delirium to all non-Unique Maps",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Delirious Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Generic Item reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item.",
+      "Shift click to unstack."
+    ],
+    "name": "Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Defence modifiers No Life Modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Dense Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Tempest's Binding to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Deregulation Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the values of the random modifiers on an item",
+    "constraints": [
+      "Right click this item then left click a magic, rare or unique item to apply it."
+    ],
+    "name": "Divine Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Divination Cards reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Diviner's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Corrupts a Unique item, modifying it unpredictably Can Modify Corrupted Items Items Corrupted this way can have up to 2 Implicit Modifiers",
+    "constraints": [],
+    "name": "Djinn-Touched Vaal Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Elder influence and a new Elder modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Elder's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "If The Searing Exarch is dominant, reroll prefix modifiers If The Eater of Worlds is dominant, reroll suffix modifiers",
+    "constraints": [
+      "Right click this item then left click a rare item with The Searing Exarch or The Eater of Worlds dominance to apply it."
+    ],
+    "name": "Eldritch Chaos Orb",
+    "tags": [
+      "all_eldritch_currency",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "If The Searing Exarch is dominant, add a prefix modifier If The Eater of Worlds is dominant, add a suffix modifier",
+    "constraints": [
+      "Right click this item then left click a rare item with The Searing Exarch or The Eater of Worlds dominance to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Eldritch Exalted Orb",
+    "tags": [
+      "all_eldritch_currency",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "If The Searing Exarch is dominant, remove a prefix modifier If The Eater of Worlds is dominant, remove a suffix modifier",
+    "constraints": [
+      "Right click this item then left click on a magic or rare item with The Searing Exarch or The Eater of Worlds dominance to apply it."
+    ],
+    "name": "Eldritch Orb of Annulment",
+    "tags": [
+      "all_eldritch_currency",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Rippling Thoughts to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Electroshock Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a Strongbox",
+    "constraints": [
+      "Right click this item then left click a Strongbox to apply it.",
+      "Has greater effect on lower rarity Strongboxes.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Engineer's Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Engineer's Orb.",
+    "constraints": [],
+    "name": "Engineer's Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds an enchantment to a utility flask that will improve it but prevent it from gaining charges during its effect Replaces any existing enchantment",
+    "constraints": [
+      "Right click this item then left click a flask to apply it."
+    ],
+    "name": "Enkindling Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: Your [[Hit|Hits]] inflict Decay, dealing 700 [[Chaos Damage]] per second for 8 seconds Gloves: [[Item socket|Socketed]] Gems deal 30% more Damage over Time Boots: Cannot be [[Poison|Poisoned]] Body Armour: 25% reduced [[Chaos Damage]] taken over time Helmet: +2 to [[Level]] of [[Item socket|Socketed]] Aura Gems Shield: +15% Chance to [[Block]] [[Spell Damage]] while on [[Low Life]] Quiver: 25% increased Effect of your Marks Amulet: (6-7)% Chance to [[Block]] [[Spell Damage]] Ring: +(12-15)% to Damage over Time Multiplier Belt: +50% to [[Chaos Resistance]] during any [[Flask]] Effect",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Essence of Delirium",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: 16% chance to gain a [[Charge|Power, Frenzy or Endurance Charge]] on [[Kill]] Gloves: [[Item socket|Socketed]] Gems have +3.5% [[Critical Strike Chance]] Boots: 5% reduced [[Elemental Damage]] Taken while [[Stationary|stationary]] Body Armour: You take 10% reduced Extra Damage from [[Critical strike|Critical Strikes]] per [[Endurance Charge]] Helmet: [[Item socket|Socketed]] Gems deal 30% more [[Elemental Damage]] Shield: [[Chill]] [[Nearby]] Enemies when you [[Block]] Quiver: 8 to 12 Added [[Cold Damage]] per [[Frenzy Charge]] Amulet: (15-25)% chance to [[Crushed|Crush]] on [[Hit]] Ring: 4 to 7 Added [[Cold Damage]] per [[Frenzy Charge]] Belt: Gain [[Alchemist's Genius]] when you use a [[Flask]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Essence of Horror",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: Cast [[Level]] 20 Fire Burst on [[Hit]] Gloves: [[Item socket|Socketed]] Gems deal 175 to 225 Added [[Fire Damage]] Boots: Drops Burning Ground while moving, dealing 2500 [[Fire Damage]] per second for 4 seconds Body Armour: 25% increased Area of Effect Helmet: [[Item socket|Socketed]] Gems deal 30% more Damage while on [[Low Life]] Shield: Adds 60 to 100 [[Fire Damage]] if you've Blocked [[Recently]] Quiver: Gain 15% of [[Physical Damage]] as Extra [[Fire Damage]] Amulet: 150% increased total Recovery per second from [[Life]] [[Leech]] Ring: Gain 10% of [[Physical Damage]] as Extra [[Fire Damage]] Belt: Damage Penetrates 5% [[Elemental Resistance|Elemental Resistances]] during any [[Flask]] Effect",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Essence of Hysteria",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: Triggers [[Level]] 20 Spectral Spirits when Equipped +3 to maximum number of Spectral Spirits Gloves: [[Item socket|Socketed]] Gems have 16% more [[Attack]] and [[Cast Speed]] Boots: 70% increased [[Mana]] Regeneration Rate while [[Shock|Shocked]] Body Armour: You gain [[Onslaught]] for 6 seconds when [[Hit]] Helmet: [[Item socket|Socketed]] Gems gain 50% of [[Physical Damage]] as extra [[Lightning Damage]] Shield: 25% chance to gain a [[Power Charge]] when you [[Block]] Quiver: Projectiles Pierce 2 additional Targets Amulet: 10% chance to Recover 10% of [[Mana]] when you use a [[Skill]] Ring: You and your [[Minion|Minions]] take 40% reduced Reflected Damage Belt: 10% increased [[Movement Speed]] during any [[Flask]] Effect",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Essence of Insanity",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Augments a rare item with a new random modifier",
+    "constraints": [
+      "Right click this item then left click a rare item to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Exalted Orb.",
+    "constraints": [],
+    "name": "Exalted Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Tujen.",
+    "constraints": [],
+    "name": "Exceptional Black Scythe Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction2",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Gwennen.",
+    "constraints": [],
+    "name": "Exceptional Broken Circle Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction1",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds an Exceptional Searing Exarch implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Exceptional Eldritch Ember",
+    "tags": [
+      "cleansing_fire_currency",
+      "eldritch_ember",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds an Exceptional Eater of Worlds implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Searing Exarch implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Exceptional Eldritch Ichor",
+    "tags": [
+      "great_tangle_currency",
+      "eldritch_ichor",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Rog.",
+    "constraints": [],
+    "name": "Exceptional Order Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction3",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Dannig.",
+    "constraints": [],
+    "name": "Exceptional Sun Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction4",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be brought to Tujen to refresh his vendor inventory.",
+    "constraints": [],
+    "name": "Exotic Coinage",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, using uncompleted non-Unique Maps where possible",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Explorer's Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Gem modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Faceted Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds stored experience to a gem, up to its maximum level",
+    "constraints": [
+      "Right click this item then left click a gem to apply it."
+    ],
+    "name": "Facetor's Lens",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably reflects a rare amulet or ring, breaking it into two mirrored halves with reflected modifiers",
+    "constraints": [
+      "Right click this item then left click a rare amulet or ring to reflect it.",
+      "Cannot be used on Synthesised, Veiled or Influenced items."
+    ],
+    "name": "Fading Reflecting Mist",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Life and Mana modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Fertile Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Currency Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item.",
+      "Shift click to unstack."
+    ],
+    "name": "Fine Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Harbinger Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Foreboding Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Fossils reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Fossilised Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Creates a split copy Cannot be used to split Influenced, Enchanted, Fractured, or Synthesised items",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Fractured Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Fracture a random modifier on a rare item with at least 4 modifiers, locking it in place",
+    "constraints": [
+      "Right click this item then left click a rare item to apply it.",
+      "Cannot be used on Influenced, Synthesised or Fractured items."
+    ],
+    "name": "Fracturing Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes a Fracturing Orb.",
+    "constraints": [],
+    "name": "Fracturing Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Fracturing Spinner to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Fragmentation Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Fragments reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Fragmented Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Cold modifiers No Fire modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Frigid Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Attribute modifiers No Critical modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Fundamental Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a gem",
+    "constraints": [
+      "Right click this item then left click a gem to apply it.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Gemcutter's Prism",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Changes a Support or Skill Gem into another of the same type Retains Gem Level, Quality and Experience",
+    "constraints": [],
+    "name": "Gemcutters Lens",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Item is overvalued by vendors",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Gilded Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a flask or tincture",
+    "constraints": [
+      "Right click this item then left click a flask or tincture to apply it.",
+      "Has greater effect on lower item level, non-unique flasks.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Glassblower's Bauble",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Has a Corrupt Essence modifier",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Glyphic Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Golden Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Tujen.",
+    "constraints": [],
+    "name": "Grand Black Scythe Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction2",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Gwennen.",
+    "constraints": [],
+    "name": "Grand Broken Circle Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction1",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Grand Searing Exarch implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Grand Eldritch Ember",
+    "tags": [
+      "cleansing_fire_currency",
+      "eldritch_ember",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Grand Eater of Worlds implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Searing Exarch implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Grand Eldritch Ichor",
+    "tags": [
+      "great_tangle_currency",
+      "eldritch_ichor",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Rog.",
+    "constraints": [],
+    "name": "Grand Order Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction3",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Dannig.",
+    "constraints": [],
+    "name": "Grand Sun Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction4",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Tujen.",
+    "constraints": [],
+    "name": "Greater Black Scythe Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction2",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Gwennen.",
+    "constraints": [],
+    "name": "Greater Broken Circle Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction1",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Greater Searing Exarch implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Greater Eldritch Ember",
+    "tags": [
+      "cleansing_fire_currency",
+      "eldritch_ember",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Greater Eater of Worlds implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Searing Exarch implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Greater Eldritch Ichor",
+    "tags": [
+      "great_tangle_currency",
+      "eldritch_ichor",
+      "all_eldritch_currency_except_lesser",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Rog.",
+    "constraints": [],
+    "name": "Greater Order Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction3",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Dannig.",
+    "constraints": [],
+    "name": "Greater Sun Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction4",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Enmity Divine to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Haemocombustion Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a map item as another of a higher tier",
+    "constraints": [
+      "Right click this item then left click a map to apply it."
+    ],
+    "name": "Harbinger's Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes a Harbinger's Orb.",
+    "constraints": [],
+    "name": "Harbinger's Shard",
+    "tags": [
+      "currency_shard",
+      "harbinger_orb_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Allows an item to foresee the result of the next Currency item used on it Modifying the item in any way removes the ability to foresee",
+    "constraints": [
+      "Right click this item then left click an item to apply it."
+    ],
+    "name": "Hinekora's Lock",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Has an Abyssal socket",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Hollow Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Horizons.",
+    "constraints": [],
+    "name": "Horizon Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Hunter influence and a new Hunter modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Hunter's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Caster modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Imbued Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Restores an imprinted item onto the original Can't be applied to Fractured Items",
+    "constraints": [
+      "Right click this item then left click on the imprinted original item to restore its modifiers.",
+      "An imprint cannot be dropped or traded to other players."
+    ],
+    "name": "Imprint",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Right-click to add this to your bestiary.",
+    "constraints": [],
+    "name": "Imprinted Bestiary Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Indigo Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, including at least one Shaper Guardian, Elder Guardian, or Elderslayer Map",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Influenced Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds an enchantment to a utility flask that will cause it to be used when certain conditions are met Replaces any existing enchantment",
+    "constraints": [
+      "Right click this item then left click a flask to apply it."
+    ],
+    "name": "Instilling Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Attribute modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Intrinsic Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Physical modifiers No Chaos modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Jagged Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Trinkets reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Jeweller's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges the number of sockets on an item",
+    "constraints": [
+      "Right click this item then left click a socketed item to apply it.",
+      "The item's quality increases the chances of obtaining more sockets."
+    ],
+    "name": "Jeweller's Orb",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+25 to maximum [[Life]] per Allocated Journey Tattoo of the Body",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Journey Tattoo of the Body",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+30 to maximum [[Mana]] per Allocated Journey Tattoo of the Mind",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Journey Tattoo of the Mind",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+40 to maximum [[Energy Shield]] per Allocated Journey Tattoo of the Soul",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Journey Tattoo of the Soul",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Tujen.",
+    "constraints": [],
+    "name": "Lesser Black Scythe Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction2",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Gwennen.",
+    "constraints": [],
+    "name": "Lesser Broken Circle Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction1",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Lesser Searing Exarch implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Lesser Eldritch Ember",
+    "tags": [
+      "drops_in_maps_only",
+      "eldritch_ember",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds a Lesser Eater of Worlds implicit modifier to a Body Armour, Boots, Gloves or Helmet This replaces any existing implicit modifiers other than Searing Exarch implicit modifiers",
+    "constraints": [
+      "Right click this item then left click a normal, magic or rare item to apply it.",
+      "Cannot be used on Shaper, Elder or Elderslayer influenced items."
+    ],
+    "name": "Lesser Eldritch Ichor",
+    "tags": [
+      "drops_in_maps_only",
+      "eldritch_ichor",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Rog.",
+    "constraints": [],
+    "name": "Lesser Order Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction3",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be used to trade with Dannig.",
+    "constraints": [],
+    "name": "Lesser Sun Artifact",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "expedition_currency_faction4",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Mana modifiers No Speed modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Lucent Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map enhancing Currency found Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Maven's Chisel of Avarice",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map enhancing Divination Cards found Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Maven's Chisel of Divination",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map enhancing Item Rarity Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Maven's Chisel of Procurement",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map enhancing Pack Size Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Maven's Chisel of Proliferation",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Improves the quality of a map enhancing Scarabs found Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a map to apply it.",
+      "Has greater effect on lower tier, non-unique maps.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Maven's Chisel of Scarabs",
+    "tags": [
+      "quality_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Lightning modifiers No Physical modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Metallic Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes a Mirror of Kalandra.",
+    "constraints": [],
+    "name": "Mirror Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Creates a mirrored copy of an item",
+    "constraints": [
+      "Right click this item then left click an equipable non-unique item to apply it.",
+      "Mirrored copies cannot be modified."
+    ],
+    "name": "Mirror of Kalandra",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below Bow: Adds (14-20) to (29-33) [[Fire Damage]] Two Handed Melee Weapon: Adds (14-20) to (29-33) [[Fire Damage]] Other Weapon: Adds (8-10) to (15-18) [[Fire Damage]] Armour: +(12-17)% to [[Fire Resistance]] Quiver: +(12-17)% to [[Fire Resistance]] Belt: +(12-17)% to [[Fire Resistance]] Other Jewellery: (11-14)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below One Handed Weapon: Adds (4-5) to (8-9) [[Physical Damage]] Two Handed Weapon: Adds (6-8) to (12-15) [[Physical Damage]] Gloves: Adds (2-3) to (4-5) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (5-10) [[Physical Damage]] to Melee Attackers Quiver: Adds (2-3) to (4-5) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (5-10) [[Physical Damage]] to Melee Attackers Other Jewellery: Adds (2-3) to (4-5) [[Physical Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below One Handed Weapon: [[Minion|Minions]] deal (20-29)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (30-44)% increased Damage Gloves: [[Minion|Minions]] deal (13-15)% increased Damage Helmet: (13-15)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (13-15)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (13-15)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (13-15)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (13-15)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below Weapon: (2.3-2.4)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(15-30) to maximum [[Life]] Boots: +(15-30) to maximum [[Life]] Helmet: +(15-30) to maximum [[Life]] Other Armour: +(40-54) to maximum [[Life]] Quiver: (0.6-0.8)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (12-15)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (2.1-8) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below Bow: Adds (12-17) to (26-30) [[Cold Damage]] Two Handed Melee Weapon: Adds (12-17) to (26-30) [[Cold Damage]] Other Weapon: Adds (7-9) to (14-16) [[Cold Damage]] Armour: +(12-17)% to [[Cold Resistance]] Quiver: +(12-17)% to [[Cold Resistance]] Belt: +(12-17)% to [[Cold Resistance]] Other Jewellery: (11-14)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below One Handed Weapon: Damage Penetrates 3% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (5-6)% [[Cold Resistance]] Other Items: +(13-17) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below One Handed Weapon: Adds (1-2) to (21-22) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (1-3) to (32-34) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds 1 to 5 [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (4-5)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (4-5)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (35-38)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds 2 to (16-18) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (35-38)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds 1 to (14-15) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 45 and below One Handed Weapon: (20-29)% increased [[Spell Damage]] Two Handed Weapon: (30-44)% increased [[Spell Damage]] Armour: +(6-11) to maximum [[Energy Shield]] Quiver: (11-20)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (5-7)% increased maximum [[Energy Shield]] Ring: +(4-8) to maximum [[Energy Shield]] Belt: +(4-8) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Muttering Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Physical and Chaos Damage modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Noxious Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Breach Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Obscured Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you reach 25% of Life to grant Adrenaline for 10 seconds",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Adrenaline",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you Die to prevent 75% of Experience loss",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Amelioration",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you use a Chromatic Orb on an item to make 1-3 Sockets become White",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Blanching",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you level up to grant 100% increased Experience gained for 60 seconds",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Brilliance",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you use an Orb of Fusing on an item to ensure maximum Links",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Connections",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you reach 25% of Life to grant Shade Form for 3 seconds",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Death's Door",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you reach 25% of Life to grant 75% chance to Avoid Damage from Hits for 4 seconds",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Death-dancing",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you use an Orb of Chance on an item which can become Unique to ensure it does so",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Fortune",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you reach 25% of Life to Refill all Flasks",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Refreshment",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you Die to create a Portal to Town",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of Return",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you use a Jeweller's Orb on an item to ensure maximum Sockets",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of the Jeweller",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Will be Consumed when you level up to grant Soul Eater for 5 minutes",
+    "constraints": [
+      "Each player can only consume one Omen in each combat area."
+    ],
+    "name": "Omen of the Soul Devourer",
+    "tags": [
+      "ui_enable_popup_inventory_total_display",
+      "enable_transfer_all_in_player_to_player_trade_window",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Opalescent Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, granting missions with rewarding implicit modifiers",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Operative's Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Drop modifiers No Tagless modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Opulent Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to a rare item",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Orb of Alchemy",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a magic item with new random modifiers",
+    "constraints": [
+      "Right click this item then left click a magic item to apply it."
+    ],
+    "name": "Orb of Alteration",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Removes a random modifier from an item",
+    "constraints": [
+      "Right click this item then left click on a magic or rare item to apply it."
+    ],
+    "name": "Orb of Annulment",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Augments a magic item with a new random modifier",
+    "constraints": [
+      "Right click this item then left click a magic item to apply it.",
+      "Magic items can have up to two random modifiers."
+    ],
+    "name": "Orb of Augmentation",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to a rare item with up to four linked sockets",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Orb of Binding",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to a random rarity",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Orb of Chance",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably raise the strength of one Searing Exarch or Eater of Worlds modifier on an item and lower the strength of another Lesser modifiers that have their strength lowered will be removed",
+    "constraints": [
+      "Right click this item then left click a non-unique item to apply it.",
+      "Can only be used on items that have both a Searing Exarch and an Eater of Worlds implicit modifier.",
+      "The chance of raising or lowering a modifier depends on its relative strength."
+    ],
+    "name": "Orb of Conflict",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Removes one Influenced Modifier from an item with at least two Influenced Modifiers and upgrades another Influenced Modifier Upgrading a modifier of the highest tier transforms the modifier into an Elevated Modifier Attempting to upgrade an Elevated Modifier rerolls its values Can be used on Body Armours, Boots, Gloves and Helmets",
+    "constraints": [
+      "Right click this item then left click an item with at least two Influenced Modifiers to apply it."
+    ],
+    "name": "Orb of Dominance",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges the links between sockets on an item",
+    "constraints": [
+      "Right click this item then left click a socketed item to apply it.",
+      "The item's quality increases the chances of obtaining more links."
+    ],
+    "name": "Orb of Fusing",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a map item as another of the same tier",
+    "constraints": [
+      "Right click this item then left click a map to apply it."
+    ],
+    "name": "Orb of Horizons",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Memory Influenced Map, causing items found to have more Memory Strands, but fewer items drop",
+    "constraints": [
+      "Right click this item then left click a Memory Influenced Map item to apply it.",
+      "Can apply up to 3 to a single Map item."
+    ],
+    "name": "Orb of Intention",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Grants a passive skill refund point",
+    "constraints": [
+      "Right click on this item to use it."
+    ],
+    "name": "Orb of Regret",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the number of Memory Strands on a normal equipment item",
+    "constraints": [
+      "Right click this item then left click a normal equipment item to apply it."
+    ],
+    "name": "Orb of Remembrance",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Removes all modifiers from an item",
+    "constraints": [
+      "Right click this item then left click on a magic or rare item to apply it."
+    ],
+    "name": "Orb of Scouring",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to a magic item",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Orb of Transmutation",
+    "tags": [
+      "lesser_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Grants an atlas passive skill refund point",
+    "constraints": [
+      "Right click on this item to use it."
+    ],
+    "name": "Orb of Unmaking",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Consumes all Memory Strands on an item to attempt to upgrade the tier of explicit modifiers based on the number of Memory Strands consumed",
+    "constraints": [
+      "Right click this item then left click an equipment item with Memory Strands to apply it."
+    ],
+    "name": "Orb of Unravelling",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, including at least one Breachstone",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Otherworldly Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Creates a portal to town",
+    "constraints": [
+      "Right click on this item to use it."
+    ],
+    "name": "Portal Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be used at the Horticrafting bench in your hideout.",
+    "constraints": [],
+    "name": "Primal Crystallised Lifeforce",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "No documented crafting action.",
+    "constraints": [],
+    "name": "Primal Wisps",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Resistance modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Prismatic Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Elemental modifiers No Physical Ailment or Chaos Ailment modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Prismatic Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to enchant Amulets.",
+    "constraints": [],
+    "name": "Prismatic Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Life modifiers No Defence modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Pristine Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Redeemer influence and a new Redeemer modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Redeemer's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably reflects a rare amulet or ring, breaking it into two mirrored halves with reflected modifiers",
+    "constraints": [
+      "Right click this item then left click a rare amulet or ring to reflect it.",
+      "Cannot be used on Synthesised, Veiled or Influenced items."
+    ],
+    "name": "Reflecting Mist",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to enchant mirrored Rings, Amulets or Blighted Maps.",
+    "constraints": [],
+    "name": "Reflective Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a magic item to a rare item",
+    "constraints": [
+      "Right click this item then left click a magic item to apply it.",
+      "Current modifiers are retained and a new one is added."
+    ],
+    "name": "Regal Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes a Regal Orb.",
+    "constraints": [],
+    "name": "Regal Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Corrupts the Essences trapping a monster, modifying them unpredictably",
+    "constraints": [
+      "Right click this item then left click a monster trapped by Essences to corrupt them.",
+      "Corrupted Essences cannot be modified again."
+    ],
+    "name": "Remnant of Corruption",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Ritual Vessel.",
+    "constraints": [],
+    "name": "Ritual Splinter",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Stores the monsters slain for the first time from a completed Ritual Altar for future use",
+    "constraints": [
+      "Right-click this item then left-click a Ritual Altar to store the monsters from the completed Ritual in this item.",
+      "Cannot be used on a Ritual in a map opened with a Blood-Filled Vessel."
+    ],
+    "name": "Ritual Vessel",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Creates a portal to the Rogue Harbour from a Town or Hideout Used as Currency for services in the Rogue Harbour",
+    "constraints": [
+      "Right click on this item while in a Town or Hideout to use it."
+    ],
+    "name": "Rogue's Marker",
+    "tags": [
+      "heist_coin",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "100% increased Warcry Speed if you have not Warcried [[Recently]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Bellows",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "30% chance to [[Curse]] non-Cursed Enemies with a random Hex on [[Hit]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Blasphemy",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+1 to [[Level]] of all non-Exceptional Support Gems",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Gemcraft",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "40% chance for Elemental Ailments inflicted on you to be inflicted on a [[Nearby|nearby]] [[Minion]] instead",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Loyalty",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Non-instant [[Mana]] Recovery from [[Flask|Flasks]] is also Recovered as [[Life]] 25% reduced [[Mana]] Recovery from [[Flask|Flasks]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Quaffing",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Recover 10% of [[Skill]] [[Mana]] Cost per unspent Chain when Projectiles end, up to 50%",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Recompense",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "40% of Damage taken from [[Critical strike|Critical Strikes]] Recouped as [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Restitching",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Your [[Lucky]] or [[Unlucky]] effects are instead Unexciting",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Stability",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "20% chance for [[Skill|Skills]] to not consume a Cooldown on use",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Time",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Auras from your [[Skill|Skills]] which affect Allies also affect Enemies 15% increased Reservation Efficiency of [[Skill|Skills]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of Treachery",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "All [[Hit|hits]] are [[Critical strike|Critical Strikes]] while holding a Fishing Rod",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Angler",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "20% increased bonuses gained from Equipped Gloves 20% reduced bonuses gained from Equipped Boots",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Bound",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "50% increased [[Attack Damage]] against Enemies with a higher percentage of their [[Life]] remaining than you",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Combatant",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% reduced Attributes 40% increased Global Defences",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Fortress",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% increased Damage for each unlinked [[Item socket|Socket]] in Equipped Two Handed Weapon",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Jeweller",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Nova [[Spell|Spells]] Cast at a Marked target instead of around you if possible",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Novamark",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "20% chance on reaching [[Low Life]] to recover to [[Full Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the River",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% more [[Attack Speed|Attack speed]] with Offhand",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Sinistral",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Gain 1 Vaal Soul per second",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Soulwick",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Debuffs on you expire 30% faster Buffs on you expire 30% slower",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Warp",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "[[Spell|Spells]] have an additional [[Life]] cost equal to 8% of your Maximum [[Life]] [[Spell|Spells]] deal added [[Chaos Damage]] equal to 2% of your maximum [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Mastery Skill.",
+      "Only one Runegraft of any given type can be in use at a time."
+    ],
+    "name": "Runegraft of the Witchmark",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be used at the Horticrafting bench in your hideout.",
+    "constraints": [],
+    "name": "Sacred Crystallised Lifeforce",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the numeric values of base defences on an armour",
+    "constraints": [
+      "Right click this item then left click an armour to apply it."
+    ],
+    "name": "Sacred Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Numeric modifier values are lucky High Level modifiers are more common",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Sanctified Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Fire modifiers No Cold modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Scorched Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "These can be brought to Rog to refresh his vendor inventory.",
+    "constraints": [],
+    "name": "Scrap Metal",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (110-150) to (223-260) [[Fire Damage]] Two Handed Melee Weapon: Adds (110-150) to (223-260) [[Fire Damage]] Other Weapon: Adds (59-81) to (120-140) [[Fire Damage]] Armour: +(36-41)% to [[Fire Resistance]] Quiver: +(36-41)% to [[Fire Resistance]] Belt: +(36-41)% to [[Fire Resistance]] Other Jewellery: (23-26)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (31-42) to (64-73) [[Fire Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (42-56) to (85-99) [[Fire Damage]] to [[Spell|Spells]] Gloves: Adds (7-10) to (15-18) [[Fire Damage]] to [[Attack|Attacks]] Body Armour: (7-8)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Shield: (7-8)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Other Armour: (47-50)% chance to Avoid being Ignited Quiver: Adds (27-35) to (53-62) [[Fire Damage]] to [[Attack|Attacks]] Belt: (47-50)% chance to Avoid being Ignited Other Jewellery: Adds (16-22) to (32-38) [[Fire Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Anguish",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (13-18) to (27-31) [[Physical Damage]] Two Handed Weapon: Adds (20-28) to (43-51) [[Physical Damage]] Gloves: Adds (4-5) to (8-9) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (51-100) [[Physical Damage]] to Melee Attackers Quiver: Adds (9-12) to (19-22) [[Physical Damage]] to [[Attack|Attacks]] Amulet: Adds (9-12) to (19-22) [[Physical Damage]] to [[Attack|Attacks]] Ring: Adds (6-8) to (12-13) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (51-100) [[Physical Damage]] to Melee Attackers",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: +(326-455) to [[Accuracy Rating]] Body Armour: +(151-200) to [[Evasion Rating]] Helmet: +(121-140) to [[Evasion Rating]] Shield: +(151-225) to [[Evasion Rating]] Other Armour: +(91-105) to [[Evasion Rating]] Quiver: +(251-350) to [[Accuracy Rating]] Amulet: (24-28)% increased [[Evasion Rating]] Other Jewellery: +(81-120) to [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Doubt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (12-16)% increased Impale Effect Wand: (34-41)% increased Projectile Speed Bow: +1 to [[Level]] of [[Item socket|Socketed]] [[Bow]] Gems Two Handed Melee Weapon: (25-29)% increased Impale Effect Body Armour: +(151-200) to [[Armour]] Helmet: +(121-140) to [[Armour]] Shield: +(151-225) to [[Armour]] Other Armour: +(91-105) to [[Armour]] Quiver: (34-41)% increased Projectile Speed Amulet: (24-28)% increased [[Armour]] Ring: +(80-120) to [[Armour]] Belt: +(323-400) to [[Armour]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Dread",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (37-59) to (79-103) [[Chaos Damage]] Two Handed Weapon: Adds (61-103) to (149-193) [[Chaos Damage]] Armour: +(21-25)% to [[Chaos Resistance]] Quiver: Adds (11-15) to (27-33) [[Chaos Damage]] to [[Attack|Attacks]] Belt: +(21-25)% to [[Chaos Resistance]] Other Jewellery: (23-26)% increased [[Chaos Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Envy",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: [[Minion|Minions]] deal (50-66)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (85-106)% increased Damage Gloves: [[Minion|Minions]] deal (22-24)% increased Damage Helmet: (22-24)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (22-24)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (22-24)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (22-24)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (22-24)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (3.3-3.6)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(61-75) to maximum [[Life]] Boots: +(61-75) to maximum [[Life]] Helmet: +(61-75) to maximum [[Life]] Shield: +(100-114) to maximum [[Life]] Other Armour: +(130-144) to maximum [[Life]] Quiver: (0.9-1.1)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (24-27)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (24.1-32) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (99-136) to (200-232) [[Cold Damage]] Two Handed Melee Weapon: Adds (99-136) to (200-232) [[Cold Damage]] Other Weapon: Adds (54-74) to (108-126) [[Cold Damage]] Armour: +(36-41)% to [[Cold Resistance]] Quiver: +(36-41)% to [[Cold Resistance]] Belt: +(36-41)% to [[Cold Resistance]] Other Jewellery: (23-26)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (25-29)% increased [[Critical Strike Chance]] Gloves: (18-20)% increased Global [[Critical Strike Chance]] Boots: (21-25)% chance to Avoid Elemental Ailments Shield: (58-63)% increased Chance to [[Block]] Other Armour: (5-6)% increased [[Mana Reservation]] Efficiency of [[Skill|Skills]] Quiver: (30-34)% increased Global [[Critical Strike Chance]] Amulet: (30-34)% increased Global [[Critical Strike Chance]] Ring: (18-20)% increased Global [[Critical Strike Chance]] Belt: (26-30)% increased Stun Duration on Enemies",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Loathing",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (21-24)% increased [[Cast Speed]] Two Handed Weapon: (32-37)% increased [[Cast Speed]] Shield: (50-59)% increased [[Mana]] Regeneration Rate Other Armour: +(55-59) to maximum [[Mana]] Quiver: (0.2-0.4)% of Physical [[Attack Damage]] Leeched as [[Mana]] Belt: (11-15)% increased [[Flask]] [[Mana]] Recovery rate Other Jewellery: (50-59)% increased [[Mana]] Regeneration Rate",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Misery",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 6% [[Fire Resistance]] Two Handed Weapon: Damage Penetrates (11-12)% [[Fire Resistance]] Other Items: +(33-37) to [[Strength]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Rage",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (80-99)% increased [[Spell]] [[Critical Strike Chance]] Body Armour: (31-39)% increased Stun Threshold Shield: (80-99)% increased [[Spell]] [[Critical Strike Chance]] Other Armour: (23-26)% chance to Avoid being Stunned Quiver: +(25-29)% to Global [[Critical Strike Multiplier]] Amulet: +(25-29)% to Global [[Critical Strike Multiplier]] Ring: +(15-17)% to Global [[Critical Strike Multiplier]] Belt: (12-13)% reduced Enemy Stun Threshold",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Scorn",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 6% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (11-12)% [[Cold Resistance]] Other Items: +(33-37) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 6% [[Lightning Resistance]] Two Handed Weapon: Damage Penetrates (11-12)% [[Lightning Resistance]] Other Items: +(33-37) to [[Intelligence]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Spite",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (26-35) to (51-60) [[Cold Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (39-52) to (77-90) [[Cold Damage]] to [[Spell|Spells]] Gloves: Adds (6-9) to (13-16) [[Cold Damage]] to [[Attack|Attacks]] Body Armour: (7-8)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Shield: (7-8)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Other Armour: (47-50)% chance to Avoid being [[Freeze|Frozen]] Quiver: Adds (18-24) to (36-42) [[Cold Damage]] to [[Attack|Attacks]] Belt: (47-50)% chance to Avoid being [[Freeze|Frozen]] Other Jewellery: Adds (12-16) to (24-28) [[Cold Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Suffering",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (2-9) to (109-115) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (5-12) to (164-173) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds (1-2) to (27-28) [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (7-8)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (7-8)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (47-50)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds (3-8) to (89-99) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (47-50)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds (3-6) to (57-61) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (50-66)% increased [[Spell Damage]] Two Handed Weapon: (85-106)% increased [[Spell Damage]] Body Armour: +(50-61) to maximum [[Energy Shield]] Helmet: +(39-45) to maximum [[Energy Shield]] Shield: +(50-59) to maximum [[Energy Shield]] Other Armour: +(27-32) to maximum [[Energy Shield]] Quiver: (31-36)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (14-16)% increased maximum [[Energy Shield]] Ring: +(27-31) to maximum [[Energy Shield]] Belt: +(27-31) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (10-14) to (197-229) [[Lightning Damage]] Bow: Adds (19-25) to (366-425) [[Lightning Damage]] Two Handed Melee Weapon: Adds (19-25) to (366-425) [[Lightning Damage]] Other Weapon: Adds (10-14) to (197-229) [[Lightning Damage]] Armour: +(36-41)% to [[Lightning Resistance]] Quiver: +(36-41)% to [[Lightning Resistance]] Belt: +(36-41)% to [[Lightning Resistance]] Other Jewellery: (23-26)% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Wrath",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Melee Weapon: (23-25)% increased [[Attack Speed]] Ranged Weapon: (13-14)% increased [[Attack Speed]] Gloves: (11-13)% increased [[Attack Speed]] Boots: 25% increased [[Movement Speed]] Body Armour: (26-30)% increased [[Totem]] Placement speed Helmet: (21-25)% increased Warcry Speed Other Armour: (23-25)% increased Stun and [[Block]] Recovery Quiver: (8-9)% increased [[Attack Speed]] Amulet: (9-12)% increased [[Cast Speed]] Ring: (9-12)% increased [[Cast Speed]] Belt: (11-13)% increased [[Trap]] and [[Mine]] Throwing Speed",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Screaming Essence of Zeal",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 5 fragments becomes a Scroll of Wisdom.",
+    "constraints": [],
+    "name": "Scroll Fragment",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Identifies an item",
+    "constraints": [
+      "Right click this item then left click an unidentified item to apply it."
+    ],
+    "name": "Scroll of Wisdom",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Sepia Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Attack modifiers Fewer Caster modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Serrated Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Shaper influence and a new Shaper modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Shaper's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (137-188) to (279-325) [[Fire Damage]] Two Handed Melee Weapon: Adds (137-188) to (279-325) [[Fire Damage]] Other Weapon: Adds (74-101) to (150-175) [[Fire Damage]] Armour: +(42-45)% to [[Fire Resistance]] Quiver: +(42-45)% to [[Fire Resistance]] Belt: +(42-45)% to [[Fire Resistance]] Other Jewellery: (27-30)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (40-52) to (79-91) [[Fire Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (53-70) to (107-123) [[Fire Damage]] to [[Spell|Spells]] Gloves: Adds (9-12) to (19-22) [[Fire Damage]] to [[Attack|Attacks]] Body Armour: (8-9)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Shield: (8-9)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Other Armour: (51-55)% chance to Avoid being Ignited Quiver: Adds (37-50) to (74-87) [[Fire Damage]] to [[Attack|Attacks]] Belt: (51-55)% chance to Avoid being Ignited Other Jewellery: Adds (19-25) to (39-45) [[Fire Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Anguish",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (16-21) to (32-38) [[Physical Damage]] Two Handed Weapon: Adds (25-33) to (52-61) [[Physical Damage]] Gloves: Adds (5-6) to (9-10) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (101-150) [[Physical Damage]] to Melee Attackers Quiver: Adds (11-15) to (22-26) [[Physical Damage]] to [[Attack|Attacks]] Amulet: Adds (11-15) to (22-26) [[Physical Damage]] to [[Attack|Attacks]] Ring: Adds (7-9) to (13-15) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (101-150) [[Physical Damage]] to Melee Attackers",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: +(456-624) to [[Accuracy Rating]] Body Armour: +(301-400) to [[Evasion Rating]] Helmet: +(141-160) to [[Evasion Rating]] Shield: +(226-300) to [[Evasion Rating]] Other Armour: +(106-120) to [[Evasion Rating]] Quiver: +(351-480) to [[Accuracy Rating]] Amulet: (29-31)% increased [[Evasion Rating]] Other Jewellery: +(121-150) to [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Doubt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (17-21)% increased Impale Effect Wand: (42-46)% increased Projectile Speed Bow: +2 to [[Level]] of [[Item socket|Socketed]] [[Bow]] Gems Two Handed Melee Weapon: (30-34)% increased Impale Effect Body Armour: +(301-400) to [[Armour]] Helmet: +(141-160) to [[Armour]] Shield: +(226-300) to [[Armour]] Other Armour: +(106-120) to [[Armour]] Quiver: (42-46)% increased Projectile Speed Amulet: (29-31)% increased [[Armour]] Ring: +(121-200) to [[Armour]] Belt: +(401-460) to [[Armour]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Dread",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (43-67) to (89-113) [[Chaos Damage]] Two Handed Weapon: Adds (73-113) to (163-205) [[Chaos Damage]] Armour: +(26-30)% to [[Chaos Resistance]] Quiver: Adds (17-21) to (37-43) [[Chaos Damage]] to [[Attack|Attacks]] Belt: +(26-30)% to [[Chaos Resistance]] Other Jewellery: (27-30)% increased [[Chaos Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Envy",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: [[Minion|Minions]] deal (67-82)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (107-122)% increased Damage Gloves: [[Minion|Minions]] deal (25-27)% increased Damage Helmet: (25-27)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (25-27)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (25-27)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (25-27)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (25-27)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (3.7-4)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(76-90) to maximum [[Life]] Boots: +(76-90) to maximum [[Life]] Helmet: +(76-90) to maximum [[Life]] Shield: +(115-129) to maximum [[Life]] Other Armour: +(145-159) to maximum [[Life]] Quiver: (1-1.2)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (28-31)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (32.1-48) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Bow: Adds (124-170) to (250-290) [[Cold Damage]] Two Handed Melee Weapon: Adds (124-170) to (250-290) [[Cold Damage]] Other Weapon: Adds (68-92) to (136-157) [[Cold Damage]] Armour: +(42-45)% to [[Cold Resistance]] Quiver: +(42-45)% to [[Cold Resistance]] Belt: +(42-45)% to [[Cold Resistance]] Other Jewellery: (27-30)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (30-34)% increased [[Critical Strike Chance]] Gloves: (21-23)% increased Global [[Critical Strike Chance]] Boots: (26-30)% chance to Avoid Elemental Ailments Shield: (64-69)% increased Chance to [[Block]] Other Armour: (7-8)% increased [[Mana Reservation]] Efficiency of [[Skill|Skills]] Quiver: (35-38)% increased Global [[Critical Strike Chance]] Amulet: (35-38)% increased Global [[Critical Strike Chance]] Ring: (21-23)% increased Global [[Critical Strike Chance]] Belt: (31-35)% increased Stun Duration on Enemies",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Loathing",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (25-28)% increased [[Cast Speed]] Two Handed Weapon: (38-43)% increased [[Cast Speed]] Shield: (60-69)% increased [[Mana]] Regeneration Rate Other Armour: +(65-68) to maximum [[Mana]] Quiver: (0.6-0.8)% of Physical [[Attack Damage]] Leeched as [[Mana]] Belt: (16-20)% increased [[Flask]] [[Mana]] Recovery rate Other Jewellery: (60-69)% increased [[Mana]] Regeneration Rate",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Misery",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 7% [[Fire Resistance]] Two Handed Weapon: Damage Penetrates (13-14)% [[Fire Resistance]] Other Items: +(43-50) to [[Strength]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Rage",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Weapon: (100-109)% increased [[Spell]] [[Critical Strike Chance]] Body Armour: (40-45)% increased Stun Threshold Shield: (100-109)% increased [[Spell]] [[Critical Strike Chance]] Other Armour: (27-30)% chance to Avoid being Stunned Quiver: +(30-34)% to Global [[Critical Strike Multiplier]] Amulet: +(30-34)% to Global [[Critical Strike Multiplier]] Ring: +(18-20)% to Global [[Critical Strike Multiplier]] Belt: (14-15)% reduced Enemy Stun Threshold",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Scorn",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 7% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (13-14)% [[Cold Resistance]] Other Items: +(43-50) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Damage Penetrates 7% [[Lightning Resistance]] Two Handed Weapon: Damage Penetrates (13-14)% [[Lightning Resistance]] Other Items: +(43-50) to [[Intelligence]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Spite",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (33-43) to (64-75) [[Cold Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (49-64) to (96-113) [[Cold Damage]] to [[Spell|Spells]] Gloves: Adds (8-11) to (16-19) [[Cold Damage]] to [[Attack|Attacks]] Body Armour: (8-9)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Shield: (8-9)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Other Armour: (51-55)% chance to Avoid being [[Freeze|Frozen]] Quiver: Adds (33-45) to (67-78) [[Cold Damage]] to [[Attack|Attacks]] Belt: (51-55)% chance to Avoid being [[Freeze|Frozen]] Other Jewellery: Adds (17-22) to (34-40) [[Cold Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Suffering",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (4-11) to (136-144) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (5-17) to (204-216) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds (1-3) to (33-34) [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (8-9)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (8-9)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (51-55)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds (5-11) to (124-140) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (51-55)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds (3-7) to (68-72) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: (67-82)% increased [[Spell Damage]] Two Handed Weapon: (107-122)% increased [[Spell Damage]] Body Armour: +(77-90) to maximum [[Energy Shield]] Helmet: +(46-51) to maximum [[Energy Shield]] Shield: +(60-69) to maximum [[Energy Shield]] Other Armour: +(28-35) to maximum [[Energy Shield]] Quiver: (37-42)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (17-18)% increased maximum [[Energy Shield]] Ring: +(38-43) to maximum [[Energy Shield]] Belt: +(32-37) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property One Handed Weapon: Adds (13-17) to (247-286) [[Lightning Damage]] Bow: Adds (23-32) to (458-531) [[Lightning Damage]] Two Handed Melee Weapon: Adds (23-32) to (458-531) [[Lightning Damage]] Other Weapon: Adds (13-17) to (247-286) [[Lightning Damage]] Armour: +(42-45)% to [[Lightning Resistance]] Quiver: +(42-45)% to [[Lightning Resistance]] Belt: +(42-45)% to [[Lightning Resistance]] Other Jewellery: (27-30)% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Wrath",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare or reforges a rare item, guaranteeing one property Melee Weapon: (26-27)% increased [[Attack Speed]] Ranged Weapon: (15-16)% increased [[Attack Speed]] Gloves: (14-16)% increased [[Attack Speed]] Boots: 30% increased [[Movement Speed]] Body Armour: (31-35)% increased [[Totem]] Placement speed Helmet: (26-30)% increased Warcry Speed Other Armour: (26-28)% increased Stun and [[Block]] Recovery Quiver: (10-12)% increased [[Attack Speed]] Amulet: (13-16)% increased [[Cast Speed]] Ring: (13-14)% increased [[Cast Speed]] Belt: (14-17)% increased [[Trap]] and [[Mine]] Throwing Speed",
+    "constraints": [
+      "Right click this item then left click a normal or rare item to apply it."
+    ],
+    "name": "Shrieking Essence of Zeal",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "More Speed modifiers No Mana modifiers",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Shuddering Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Silver Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 300 Splinters to create a Simulacrum.",
+    "constraints": [],
+    "name": "Simulacrum Splinter",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Unique Items reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Singular Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, including at least one Unique map",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Singular Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Scarabs reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Skittering Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Unshattered Will to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Specularity Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 splinters to create Chayula's Breachstone.",
+    "constraints": [],
+    "name": "Splinter of Chayula",
+    "tags": [
+      "breachstone_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create Esh's Breachstone.",
+    "constraints": [],
+    "name": "Splinter of Esh",
+    "tags": [
+      "breachstone_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create Tul's Breachstone.",
+    "constraints": [],
+    "name": "Splinter of Tul",
+    "tags": [
+      "breachstone_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create Uul-Netol's Breachstone.",
+    "constraints": [],
+    "name": "Splinter of Uul-Netol",
+    "tags": [
+      "breachstone_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create Xoph's Breachstone.",
+    "constraints": [],
+    "name": "Splinter of Xoph",
+    "tags": [
+      "breachstone_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of unknown divination cards",
+    "constraints": [
+      "Right click to take a divination card out of the deck."
+    ],
+    "name": "Stacked Deck",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds or replaces an enchantment on a body armour This may reforge the body armour's sockets",
+    "constraints": [
+      "Right click this item then left click on the item you wish to modify."
+    ],
+    "name": "Tailoring Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the quality of a corrupted armour",
+    "constraints": [
+      "Right click this item then left click a corrupted armour to apply it.",
+      "The maximum random quality is 20%."
+    ],
+    "name": "Tainted Armourer's Scrap",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Randomises the quality of a corrupted weapon",
+    "constraints": [
+      "Right click this item then left click a corrupted weapon to apply it.",
+      "The maximum random quality is 20%."
+    ],
+    "name": "Tainted Blacksmith's Whetstone",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Applies a random quality type and amount of quality to a Corrupted ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a Corrupted ring, amulet or belt to apply it.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Tainted Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably either reforges a corrupted rare item with new random modifiers or removes all of its modifiers",
+    "constraints": [
+      "Right click this item then left click a corrupted rare item to apply it."
+    ],
+    "name": "Tainted Chaos Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably reforges the colour of sockets on a corrupted item",
+    "constraints": [
+      "Right click this item then left click a corrupted socketed item to apply it."
+    ],
+    "name": "Tainted Chromatic Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably raises or lowers the tier of each modifier on a corrupted rare item",
+    "constraints": [
+      "Right click this item then left click a corrupted rare item to apply it."
+    ],
+    "name": "Tainted Divine Teardrop",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably adds or removes a modifier on a corrupted rare item",
+    "constraints": [
+      "Right click this item then left click a corrupted rare item to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Tainted Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably adds or removes a socket on a corrupted item",
+    "constraints": [
+      "Right click this item then left click a corrupted socketed item to apply it."
+    ],
+    "name": "Tainted Jeweller's Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably either upgrades a corrupted item to unique rarity or destroys it",
+    "constraints": [
+      "Right click this item then left click a corrupted item to apply it.",
+      "Cannot apply to Maps."
+    ],
+    "name": "Tainted Mythic Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to enchant corrupted Rings, Amulets or Blighted Maps.",
+    "constraints": [],
+    "name": "Tainted Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Unpredictably adds or removes a link to the largest group of linked sockets on a corrupted item",
+    "constraints": [
+      "Right click this item then left click a corrupted socketed item to apply it."
+    ],
+    "name": "Tainted Orb of Fusing",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Makes a random modifier type much more likely and prevents another random modifier type Effects revealed once resonator is fully socketed",
+    "constraints": [
+      "Place in a Resonator to influence item crafting."
+    ],
+    "name": "Tangled Fossil",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+6% to [[Cold Resistance]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Arohongui Moonwarden",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% chance to Avoid being [[Chill|Chilled]] 10% chance to Avoid being [[Freeze|Frozen]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Arohongui Scout",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased Effect of Herald Buffs on you",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Arohongui Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to [[Freeze]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Arohongui Warmonger",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Arohongui Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "6% reduced Effect of [[Curse|Curses]] on you",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Hinekora Deathwarden",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "8% increased [[Mana]] Regeneration Rate",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Hinekora Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+3% to [[Chaos Resistance]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Hinekora Storyteller",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "[[Minion|Minions]] have 5% increased maximum [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Hinekora Warmonger",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "3% increased maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Hinekora Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "0.5% of [[Attack Damage]] Leeched as [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Kitava Blood Drinker",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Killing Blows have 4% chance to Consume corpses to recover 10% of Maximum [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Kitava Heart Eater",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% chance to Avoid Bleeding",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Kitava Rebel",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "[[Attack|Attacks]] have 5% chance to cause Bleeding",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Kitava Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased Global [[Physical Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Kitava Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+6% to [[Fire Resistance]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ngamahu Firewalker",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% reduced [[Ignite]] Duration on you",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ngamahu Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to [[Ignite]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ngamahu Warmonger",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ngamahu Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased [[Totem]] [[Life]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ngamahu Woodcarver",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased Global [[Accuracy Rating]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ramako Archer",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "2% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ramako Fleetfoot",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "6% increased [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ramako Scout",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+2% chance to Suppress [[Spell Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ramako Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased Projectile Speed",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Ramako Sniper",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% increased Stun Threshold",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Rongokurai Brute",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% increased Stun Duration on Enemies",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Rongokurai Goliath",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Guard [[Skill|Skills]] have 6% increased Duration",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Rongokurai Guard",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "You take 5% reduced Extra Damage from [[Critical strike|Critical Strikes]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Rongokurai Turtle",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "6% increased [[Armour]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Rongokurai Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "[[Attack|Attacks]] have 5% chance to Maim on [[Hit]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tasalio Bladedancer",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "4% increased Effect of your Marks",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tasalio Scout",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to Hinder Enemies on [[Hit]] with [[Spell|Spells]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tasalio Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% chance to Avoid being Stunned",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tasalio Tideshifter",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to Blind Enemies on [[Hit]] with [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tasalio Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "4% increased [[Flask]] Effect Duration",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tawhoa Herbalist",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "8% increased [[Life]] Recovery from [[Flask|Flasks]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tawhoa Naturalist",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% chance to Avoid being [[Poison|Poisoned]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tawhoa Scout",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to [[Poison]] on [[Hit]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tawhoa Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased [[Chaos Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tawhoa Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% chance to Knock Enemies Back on [[Hit|hit]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tukohama Brawler",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Regenerate 0.3% of [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tukohama Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "8% increased Warcry Cooldown Recovery Rate",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tukohama Warcaller",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased Melee Damage",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tukohama Warmonger",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Melee [[Hit|Hits]] which Stun have 5% chance to Fortify",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Tukohama Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "10% reduced Effect of [[Shock]] on you",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Valako Scout",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% chance to [[Shock]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Valako Shaman",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+1% Chance to [[Block]] [[Attack Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Valako Shieldbearer",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "+6% to [[Lightning Resistance]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Valako Stormrider",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "5% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click an allocated Passive Skill.",
+      "Maximum 50 Tattoos."
+    ],
+    "name": "Tattoo of the Valako Warrior",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Teal Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Defence modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Tempering Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds or replaces an enchantment on a weapon This may reforge the weapon's sockets",
+    "constraints": [
+      "Right click this item then left click on the item you wish to modify."
+    ],
+    "name": "Tempering Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Gems reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Thaumaturge's Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades The Flow Untethered to a more powerful version",
+    "constraints": [
+      "Right click this item then left click an applicable Harbinger unique item to upgrade it."
+    ],
+    "name": "Time-light Scroll",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Legion reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Timeless Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Timeless Eternal Emblem.",
+    "constraints": [],
+    "name": "Timeless Eternal Empire Splinter",
+    "tags": [
+      "legion_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Timeless Karui Emblem.",
+    "constraints": [],
+    "name": "Timeless Karui Splinter",
+    "tags": [
+      "legion_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Timeless Maraketh Emblem.",
+    "constraints": [],
+    "name": "Timeless Maraketh Splinter",
+    "tags": [
+      "legion_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Timeless Templar Emblem.",
+    "constraints": [],
+    "name": "Timeless Templar Splinter",
+    "tags": [
+      "legion_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Combine 100 Splinters to create a Timeless Vaal Emblem.",
+    "constraints": [],
+    "name": "Timeless Vaal Splinter",
+    "tags": [
+      "legion_splinter",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A stack of 20 shards becomes an Orb of Transmutation.",
+    "constraints": [],
+    "name": "Transmutation Shard",
+    "tags": [
+      "currency_shard",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Elemental Damage modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Turbulent Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Trade this in to Siosa inside the Library for a Skill Gem",
+    "constraints": [],
+    "name": "Uncarved Gemstone",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds quality that enhances Critical modifiers on a ring, amulet or belt Replaces other quality types",
+    "constraints": [
+      "Right click this item then left click a ring, amulet or belt to apply it.",
+      "Has greater effect on lower item level, non-unique jewellery.",
+      "The maximum quality is 20%."
+    ],
+    "name": "Unstable Catalyst",
+    "tags": [
+      "catalyst",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Corrupts an item, modifying it unpredictably",
+    "constraints": [
+      "Right click this item then left click an item to corrupt it.",
+      "Corrupted items cannot be modified again."
+    ],
+    "name": "Vaal Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reroll all of Kirac's Atlas Missions, corrupting all non-Unique Maps",
+    "constraints": [
+      "Right click this item while viewing Kirac's Atlas Missions to use it."
+    ],
+    "name": "Vaal Scouting Report",
+    "tags": [
+      "drops_in_maps_only",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Contains a Mysterious Map with a Foil Unique Reward",
+    "constraints": [
+      "Right click to open."
+    ],
+    "name": "Valdo's Puzzle Box",
+    "tags": [
+      "fake_currency",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Reforges a rare item with new random modifiers including a random Veiled modifier",
+    "constraints": [
+      "Right click this item then left click a rare item to apply it."
+    ],
+    "name": "Veiled Chaos Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Removes a random modifier and adds a random Veiled modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a rare item to apply it."
+    ],
+    "name": "Veiled Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "A collection of unknown Scarabs",
+    "constraints": [
+      "Right Click to reveal a random Scarab"
+    ],
+    "name": "Veiled Scarab",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Verdant Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Apep's Slumber to transform it.",
+    "constraints": [],
+    "name": "Vial of Awakening",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Coward's Chains to transform it.",
+    "constraints": [],
+    "name": "Vial of Consequence",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Architect's Hand to transform it.",
+    "constraints": [],
+    "name": "Vial of Dominance",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Story of the Vaal to transform it.",
+    "constraints": [],
+    "name": "Vial of Fate",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Sacrificial Heart to transform it.",
+    "constraints": [],
+    "name": "Vial of Sacrifice",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Mask of the Spirit Drinker to transform it.",
+    "constraints": [],
+    "name": "Vial of Summoning",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with any Tempered Flesh, Tempered Spirit or Tempered Mind to transform it.",
+    "constraints": [],
+    "name": "Vial of Transcendence",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Soul Catcher to transform it.",
+    "constraints": [],
+    "name": "Vial of the Ghost",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Sacrifice this item on the Altar of Sacrifice along with Dance of the Offered to transform it.",
+    "constraints": [],
+    "name": "Vial of the Ritual",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be combined with other Oils at Cassia to Enchant Rings or Amulets, or to modify Blighted Maps.",
+    "constraints": [],
+    "name": "Violet Oil",
+    "tags": [
+      "mushrune",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be used at the Horticrafting bench in your hideout.",
+    "constraints": [],
+    "name": "Vivid Crystallised Lifeforce",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "No documented crafting action.",
+    "constraints": [],
+    "name": "Vivid Wisps",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Bow: Adds (63-85) to (128-148) [[Fire Damage]] Two Handed Melee Weapon: Adds (63-85) to (128-148) [[Fire Damage]] Other Weapon: Adds (34-46) to (68-80) [[Fire Damage]] Armour: +(24-29)% to [[Fire Resistance]] Quiver: +(24-29)% to [[Fire Resistance]] Belt: +(24-29)% to [[Fire Resistance]] Other Jewellery: (19-22)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Adds (24-33) to (48-57) [[Fire Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (32-44) to (65-76) [[Fire Damage]] to [[Spell|Spells]] Gloves: Adds (5-7) to (11-13) [[Fire Damage]] to [[Attack|Attacks]] Body Armour: (6-7)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Shield: (6-7)% chance to Avoid [[Fire Damage]] from [[Hit|Hits]] Other Armour: (43-46)% chance to Avoid being Ignited Quiver: Adds (17-22) to (33-38) [[Fire Damage]] to [[Attack|Attacks]] Belt: (43-46)% chance to Avoid being Ignited Other Jewellery: Adds (11-15) to (23-27) [[Fire Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Anguish",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Adds (8-12) to (17-20) [[Physical Damage]] Two Handed Weapon: Adds (13-17) to (28-32) [[Physical Damage]] Gloves: Adds (3-5) to (7-8) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (25-50) [[Physical Damage]] to Melee Attackers Quiver: Adds (6-9) to (13-15) [[Physical Damage]] to [[Attack|Attacks]] Amulet: Adds (6-9) to (13-15) [[Physical Damage]] to [[Attack|Attacks]] Ring: Adds (5-7) to (11-12) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (25-50) [[Physical Damage]] to Melee Attackers",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Weapon: +(216-325) to [[Accuracy Rating]] Gloves: +(81-90) to [[Evasion Rating]] Boots: +(81-90) to [[Evasion Rating]] Shield: +(121-150) to [[Evasion Rating]] Other Armour: +(102-120) to [[Evasion Rating]] Quiver: +(166-250) to [[Accuracy Rating]] Amulet: (19-23)% increased [[Evasion Rating]] Other Jewellery: +(61-80) to [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Doubt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: [[Minion|Minions]] deal (40-54)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (60-84)% increased Damage Gloves: [[Minion|Minions]] deal (19-21)% increased Damage Helmet: (19-21)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (19-21)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (19-21)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (19-21)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (19-21)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Weapon: (2.9-3.2)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(46-60) to maximum [[Life]] Boots: +(46-60) to maximum [[Life]] Helmet: +(46-60) to maximum [[Life]] Shield: +(85-99) to maximum [[Life]] Other Armour: +(100-114) to maximum [[Life]] Quiver: (0.8-1)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (20-23)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (16.1-24) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Bow: Adds (57-77) to (114-132) [[Cold Damage]] Two Handed Melee Weapon: Adds (57-77) to (114-132) [[Cold Damage]] Other Weapon: Adds (31-42) to (62-71) [[Cold Damage]] Armour: +(24-29)% to [[Cold Resistance]] Quiver: +(24-29)% to [[Cold Resistance]] Belt: +(24-29)% to [[Cold Resistance]] Other Jewellery: (19-22)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Weapon: (20-24)% increased [[Critical Strike Chance]] Gloves: (15-17)% increased Global [[Critical Strike Chance]] Boots: (16-20)% chance to Avoid Elemental Ailments Shield: (52-57)% increased Chance to [[Block]] Other Armour: (3-4)% increased [[Mana Reservation]] Efficiency of [[Skill|Skills]] Quiver: (25-29)% increased Global [[Critical Strike Chance]] Amulet: (25-29)% increased Global [[Critical Strike Chance]] Ring: (15-17)% increased Global [[Critical Strike Chance]] Belt: (21-25)% increased Stun Duration on Enemies",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Loathing",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Damage Penetrates 5% [[Fire Resistance]] Two Handed Weapon: Damage Penetrates (9-10)% [[Fire Resistance]] Other Items: +(28-32) to [[Strength]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Rage",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Damage Penetrates 5% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (9-10)% [[Cold Resistance]] Other Items: +(28-32) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Damage Penetrates 5% [[Lightning Resistance]] Two Handed Weapon: Damage Penetrates (9-10)% [[Lightning Resistance]] Other Items: +(28-32) to [[Intelligence]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Spite",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Adds (20-26) to (40-46) [[Cold Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (30-40) to (59-69) [[Cold Damage]] to [[Spell|Spells]] Gloves: Adds (5-7) to (10-12) [[Cold Damage]] to [[Attack|Attacks]] Body Armour: (6-7)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Shield: (6-7)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Other Armour: (43-46)% chance to Avoid being [[Freeze|Frozen]] Quiver: Adds (15-20) to (30-35) [[Cold Damage]] to [[Attack|Attacks]] Belt: (43-46)% chance to Avoid being [[Freeze|Frozen]] Other Jewellery: Adds (10-13) to (20-24) [[Cold Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Suffering",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Adds (2-7) to (84-88) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (3-10) to (126-133) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds (1-2) to (22-23) [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (6-7)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (6-7)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (43-46)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds (2-5) to (56-62) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (43-46)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds (1-4) to (40-43) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: (40-54)% increased [[Spell Damage]] Two Handed Weapon: (60-84)% increased [[Spell Damage]] Gloves: +(18-26) to maximum [[Energy Shield]] Boots: +(18-26) to maximum [[Energy Shield]] Shield: +(39-49) to maximum [[Energy Shield]] Other Armour: +(31-38) to maximum [[Energy Shield]] Quiver: (26-30)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (11-13)% increased maximum [[Energy Shield]] Ring: +(23-26) to maximum [[Energy Shield]] Belt: +(23-26) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below One Handed Weapon: Adds (5-8) to (112-131) [[Lightning Damage]] Bow: Adds (11-14) to (208-242) [[Lightning Damage]] Two Handed Melee Weapon: Adds (11-14) to (208-242) [[Lightning Damage]] Other Weapon: Adds (5-8) to (112-131) [[Lightning Damage]] Armour: +(24-29)% to [[Lightning Resistance]] Quiver: +(24-29)% to [[Lightning Resistance]] Belt: +(24-29)% to [[Lightning Resistance]] Other Jewellery: (16-18)% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Wrath",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 75 and below Melee Weapon: (20-22)% increased [[Attack Speed]] Ranged Weapon: (11-12)% increased [[Attack Speed]] Gloves: (8-10)% increased [[Attack Speed]] Boots: 20% increased [[Movement Speed]] Body Armour: (21-25)% increased [[Totem]] Placement speed Helmet: (15-20)% increased Warcry Speed Other Armour: (20-22)% increased Stun and [[Block]] Recovery Quiver: (6-7)% increased [[Attack Speed]] Amulet: (5-8)% increased [[Cast Speed]] Ring: (5-8)% increased [[Cast Speed]] Belt: (7-10)% increased [[Trap]] and [[Mine]] Throwing Speed",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Wailing Essence of Zeal",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Adds Warlord influence and a new Warlord modifier to a rare item",
+    "constraints": [
+      "Right click this item then left click a high-level rare item with no influence to apply it.",
+      "Rare items can have up to six random modifiers."
+    ],
+    "name": "Warlord's Exalted Orb",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below Bow: Adds (32-44) to (65-76) [[Fire Damage]] Two Handed Melee Weapon: Adds (32-44) to (65-76) [[Fire Damage]] Other Weapon: Adds (17-24) to (35-41) [[Fire Damage]] Armour: +(18-23)% to [[Fire Resistance]] Quiver: +(18-23)% to [[Fire Resistance]] Belt: +(18-23)% to [[Fire Resistance]] Other Jewellery: (15-18)% increased [[Fire Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Anger",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Adds (6-9) to (13-15) [[Physical Damage]] Two Handed Weapon: Adds (10-13) to (21-25) [[Physical Damage]] Gloves: Adds (3-4) to (6-7) [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (11-24) [[Physical Damage]] to Melee Attackers Quiver: Adds (4-6) to (9-10) [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (11-24) [[Physical Damage]] to Melee Attackers Other Jewellery: Adds (4-6) to (9-10) [[Physical Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below Weapon: +(131-215) to [[Accuracy Rating]] Armour: +(64-82) to [[Evasion Rating]] Quiver: +(100-165) to [[Accuracy Rating]] Amulet: (14-18)% increased [[Evasion Rating]] Other Jewellery: +(36-60) to [[Evasion Rating]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Doubt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: [[Minion|Minions]] deal (30-39)% increased Damage Two Handed Weapon: [[Minion|Minions]] deal (45-59)% increased Damage Gloves: [[Minion|Minions]] deal (16-18)% increased Damage Helmet: (16-18)% increased [[Minion]] [[Accuracy Rating]] Other Armour: [[Minion|Minions]] have (16-18)% increased maximum [[Life]] Quiver: [[Minion|Minions]] have (16-18)% increased [[Movement Speed]] Belt: [[Minion|Minions]] have (16-18)% increased maximum [[Life]] Other Jewellery: [[Minion|Minions]] have (16-18)% increased [[Movement Speed]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Fear",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below Weapon: (2.5-2.8)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(31-45) to maximum [[Life]] Boots: +(31-45) to maximum [[Life]] Helmet: +(31-45) to maximum [[Life]] Other Armour: +(70-84) to maximum [[Life]] Quiver: (0.7-0.9)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (16-19)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (8.1-16) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below Bow: Adds (29-40) to (58-68) [[Cold Damage]] Two Handed Melee Weapon: Adds (29-40) to (58-68) [[Cold Damage]] Other Weapon: Adds (16-21) to (31-37) [[Cold Damage]] Armour: +(18-23)% to [[Cold Resistance]] Quiver: +(18-23)% to [[Cold Resistance]] Belt: +(18-23)% to [[Cold Resistance]] Other Jewellery: (15-18)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Damage Penetrates 4% [[Fire Resistance]] Two Handed Weapon: Damage Penetrates (7-8)% [[Fire Resistance]] Other Items: +(18-22) to [[Strength]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Rage",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Damage Penetrates 4% [[Cold Resistance]] Two Handed Weapon: Damage Penetrates (7-8)% [[Cold Resistance]] Other Items: +(18-22) to [[Dexterity]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Sorrow",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Adds (11-15) to (22-25) [[Cold Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (16-22) to (33-38) [[Cold Damage]] to [[Spell|Spells]] Gloves: Adds (3-4) to (7-8) [[Cold Damage]] to [[Attack|Attacks]] Body Armour: (5-6)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Shield: (5-6)% chance to Avoid [[Cold Damage]] from [[Hit|Hits]] Other Armour: (39-42)% chance to Avoid being [[Freeze|Frozen]] Quiver: Adds (10-13) to (19-22) [[Cold Damage]] to [[Attack|Attacks]] Belt: (39-42)% chance to Avoid being [[Freeze|Frozen]] Other Jewellery: Adds (6-9) to (13-16) [[Cold Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Suffering",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Adds (1-4) to (46-48) [[Lightning Damage]] to [[Spell|Spells]] Two Handed Weapon: Adds (2-5) to (69-73) [[Lightning Damage]] to [[Spell|Spells]] Gloves: Adds 1 to (14-15) [[Lightning Damage]] to [[Attack|Attacks]] Body Armour: (5-6)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Shield: (5-6)% chance to Avoid [[Lightning Damage]] from [[Hit|Hits]] Other Armour: (39-42)% chance to Avoid being [[Shock|Shocked]] Quiver: Adds (2-3) to (35-40) [[Lightning Damage]] to [[Attack|Attacks]] Belt: (39-42)% chance to Avoid being [[Shock|Shocked]] Other Jewellery: Adds (1-2) to (27-28) [[Lightning Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Torment",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: (30-39)% increased [[Spell Damage]] Two Handed Weapon: (45-59)% increased [[Spell Damage]] Armour: +(17-23) to maximum [[Energy Shield]] Quiver: (21-25)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (8-10)% increased maximum [[Energy Shield]] Ring: +(16-19) to maximum [[Energy Shield]] Belt: +(16-19) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 60 and below One Handed Weapon: Adds 3 to (57-67) [[Lightning Damage]] Bow: Adds (5-8) to (106-123) [[Lightning Damage]] Two Handed Melee Weapon: Adds (5-8) to (106-123) [[Lightning Damage]] Other Weapon: Adds 3 to (57-67) [[Lightning Damage]] Armour: +(18-23)% to [[Lightning Resistance]] Quiver: +(18-23)% to [[Lightning Resistance]] Belt: +(18-23)% to [[Lightning Resistance]] Other Jewellery: (13-15)% increased [[Lightning Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Weeping Essence of Wrath",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Modifies a Map item adding layers of Delirium with the Essences reward type",
+    "constraints": [
+      "Right click this item then left click a Map item to apply it.",
+      "Can apply up to 5 to a single Map item."
+    ],
+    "name": "Whispering Delirium Orb",
+    "tags": [
+      "affliction_orb",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 35 and below One Handed Weapon: Adds 1 to (2-3) [[Physical Damage]] Two Handed Weapon: Adds 2 to (4-5) [[Physical Damage]] Gloves: Adds 1 to 2 [[Physical Damage]] to [[Attack|Attacks]] Other Armour: Reflects (1-4) [[Physical Damage]] to Melee Attackers Quiver: Adds 1 to 2 [[Physical Damage]] to [[Attack|Attacks]] Belt: Reflects (1-4) [[Physical Damage]] to Melee Attackers Other Jewellery: Adds 1 to 2 [[Physical Damage]] to [[Attack|Attacks]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Whispering Essence of Contempt",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 35 and below Weapon: (2-2.2)% of Physical [[Attack Damage]] Leeched as [[Life]] Gloves: +(5-14) to maximum [[Life]] Boots: +(5-14) to maximum [[Life]] Helmet: +(5-14) to maximum [[Life]] Other Armour: +(10-24) to maximum [[Life]] Quiver: (0.5-0.7)% of Physical [[Attack Damage]] Leeched as [[Life]] Belt: (8-11)% increased [[Flask]] [[Life]] Recovery rate Other Jewellery: Regenerate (1-2) [[Life]] per second",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Whispering Essence of Greed",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 35 and below Bow: Adds (2-3) to (6-7) [[Cold Damage]] Two Handed Melee Weapon: Adds (2-3) to (6-7) [[Cold Damage]] Other Weapon: Adds (1-2) to (3-4) [[Cold Damage]] Armour: +(6-11)% to [[Cold Resistance]] Quiver: +(6-11)% to [[Cold Resistance]] Belt: +(6-11)% to [[Cold Resistance]] Other Jewellery: (6-10)% increased [[Cold Damage]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Whispering Essence of Hatred",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Upgrades a normal item to rare with one guaranteed property Properties restricted to level 35 and below One Handed Weapon: (10-19)% increased [[Spell Damage]] Two Handed Weapon: (15-29)% increased [[Spell Damage]] Armour: +(3-5) to maximum [[Energy Shield]] Quiver: (5-10)% increased Damage with [[Bow]] [[Skill|Skills]] Amulet: (2-4)% increased maximum [[Energy Shield]] Ring: +(1-3) to maximum [[Energy Shield]] Belt: +(1-3) to maximum [[Energy Shield]]",
+    "constraints": [
+      "Right click this item then left click a normal item to apply it."
+    ],
+    "name": "Whispering Essence of Woe",
+    "tags": [
+      "essence",
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "Can be used at the Horticrafting bench in your hideout.",
+    "constraints": [],
+    "name": "Wild Crystallised Lifeforce",
+    "tags": [
+      "currency",
+      "default"
+    ]
+  },
+  {
+    "action": "No documented crafting action.",
+    "constraints": [],
+    "name": "Wild Wisps",
+    "tags": [
+      "disallowed_in_generic_currency_stash_slots",
+      "currency",
+      "default"
+    ]
+  }
+]

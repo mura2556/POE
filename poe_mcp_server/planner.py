@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Iterable, List, Sequence
 
-from .datasources import bench_recipes, bosses, essences, harvest
+from .datasources import bench_recipes, bosses, currency, essences, harvest
 from .models import CraftingStep
 
 
@@ -63,6 +63,25 @@ def assemble_crafting_plan(actions: Sequence[str]) -> List[CraftingStep]:
                 for recipe in bench_hits[:3]
             ]
             section = _format_section("Workbench Options:", lines)
+            if section:
+                instruction_parts.append(section)
+
+        currency_hits = currency.find(base_text)
+        if currency_hits:
+            metadata["currency_options"] = [asdict(option) for option in currency_hits]
+            lines = []
+            for option in currency_hits[:3]:
+                tag_text = f" [{', '.join(option.tags)}]" if option.tags else ""
+                action_text = option.action.strip()
+                constraint_text = option.constraints[0].strip() if option.constraints else ""
+                details = action_text
+                if constraint_text and constraint_text != action_text:
+                    details = f"{details} – {constraint_text}" if details else constraint_text
+                line = f"- {option.name}{tag_text}"
+                if details:
+                    line += f": {details}"
+                lines.append(line)
+            section = _format_section("Currency Options:", lines)
             if section:
                 instruction_parts.append(section)
 

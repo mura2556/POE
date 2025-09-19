@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import re
@@ -21,6 +22,8 @@ POEWIKI_API = "https://www.poewiki.net/w/api.php"
 REPOE_BASE = "https://raw.githubusercontent.com/brather1ng/RePoE/master/RePoE/data"
 
 LOGGER = logging.getLogger("sync_static_data")
+
+TARGET_RELEASE_VERSION = (3, 26, 0, 0)
 
 
 @dataclass
@@ -140,6 +143,150 @@ def build_translator() -> StatTranslator:
     stats_url = f"{REPOE_BASE}/stat_translations.min.json"
     translations = fetch_json(stats_url)
     return StatTranslator(translations)
+
+
+def _parse_version(value: str | None) -> tuple[int, int, int, int] | None:
+    if not value:
+        return None
+    match = re.match(r"^(\d+)(?:\.(\d+))?(?:\.(\d+))?([a-z]?)", value)
+    if not match:
+        return None
+    major = int(match.group(1))
+    minor = int(match.group(2) or 0)
+    patch = int(match.group(3) or 0)
+    suffix = match.group(4)
+    suffix_value = ord(suffix) - ord("a") + 1 if suffix else 0
+    return (major, minor, patch, suffix_value)
+
+
+def _normalise_text(value: str | None) -> str:
+    if not value:
+        return ""
+    text = html.unescape(value)
+    text = text.replace("<br>", "\n").replace("<br/>", "\n").replace("<br />", "\n")
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def _split_constraints(value: str | None) -> List[str]:
+    cleaned = _normalise_text(value)
+    if not cleaned:
+        return []
+    segments = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9])", cleaned)
+    if len(segments) == 1:
+        segments = [part.strip() for part in re.split(r"[\n;]+", cleaned)]
+    return [segment.strip() for segment in segments if segment.strip()]
+
+
+def _truthy(value: object | None) -> bool:
+    if value is None:
+        return False
+    if isinstance(value, (int, float)):
+        return bool(value)
+    text = str(value).strip().lower()
+    return text in {"1", "true", "yes"}
+
+
+def _merge_unique(base: List[str], extras: Iterable[str]) -> List[str]:
+    seen = set(base)
+    for entry in extras:
+        if entry not in seen:
+            base.append(entry)
+            seen.add(entry)
+    return base
+
+
+def fetch_currency_rows() -> List[dict]:
+    fields = ",".join(
+        [
+            "items._pageName=Page",
+            "items.name=Name",
+            "items.tags=Tags",
+            "items.description=Description",
+            "items.stat_text=StatText",
+            "items.help_text=HelpText",
+            "items.release_version=ReleaseVersion",
+            "items.removal_version=RemovalVersion",
+            "items.is_in_game=IsInGame",
+        ]
+    )
+    params = {
+        "action": "cargoquery",
+        "tables": "items",
+        "fields": fields,
+        "where": "items.class='Currency Item'",
+        "group_by": "items._pageName,items.name",
+        "format": "json",
+        "limit": 500,
+    }
+    rows: List[dict] = []
+    offset = 0
+    while True:
+        params["offset"] = offset
+        response = requests.get(POEWIKI_API, params=params, headers=HEADERS, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        chunk = data.get("cargoquery", [])
+        if not chunk:
+            break
+        rows.extend(entry.get("title", {}) for entry in chunk)
+        if len(chunk) < params["limit"]:
+            break
+        offset += params["limit"]
+    return rows
+
+
+def sync_currency_data() -> None:
+    rows = fetch_currency_rows()
+    curated: dict[str, dict] = {}
+    for row in rows:
+        if not _truthy(row.get("IsInGame")):
+            continue
+        release_version = _parse_version(row.get("ReleaseVersion"))
+        if release_version and release_version > TARGET_RELEASE_VERSION:
+            continue
+        removal_version = _parse_version(row.get("RemovalVersion"))
+        if removal_version and removal_version <= TARGET_RELEASE_VERSION:
+            continue
+        name = (row.get("Name") or "").strip()
+        if not name:
+            continue
+        tags = [tag.strip() for tag in (row.get("Tags") or "").split(",") if tag.strip()]
+        action_source = row.get("Description") or row.get("StatText") or ""
+        action = _normalise_text(action_source)
+        constraints = _split_constraints(row.get("HelpText"))
+        if not action and constraints:
+            action = constraints[0]
+            constraints = constraints[1:]
+        if not action:
+            action = "No documented crafting action."
+        entry = curated.get(name)
+        if entry is None:
+            curated[name] = {
+                "name": name,
+                "tags": tags,
+                "action": action,
+                "constraints": constraints,
+            }
+            continue
+        entry["tags"] = _merge_unique(list(entry.get("tags", [])), tags)
+        if action and (not entry.get("action") or len(action) > len(entry.get("action", ""))):
+            entry["action"] = action
+        if constraints:
+            entry["constraints"] = _merge_unique(list(entry.get("constraints", [])), constraints)
+        curated[name] = entry
+
+    payload = [
+        {
+            "name": data["name"],
+            "tags": data.get("tags", []),
+            "action": data.get("action", ""),
+            "constraints": data.get("constraints", []),
+        }
+        for data in (curated[name] for name in sorted(curated))
+    ]
+    write_json("currency.json", payload)
 
 
 def sync_bench_data(translator: StatTranslator) -> None:
@@ -421,7 +568,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--sections",
-        choices=["bosses", "bench", "essences", "harvest"],
+        choices=["bosses", "bench", "currency", "essences", "harvest"],
         nargs="*",
         help="Limit execution to selected sections.",
     )
@@ -430,18 +577,29 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO, format="%(message)s")
     ensure_data_dir()
-    translator = build_translator()
 
-    sections = set(args.sections or ["bosses", "bench", "essences", "harvest"])
+    sections = set(args.sections or ["bosses", "bench", "currency", "essences", "harvest"])
+
+    translator: StatTranslator | None = None
+
+    def get_translator() -> StatTranslator:
+        nonlocal translator
+        if translator is None:
+            translator = build_translator()
+        return translator
+
     if "bench" in sections:
         LOGGER.info("Syncing crafting bench options...")
-        sync_bench_data(translator)
+        sync_bench_data(get_translator())
     if "essences" in sections:
         LOGGER.info("Syncing essences...")
-        sync_essence_data(translator)
+        sync_essence_data(get_translator())
     if "harvest" in sections:
         LOGGER.info("Syncing Harvest crafts...")
-        sync_harvest_data(translator)
+        sync_harvest_data(get_translator())
+    if "currency" in sections:
+        LOGGER.info("Syncing currency data...")
+        sync_currency_data()
     if "bosses" in sections:
         LOGGER.info("Syncing boss data...")
         sync_boss_data()
