@@ -857,12 +857,45 @@ def sync_crafting_methods(translator: StatTranslator) -> None:
     write_json("crafting_methods.json", payload)
 
 
+def _is_horticraft(identifier: str, mod: dict) -> bool:
+    """Return True when the mod describes a horticrafting option."""
+
+    ident = identifier.lower()
+    if ident.startswith("harvest"):
+        return True
+
+    if (mod or {}).get("domain") != "crafted":
+        return False
+
+    horticraft_prefixes = (
+        "affliction",
+        "horticraft",
+        "horticrafting",
+        "primal",
+        "sacred",
+        "vivid",
+        "wild",
+    )
+    if ident.startswith(horticraft_prefixes):
+        return True
+
+    all_tags = {
+        *(tag.lower() for tag in mod.get("groups", []) or []),
+        *(tag.lower() for tag in mod.get("adds_tags", []) or []),
+        *(tag.lower() for tag in mod.get("implicit_tags", []) or []),
+    }
+    if any(tag in all_tags for tag in ("affliction", "harvest", "horticraft")):
+        return True
+
+    return False
+
+
 def sync_harvest_data(translator: StatTranslator) -> None:
     mods_url = f"{REPOE_BASE}/mods.min.json"
     mods = fetch_json(mods_url)
     curated: List[dict] = []
     for identifier, mod in mods.items():
-        if not identifier.lower().startswith("harvest"):
+        if not _is_horticraft(identifier, mod):
             continue
         description = translator.translate(mod.get("stats", [])) or [identifier]
         curated.append(
@@ -870,7 +903,7 @@ def sync_harvest_data(translator: StatTranslator) -> None:
                 "identifier": identifier,
                 "description": description,
                 "groups": mod.get("groups", []),
-                "tags": list({*mod.get("adds_tags", []), *mod.get("implicit_tags", [])}),
+                "tags": sorted({*mod.get("adds_tags", []), *mod.get("implicit_tags", [])}),
                 "item_classes": mod.get("item_classes", []),
             }
         )
